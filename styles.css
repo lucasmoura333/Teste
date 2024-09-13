@@ -1,0 +1,80 @@
+/* Contêiner principal */
+.Layout---Processo-Seletivo-MPX-Brasil {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em coluna */
+    width: 100%; /* Ocupa toda a largura disponível */
+    min-height: 100vh; /* Altura mínima para ocupar toda a altura da viewport */
+    background-color: #fafafa; /* Cor de fundo */
+}
+
+/* Barra de acessibilidade na parte superior */
+.Acessibilidade {
+    display: flex; /* Define o contêiner como flexível */
+    justify-content: flex-start; /* Alinha os itens no início do contêiner */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%; /* Ocupa toda a largura do contêiner principal */
+    height: 54px; /* Altura da barra de acessibilidade */
+    padding: 8px 20px; /* Padding interno */
+    background-color: #fafafa; /* Cor de fundo */
+    border-bottom: 1px solid #e0e7f2; /* Linha inferior para separação */
+    box-shadow: 1px 2px 8px 0 #e0e7f2; /* Sombra do contêiner */
+}
+
+/* Contêiner dos botões */
+.bg {
+    display: flex; /* Define o contêiner interno como flexível */
+    flex-wrap: nowrap; /* Garante que os itens não quebrem para a linha seguinte */
+    justify-content: space-between; /* Espaça os itens uniformemente */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: 100%; /* Ocupa toda a altura do contêiner pai */
+}
+
+/* Estilo dos botões */
+.BG1, .BG2, .BG3, .BG4, .BG5, .BG6 {
+    display: flex; /* Define os botões como flexíveis */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    justify-content: center; /* Alinha o conteúdo horizontalmente ao centro */
+    width: 166px; /* Largura dos botões */
+    height: 38px; /* Altura dos botões */
+    margin: 0 15px; /* Margem entre os botões */
+    border-radius: 12px; /* Bordas arredondadas */
+    border: solid 1px var(--0277-bd); /* Borda dos botões */
+    background-color: #fafafa; /* Cor de fundo dos botões */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Ajustes nos textos dos botões */
+.Aumentar-fonte, .Alto-Contraste, .Mapa-do-Site, .Fonte-para-dislexia, .Entenda-a-Acessibilidade, .Pesquise-no-Site {
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* Ajustes específicos para o botão Pesquise no Site */
+.Pesquisa {
+    display: flex; /* Define a div de pesquisa como flexível */
+    align-items: center; /* Alinha o conteúdo verticalmente ao centro */
+    justify-content: center; /* Alinha o conteúdo horizontalmente ao centro */
+    width: 166px; /* Largura da div de pesquisa */
+    height: 38px; /* Altura da div de pesquisa */
+    margin-left: 30px; /* Margem esquerda */
+    padding: 11px 12px; /* Padding interno */
+}
+
+/* Ajustes na div Caminho-2 */
+.Caminho-2 {
+    width: 12px; /* Largura da div Caminho-2 */
+    height: 12px; /* Altura da div Caminho-2 */
+    background-color: #000; /* Cor de fundo */
+    display: flex; /* Define a div Caminho-2 como flexível */
+    align-items: center; /* Alinha a imagem verticalmente ao centro */
+    justify-content: center; /* Alinha a imagem horizontalmente ao centro */
+}
+
+.Caminho-2 img {
+    width: 100%; /* Largura da imagem para preencher a div */
+    height: 100%; /* Altura da imagem para preencher a div */
+    object-fit: contain; /* Ajusta a imagem para caber na div sem distorção */
+}
