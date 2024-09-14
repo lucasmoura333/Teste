@@ -2,212 +2,151 @@
 
 *{
 margin: 0;
-
+padding: 0;
 
 transition: transform .2s;
-background-color: #fafafa;
+/* background-color: #fafafa; */
+}
+
+body {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
 
-.Layout---Processo-Seletivo-MPX-Brasil {
-    width: 1920px;
-    height: 5440px;
-    flex-grow: 0;
-    flex: auto;
-    padding: 0;    
-    
+/* Custom CSS for layout */
+
+.container-superior {
+    max-width: 100%; /* Ajuste para responsividade */
+    height: 54px;
+    padding: 8px;
+    border-radius: 12px;
+    box-shadow: 1px 2px 8px 0 #e0e7f2;
+    display: flex;
+    justify-content: space-between; /* Para distribuir os itens corretamente */
+    align-items: center; /* Alinhamento vertical centralizado */
 }
 
-.Aumentar-fonte {
-    width: 91px;
-    height: 15px;
-    flex-grow: 0;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
+/* .nav-head {
+    background-color: #fafafa;
+    padding: 15px;
+   
+} */
+
+.nav-head {
+    display: flex; /* Utilizando flex para o layout fluido dos itens */
+    gap: 15px; /* Espaço entre os itens */
 }
 
-.Alto-Contraste {
-    width: 85px;
-    height: 15px;
-    flex-grow: 0;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
+.nav-head .nav-item {
+    width: 166px;
+    height: 38px;
+    padding: 12px 39px 11px 36px;
+    border-radius: 12px;
+    border: solid 1px #0277bd;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center; /* Centralizar conteúdo dentro do botão */
+    justify-content: center; /* Centralizar horizontalmente */
+    flex-shrink: 0; /* Impede que o botão diminua se o espaço for reduzido */
 }
 
-.Mapa-do-Site {
-    width: 76px;
-    height: 15px;
-    flex-grow: 0;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
+.nav-head .nav-item a {
+    color: #0056b3;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
 }
 
-.Fonte-para-dislexia {
-    width: 109px;
-    height: 15px;
-    flex-grow: 0;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-}
-
-.Entenda-a-Acessibilidade {
-    width: 146px;
-    height: 15px;
-    flex-grow: 0;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-}
-
-.CaminhoPesquisa {
-    width: 142px;
-    height: 16px;
-    flex-grow: 0;
-}
-
-.Pesquise-no-Site {
-    width: 110px;
-    height: 16px;
-    flex-grow: 0;
-    margin: 0 20px 0 0;
-    font-family: Inter;
-    font-size: 12px;
-    font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-}
-
-  
-
-.Caminho-2{
-    width: 12px;
-    height: 12px;
-    flex-grow: 0;
-    margin: 2px 0 2px 20px;
-    background-color: #000;
+.nav-head .nav-item .input-group {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.Search, .search-icon{
-    width: 12px;
-    height: 12px;
-    flex-grow: 0;
-    margin: auto  
-}
-
-/* Ajusta a estrutura do formulário e botão */
-.form-inline {
-    display: flex;
-    align-items: center;
-}
-
-.form-control {
     width: auto;
-    flex-grow: 1;
 }
 
-button.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 6px;
-} */
-
-.nav-acessibilidade .nav-item .input {
-    height: auto;
-    max-height: 38px;
-    padding: 10px;
-    padding-right: 5px;
-    background-color: transparent;
+.nav-head .nav-item .input-group .input {
     border: none;
-    font-size: .75rem;
-    position: relative;
-    flex: 1 1 auto;
-    width: 1%;
-    margin-bottom: 0;
+    padding: 5px;
 }
 
-.azulPadrao{
-    color: #01579b;
+.nav-head .nav-item .btn {
+    background-color: #0056b3;
+    color: white;
 }
 
-/* .Vitrine {
-    width: 1890px;
-    height: 485px;
-    flex-grow: 0;
-    margin: 173px 0 0;
-    padding: 48px 0 30px 64px;
-} */
-
-.Btn-Dir {
-    width: 48px;
-    height: 48px;
-    flex-grow: 0;
-    margin: 123px 16px 176px 749px;
-    object-fit: contain;
-    transform: rotate(-90deg);
+.carousel img {
+    width: 100%;
+    height: auto;
 }
 
-.Btn-Esq {
-    width: 48px;
-    height: 48px;
-    flex-grow: 0;
-    object-fit: contain;
-    transform: rotate(90deg);
+.slick-slide {
+    padding: 10px;
 }
 
-.custom-btn-icon {
-    width: 50px; /* Largura do botão */
-    height: 50px; /* Altura do botão */
+.container-01 {
+    background-color: #0056b3;
+    padding: 20px;
 }
-  
-.carousel-control-prev, .carousel-control-next {
-    background-color: transparent; /* Remove o fundo */
-    border: none; /* Remove bordas */
-}
-  
-  
-  
- 
 
+.slider-item {
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container para os submenus */
+.container-01 {
+    background-color: #0056b3;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* Estilo para o submenu */
+.submenu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.submenu-item {
+    text-align: center;
+    background-color: #0056b3;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.submenu-item a {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.submenu-item:hover {
+    background-color: #003f7f;
+}
+
+/* Menu dropdown */
+.navbar {
+    padding: 15px;
+    background-color: #0277bd;
+}
+
+.nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+.dropdown-item {
+    padding: 5px;
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #e0e7f2;
+    color: #003f7f;
+}
