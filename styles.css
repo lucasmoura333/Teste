@@ -3,8 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    transition: background-color .2s ease, color .2s ease;
+    font-family: 'Inter';
+    text-align: center;    
+    transition: transform .2s;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
 }
 
 body {
@@ -15,12 +22,13 @@ body {
 /* Nav header */
 .nav-topo {
     display: flex;
-    justify-content: center;
+    align-items: center; 
     flex-wrap: wrap;
-    padding: 10px 0;
     background-color: #fff;
     max-width: 100%;
     overflow: hidden;
+    margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 /* Itens da navegação */
@@ -30,7 +38,7 @@ body {
     align-items: center;
     width: 166px;
     height: 38px;
-    margin: 10px;
+    margin: 10px;    
     padding: 0 15px;
     border-radius: 12px;
     border: solid 1px #e0e0e0;
@@ -51,31 +59,20 @@ body {
     color: #0056b3;
 }
 
-/* Estilização da área de pesquisa */
-.pesquisa {
+/* Estilização da área de PesquisaSite */
+.PesquisaSite {
     display: flex;
     align-items: center;
-    flex-grow: 1;
-    /* Faz a pesquisa ocupar o espaço restante proporcionalmente */
-    max-width: 300px;
-    /* Limita a largura máxima da pesquisa */
-    margin-left: 10px;
-    margin-right: 10px;
-    border: none;
 }
 
 .form-control {
-    flex: 2;
-    /* O campo de entrada ocupa 2/3 do espaço da pesquisa */
+    flex: 1;    
     height: 38px;
     padding: 0 10px;
-    border: solid 1px #e0e0e0;
+    border: 1px solid #e0e0e0;
     border-right: none;
-    /* Remove a borda à direita para integrar com o botão */
     border-radius: 12px 0 0 12px;
     background-color: #fafafa;
-    font-size: 14px;
-    color: #333;
 }
 
 .form-control::placeholder {
@@ -84,27 +81,17 @@ body {
 
 .form-control:focus {
     outline: none;
-    /* Remove o contorno padrão */
     border-color: #0277bd;
-    /* Adiciona uma borda azul suave ao focar */
 }
 
 .btn-search {
-    flex: 1;
-    /* O botão ocupa 1/3 do espaço da pesquisa */
     height: 38px;
-    border: solid 1px #e0e0e0;
-    border-left: none;
-    /* Remove a borda entre o input e o botão */
-    border-radius: 0 12px 12px 0;
     background-color: #fafafa;
-    padding: 0 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    /* Mostra o cursor de ponteiro */
-    transition: background-color .2s ease, transform .2s ease;
+    border-radius: 0 12px 12px 0;
+    border: 1px solid #e0e0e0;
 }
 
 .btn-search:hover {
@@ -124,8 +111,10 @@ body {
 }
 
 .loupe-icon {
-    width: 16px;
-    height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    display: block;
+    margin: auto;
 }
 
 /* Efeito hover */
@@ -146,7 +135,7 @@ body {
         width: 100%;
     }
 
-    .pesquisa {
+    .PesquisaSite {
         max-width: 100%;
     }
 }
@@ -164,7 +153,7 @@ body {
         width: auto;
     }
 
-    .pesquisa {
+    .PesquisaSite {
         flex-grow: 0;
         max-width: 166;
         margin-left: auto;
@@ -184,7 +173,7 @@ body {
     margin-left: 0;
 }
 
-.pesquisa:hover {
+.PesquisaSite:hover {
     background-color: transparent;
     color: inherit;
 }
@@ -192,10 +181,10 @@ body {
 
 
 
-/* bobera pra deixar botão pesquisar inato para digitar sem nenhuma sombra interna */
+/* bobera pra deixar botão PesquisaSiter inato para digitar sem nenhuma sombra interna */
 
-.pesquisa:focus-within .form-control,
-.pesquisa:focus-within .btn-search {
+.PesquisaSite:focus-within .form-control,
+.PesquisaSite:focus-within .btn-search {
     background-color: #fafafa;
     /* Mantém a cor de fundo original */
     color: #333;
@@ -207,7 +196,7 @@ body {
 }
 
 /* Garante que o hover não ative para o botão enquanto o formulário estiver em foco */
-.pesquisa:focus-within .btn-search:hover {
+.PesquisaSite:focus-within .btn-search:hover {
     background-color: #fafafa;
     /* Restaura a cor de fundo original */
     color: #333;
@@ -217,7 +206,7 @@ body {
 }
 
 /* Garante que o hover não ative para o campo de input enquanto o formulário estiver em foco */
-.pesquisa:focus-within .form-control:hover {
+.PesquisaSite:focus-within .form-control:hover {
     background-color: #fafafa;
     /* Restaura a cor de fundo original */
     color: #333;
@@ -232,202 +221,194 @@ body {
 
 
 
-/* Final marcação 1 */
+
 
 /* <<<<<<<<<< Marcação 2>>>> */
 
-
-.menu-maior {
+.containerMenu-superior {
+      
     background-color: #01579b;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: warp;
-
-    padding: 15px;
-    font-size: 1.2rem;
-    text-align: center;
-
-    /* arredondamento pelas beiradas pra facilitar; */
-    border-top-left-radius: 15px;    
-    border-top-right-radius: 15px;    
-}
-
-.menu-maior .logo-cliente {
-    font-size: 1.5rem;
-    /* Ajusta o tamanho do texto para a logo */
-}
-
-.menu-maior img {
-    max-width: 50px;
-    margin-bottom: 10px;
-}
-
-.menu-maior span {
-    display: block;
-    color: white;
-    font-weight: bold;
-}
-
-.menu-maior .logo-cliente img {
-    max-width: 105px;
-    /* Aumenta o tamanho da imagem da logo em 1,5x */
-}
-
-.menu-maior button {
-    padding: 15px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-/* Estilo para telas grandes */
-@media (min-width: 1200px) {
-    .menu-maior {
-        padding: 20px; /* Aumenta o padding em telas grandes */
-    }
-
-    .menu-maior .col-lg-2 {
-        min-width: 325px; /* Espaço mínimo para itens grandes */
-    }
-
-    .menu-maior img {
-        max-width: 75px; /* Aumenta o tamanho da imagem em telas grandes */
-    }
-}
-
-/* Estilo para telas pequenas */
-@media (max-width: 768px) {
-    .menu-maior {
-        flex-direction: column; /* Empilha os itens verticalmente em telas pequenas */
-        padding: 10px; /* Reduz o padding em telas menores */
-    }
-
-    .menu-maior img {
-        max-width: 40px; /* Reduz o tamanho da imagem */
-    }
-
-    .menu-maior button {
-        font-size: 1rem; /* Ajusta o tamanho da fonte dos botões */
-    }
-}
-
-.submenu-menor {
-    background-color: #0277bd;
-    padding: 10px;
-    text-align: center;
-}
-
-.submenu-menor a {
-    color: white;
-    padding: 10px 20px;
-}
-
-.slicker-submenu {
-    background-color: #01579b;
-    padding: 20px;
-}
-
-.slicker-item {
-    width: 150px;
-    height: 100px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-.carousel-item img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.submenu-menor .nav-link {
-    color: white;
-    padding: 10px 20px;
-}
-
-.submenu-menor .dropdown-menu {
-    background-color: #01579B;
-}
-
-.submenu-menor .dropdown-item {
-    color: white;
-}
-
-.submenu-menor .dropdown-item:hover {
-    background-color: #0277bd;
-    color: white;
-}
-
-
-/* Garante que todos os menus fiquem na horizontal */
-.menu-maior,
-.submenu-menor,
-.slicker-submenu {
     display: flex;
-    flex-direction: row;
-    /* Define a direção dos itens como horizontal */
-    justify-content: center;
-    /* Centraliza os itens */
-    align-items: center;
-    /* Alinha verticalmente os itens ao centro */
-    gap: 10px;
-    /* Adiciona um espaçamento entre os itens */
+    justify-content: space-between; 
+    margin: 0 auto; 
+    border-top-left-radius: 15px;    
+    border-top-right-radius: 15px;
+       
 }
 
-/* Ajuste para responsividade do Menu Maior */
-.menu-maior .col-lg-3 {
-    flex: 1;
+.containerMenu-superior > div {
+    flex: 0 1 auto; /* Permite que os itens ocupem o espaço necessário */
+    min-width: 150px; 
+    margin: 0 10px; /* Margens laterais para espaçamento */
+}
+
+
+
+.containerMenu-superior .rowMenu-superior  {
+    margin-top: 16px; 
+    text-align: center;   
+}
+
+.botaoMenuSuperior, .botaoMenuSuperiorLogo{ 
+    display:inline-block; 
+    background-color: #fff;
+    border-radius: 25px;  
+    margin-top: 16px;    
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    min-width: 30px;    
+}
+
+.botaoMenuSuperiorLogo{
+    margin-right: 20px;
+}
+
+.botaoMenuSuperior img {
     max-width: 100%;
+    height: auto;
+    margin: 0 auto;  
+    transition: filter 0.2s ease;  
+}
+
+
+.tituloSuperior{
+    display: inline-flexbox;
+    color: #000;
+    font-weight: bold;
+    border-radius: 24px;        
+    margin-top: 4px;
+    height: 38px;
+    font-size: 16px;        
+    margin-bottom: auto;     
+    margin-top: 10px;
+    font-size: 16px;
+    
+}
+
+.tituloSuperior:hover path img.img-fluid{
+    text-align: center;
+    margin: auto;
+}
+
+
+/* teste */
+.botaoMenuSuperior:hover .tituloSuperior,
+.botaoMenuSuperior:active .tituloSuperior, .botaoMenuSuperior:hover path {
+    color: #01579B; /* Muda a cor ao passar o mouse ou clicar */
+}
+
+/* Efeito hover para a imagem */
+.botaoMenuSuperior:hover img,
+.botaoMenuSuperior:active img {
+    color: #01579B;
+    filter: brightness(0) saturate(100%) invert(34%) sepia(87%) saturate(1072%) hue-rotate(186deg) brightness(94%) contrast(100%);
+}
+
+
+.img-fluid {
+    mix-blend-mode: normal; /* Mistura a cor de fundo com a imagem */
+    transition: mix-blend-mode 0.3s;
+}
+
+.botaoMenuSuperior:hover .img-fluid,
+.botaoMenuSuperior:active .img-fluid {
+    mix-blend-mode: normal; /* Restaura a imagem original ao passar o mouse */
+}
+
+
+
+.botaoMenuSuperiorLogo {
+    margin-left: 0; 
     display: flex;
     justify-content: center;
+    align-items: flex-end; 
 }
 
-/* Força o submenu a se comportar horizontalmente */
-.submenu-menor .dropdown {
-    display: inline-block;
+.botaoMenuSuperior {
+    display: inline-block; 
+    background-color: #fff;
+    border-radius: 25px;  
+    margin-top: 16px;    
+    padding: 10px;    
+    min-width: 30px;    
 }
 
-.submenu-menor .dropdown-menu {
-    display: none;
-    position: absolute;
-}
+/* Responsividade */
 
-.submenu-menor .dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-/* Ajuste de layout do carousel para garantir horizontalidade */
-.carousel .carousel-inner {
-    display: flex;
-    /* Garante que os itens do carousel fiquem lado a lado */
-    flex-direction: row;
-    justify-content: center;
-}
-
-.carousel .carousel-item {
-    flex: 0 0 auto;
-    /* Garante que cada item tenha um tamanho fixo */
-}
-
-/* Forçar o slicker-submenu a ficar na horizontal */
-.slicker-submenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Responsividade geral */
-@media (max-width: 768px) {
-
-    .menu-maior,
-    .submenu-menor,
-    .slicker-submenu {
-        flex-wrap: wrap;
-        /* Permite que os itens quebrem em múltiplas linhas em telas pequenas */
+@media (min-width: 992px) {
+    .containerMenu-superior {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start;
     }
 }
+
+/* Ajuste específico para o botaoMenuSuperiorLogo */
+.botaoMenuSuperiorLogo {
+    margin-right: 20px; /* Espaçamento específico para o logo */
+    text-align: left; /* Certifica-se de que o texto está alinhado à esquerda */
+}
+
+
+
+@media (max-width: 768px) {
+    .botaoMenuSuperiorLogo {
+        
+        text-align: left !important;
+    }
+
+    .rowMenu-superior {
+        flex-direction: column; /* Para telas menores, empilha os botões */
+        align-items: start; /* Centraliza os itens verticalmente */
+    }
+}
+
+
+
+/* Fim marcação 2 >>>> */
+
+
+
+
+/* marcação 3 >>>>> SUBMENU  COM DROPDOWN>>>>>>> */
+
+
+
+.submenu, .dropdown-menu{
+    background-color: #0277bd;
+}
+
+.rowSubMenu{
+    padding: 14px;
+}
+
+.btn-submenu, .dropdown-item{
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.btn-submenu:hover{
+    background-color: #01579B;
+    color: #fff;
+}
+
+.dropdown-item:hover {
+    background-color: #4671e6;
+    color: #fff;
+    transform: scale(1.1); 
+    border-radius: 3px;
+}
+    
+
+/* Fim marcação 3 */
+
+
+
 
 
 /* Final marcação 2 */
+
+
