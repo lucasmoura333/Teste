@@ -1,7 +1,7 @@
 /* Estilos gerais */
 * {
     margin: 0;
-    padding: 0;
+    padding: 0;    
     box-sizing: border-box;
     font-family: 'Inter';
     text-align: center;    
@@ -219,8 +219,21 @@ body {
 /* <<<< -- marcação 1 , acima é o header --- >>>> */
 
 
+.container-maior {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 100%;
+    height: 100%;     
+    
+}
 
-
+.blocoMaior{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
 
 
 /* <<<<<<<<<< Marcação 2>>>> */
@@ -230,7 +243,7 @@ body {
     background-color: #01579b;
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     margin: 0 auto; 
     border-top-left-radius: 15px;    
     border-top-right-radius: 15px;
@@ -240,13 +253,13 @@ body {
 .containerMenu-superior > div {
     flex: 0 1 auto; /* Permite que os itens ocupem o espaço necessário */
     min-width: 150px; 
-    margin: 0 10px; /* Margens laterais para espaçamento */
+    margin: 0 15px; /* Margens laterais para espaçamento */
 }
 
 
 
 .containerMenu-superior .rowMenu-superior  {
-    margin-top: 16px; 
+    /* margin-top: 16px;  */
     text-align: center;   
 }
 
@@ -273,17 +286,15 @@ body {
 
 
 .tituloSuperior{
-    display: inline-flexbox;
+    font-family: 'Inter';
     color: #000;
-    font-weight: bold;
+    font-weight: bolder;
     border-radius: 24px;        
-    margin-top: 4px;
-    height: 38px;
-    font-size: 16px;        
+    margin-top: 4px;    
+    font-size: 99px;        
     margin-bottom: auto;     
     margin-top: 10px;
     font-size: 16px;
-    
 }
 
 .tituloSuperior:hover path img.img-fluid{
@@ -406,9 +417,214 @@ body {
 /* Fim marcação 3 */
 
 
+/* Marcação 4>>> */
+
+/* Remove os botões originais do slick 
+Botões do slick - Removendo bordas */
+
+.slick-prev, .slick-next {
+    background: transparent !important; /* Remove qualquer fundo */
+    border: none !important; /* Remove as bordas */
+    outline: none !important; /* Remove outline ao focar */
+}
+
+/* Personalize os botões de navegação customizados */
+.slick-prev-custom, .slick-next-custom {
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: none; /* Certifique-se que o fundo é transparente */
+    border: none; /* Remove qualquer borda */
+    cursor: pointer;
+}
+
+/* Botão anterior à esquerda */
+.slick-prev-custom {
+    left: 64px;
+}
+
+/* Botão próximo à direita */
+.slick-next-custom {
+    right: 64px;
+}
+
+/* Dots customizados - retangulares e centralizados */
+
+.slick-dots {
+    position: absolute;
+    bottom: 20px; /* Ajusta a posição vertical dos dots */
+    width: 100%; /* Garante que o container ocupe 100% da largura da tela */
+    display: flex;
+    justify-content: center; /* Centraliza os dots na tela */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 30px;
+}
+
+
+.slick-dots ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Garante que os dots fiquem no centro */
+    width: auto; /* Ajusta a largura conforme necessário */
+}
+
+.slick-dots ul {
+    width: auto; /* Faz com que o ul ajuste sua largura automaticamente */
+    padding: 0;
+    margin: 0 auto; /* Centraliza o ul dentro do container pai */
+    display: flex;
+    justify-content: center;
+}
+
+/* Cada dot */
+.slick-dots li {
+    margin: 0 10px; /* Adiciona espaçamento horizontal entre os dots */
+    flex: 0 1 auto; /* Mantém o comportamento flexível dos itens */
+}
+/* Estilo dos dots */
+.slick-dots li button {
+    width: 48px; /* Largura dos dots */
+    height: 8px; /* Altura dos dots */
+    border-radius: 12px; /* Bordas arredondadas */
+    background-color: #b3e5fc; /* Cor padrão dos dots */
+    border: none;
+    transition: background-color 0.3s, transform 0.3s; /* Transição para o hover */
+}
+
+/* Dot ativo com destaque */
+.slick-dots li.slick-active button {
+    background-color: #03a9f4; /* Cor ativa */
+    transform: scale(1.3); /* Aumenta o tamanho para destacar */
+}
+
+/* Hover nos dots */
+.slick-dots li button:hover {
+    background-color: #03a8f473; /* Cor ao passar o mouse */
+}
+
+/* Para remover qualquer pseudo-elemento padrão */
+.slick-dots li button:before {
+    content: ''; /* Remove qualquer conteúdo padrão */
+}
+
+
+/* fim marcação 4 <<<< */
+
+
+/* marcação 5 */
+
+.containerMenu-inferior {
+      
+    background-color: #01579b;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    /* margin: 0 auto;  */
+    border-bottom-left-radius: 15px;    
+    border-bottom-right-radius: 15px;
+
+    flex-direction: column;  /* Permite que os elementos filhos fiquem um abaixo do outro */
+    align-items: center;  /* Centraliza os elementos filhos */
+
+    height: auto;
+       
+}
+
+.rowMenu-inferior{
+    /* width: 100%; */
+    max-width: 1146px;
+    max-height: 90;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.slickerMenor {
+    display: flex;  /* Ativa o Flexbox */
+    justify-content: center;  
+    flex-wrap: wrap;  
+    /* width: 100%;   */
+
+    overflow-x: auto;  /* Adiciona rolagem horizontal se necessário */
+    padding: 10px 0;  /* Espaçamento vertical */
+}
+
+.slickerMenor .slick-slider {
+    position: relative;
+    display: block;
+}
+
+.slickerMenor .slick-list a {
+    
+    padding: 15px;
+    max-width: 166px;  
+    max-height: 86px;  
+    text-align: center;  
+    
+    color: inherit;  
+}
+
+/* .slick-slider img {
+    width: 100%;
+    height: auto; 
+    display: block;
+} */
+
+
+.slickerMaior, .slickerMaior row, .slicker-slider row {
+    padding: 0; /* Remove o padding da coluna */
+    margin: 0; /* Remove a margem da coluna */
+    height: 100%; /* Define altura para ocupar todo o espaço disponível */
+    margin: 0;
+}
 
 
 
-/* Final marcação 2 */
+.slick-slider img {
+    width: 100%;
+    height: 100%; /* Pode ajustar conforme necessário */
+    object-fit: fill; 
+    display: block !important; /* Força a imagem a não gerar espaçamento */
+}
+.prevBtn {
+    background-image: url('assets/btn-esq.png');
+
+}
+
+.nextBtn{
+    background-image: url('assets/btn-dir.png');
+}
+
+.btnSlickInferior{
+    cursor: pointer;
+}
+
+/* fim marcação 5 */
 
 
+/* inicio libras */
+
+.btnAcesso {
+    position: fixed;
+    right: 20px;
+    top: 150px;
+    z-index: 99999999;
+  }
+  
+  .icone {
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+    background-image: url('assets/libras-1.png'); /* Ajuste o caminho conforme necessário */
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    
+  }
+
+/* fim libras */
