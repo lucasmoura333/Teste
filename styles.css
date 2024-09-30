@@ -1,12 +1,18 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* Se num importar a fonte, não vai né jão.... */
+
 /* Estilos gerais */
 * {
     margin: 0;
     padding: 0;    
     box-sizing: border-box;
-    font-family: 'Inter';
+    font-family: 'Inter';    
     text-align: center;    
     transition: transform .2s;
     flex-wrap: wrap;
+
+    font-size: 12px;    
 }
 
 a {
@@ -14,10 +20,17 @@ a {
     color: #000000;
 }
 
-body {
-    padding-left: 15px;
-    padding-right: 15px;
+
+/* teste começa  sumir com o espaçamento bizarro na borda de baixo*/
+
+
+.slick-slider, .slick-track, .slick-slide, .slick-slide > div {
+    margin: 0 !important;
+    padding: 0 !important;
 }
+
+
+/* fim teste */
 
 /* Nav header */
 .nav-topo {
@@ -29,6 +42,14 @@ body {
     overflow: hidden;
     margin-bottom: 8px;
     margin-top: 8px;
+}
+
+.nav-topo .nav-item {
+    margin-right: 30px; /* Espaçamento à direita entre os itens */
+}
+
+.nav-topo .nav-item:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
 }
 
 /* Itens da navegação */
@@ -49,6 +70,8 @@ body {
     white-space: nowrap;
 }
 
+
+
 .nav-item a {
     text-decoration: none;
     color: inherit;
@@ -57,6 +80,18 @@ body {
 .nav-item:hover {
     background-color: #e0e0e0;
     color: #0056b3;
+}
+
+@media screen and (max-width: 1199.9px) {
+    .nav-topo .nav-item {
+      margin: 0.25rem;
+    }
+}
+  
+@media only screen and (max-width: 991px) {
+    .nav-topo .nav-item {
+      max-width: 100%;
+    }
 }
 
 /* Estilização da área de PesquisaSite */
@@ -224,7 +259,8 @@ body {
     justify-content: center; 
     align-items: center;     
     width: 100%;
-    height: 100%;     
+    height: 100%;    
+     
     
 }
 
@@ -270,31 +306,30 @@ body {
     margin-top: 16px;    
     padding-top: 10px;
     padding-bottom: 10px;    
-    min-width: 30px;    
+    min-width: 30px;
+        
 }
 
 .botaoMenuSuperiorLogo{
     margin-right: 20px;
 }
 
-.botaoMenuSuperior img {
-    max-width: 100%;
-    height: auto;
+.botaoMenuSuperior img , .botaoMenuServicos img{
     margin: 0 auto;  
+    width: 28px; 
+    height: 28px; 
+    object-fit: cover; 
+
     transition: filter 0.2s ease;  
 }
 
 
 .tituloSuperior{
-    font-family: 'Inter';
-    color: #000;
-    font-weight: bolder;
-    border-radius: 24px;        
-    margin-top: 4px;    
-    font-size: 99px;        
-    margin-bottom: auto;     
-    margin-top: 10px;
-    font-size: 16px;
+    border-radius: 24px;  
+    font-weight: bold;  
+    margin: 10px 0; /* Define margem superior e inferior uniformemente */
+    font-size: 16px;    
+
 }
 
 .tituloSuperior:hover path img.img-fluid{
@@ -304,14 +339,13 @@ body {
 
 
 /* teste */
-.botaoMenuSuperior:hover .tituloSuperior,
-.botaoMenuSuperior:active .tituloSuperior, .botaoMenuSuperior:hover path {
+.botaoMenuSuperior:hover .tituloSuperior, .botaoMenuSuperior:active .tituloSuperior, .botaoMenuSuperior:hover path, 
+.botaoMenuServicos:hover .tituloSuperior, .botaoMenuServicos:active .tituloSuperior, .botaoMenuServicos:hover path {
     color: #01579B; /* Muda a cor ao passar o mouse ou clicar */
 }
 
 /* Efeito hover para a imagem */
-.botaoMenuSuperior:hover img,
-.botaoMenuSuperior:active img {
+.botaoMenuSuperior:hover img, .botaoMenuSuperior:active img , .botaoMenuServicos:hover img, .botaoMenuServicos:active img{
     color: #01579B;
     filter: brightness(0) saturate(100%) invert(34%) sepia(87%) saturate(1072%) hue-rotate(186deg) brightness(94%) contrast(100%);
 }
@@ -322,8 +356,8 @@ body {
     transition: mix-blend-mode 0.3s;
 }
 
-.botaoMenuSuperior:hover .img-fluid,
-.botaoMenuSuperior:active .img-fluid {
+.botaoMenuSuperior:hover .img-fluid, .botaoMenuSuperior:active .img-fluid,
+.botaoMenuServicos:hover .img-fluid, .botaoMenuServicos:active .img-fluid {
     mix-blend-mode: normal; /* Restaura a imagem original ao passar o mouse */
 }
 
@@ -339,10 +373,13 @@ body {
 .botaoMenuSuperior {
     display: inline-block; 
     background-color: #fff;
+    text-align: center;
+    
     border-radius: 25px;  
     margin-top: 16px;    
     padding: 10px;    
-    min-width: 30px;    
+    min-width: 166px;
+    min-height: 99px;    
 }
 
 /* Responsividade */
@@ -384,7 +421,9 @@ body {
 
 /* marcação 3 >>>>> SUBMENU  COM DROPDOWN>>>>>>> */
 
-
+.submenu .btn-submenu{
+    margin: 0 auto;
+}
 
 .submenu, .dropdown-menu{
     background-color: #0277bd;
@@ -392,11 +431,19 @@ body {
 
 .rowSubMenu{
     padding: 14px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
 }
 
 .btn-submenu, .dropdown-item{
     text-align: center;
     color: #fff;
+}
+
+.submenu {
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 
@@ -429,15 +476,17 @@ Botões do slick - Removendo bordas */
 }
 
 /* Personalize os botões de navegação customizados */
-.slick-prev-custom, .slick-next-custom {
-    display: block;
+.slick-prev-custom, .slick-next-custom, .slick-prev-servicos, .slick-next-servicos {
+    background: none;
+    border: none;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
-    background: none; /* Certifique-se que o fundo é transparente */
-    border: none; /* Remove qualquer borda */
     cursor: pointer;
+    padding: 0;
+    height: 48px;
+    display: block;
 }
 
 /* Botão anterior à esquerda */
@@ -450,56 +499,45 @@ Botões do slick - Removendo bordas */
     right: 64px;
 }
 
+.slick-prev-custom:hover img, .slick-next-custom:hover img,
+.slick-prev-servicos:hover img, .slick-next-servicos:hover img {
+    opacity: 0.8; 
+    transform: scale(1.05); 
+}
+
+
+
 /* Dots customizados - retangulares e centralizados */
 
 .slick-dots {
     position: absolute;
-    bottom: 20px; /* Ajusta a posição vertical dos dots */
-    width: 100%; /* Garante que o container ocupe 100% da largura da tela */
+    bottom: 30px; 
+    width: 100%; 
     display: flex;
-    justify-content: center; /* Centraliza os dots na tela */
-    padding: 0;
-    margin: 0;
+    justify-content: center; 
     list-style: none;
-    gap: 30px;
+    gap: 20px;
 }
 
-
-.slick-dots ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center; /* Garante que os dots fiquem no centro */
-    width: auto; /* Ajusta a largura conforme necessário */
-}
-
-.slick-dots ul {
-    width: auto; /* Faz com que o ul ajuste sua largura automaticamente */
-    padding: 0;
-    margin: 0 auto; /* Centraliza o ul dentro do container pai */
-    display: flex;
-    justify-content: center;
-}
 
 /* Cada dot */
 .slick-dots li {
-    margin: 0 10px; /* Adiciona espaçamento horizontal entre os dots */
-    flex: 0 1 auto; /* Mantém o comportamento flexível dos itens */
+    margin: 0 10px; 
+    /* flex: 0 1 auto;  */
 }
 /* Estilo dos dots */
 .slick-dots li button {
-    width: 48px; /* Largura dos dots */
-    height: 8px; /* Altura dos dots */
-    border-radius: 12px; /* Bordas arredondadas */
-    background-color: #b3e5fc; /* Cor padrão dos dots */
-    border: none;
-    transition: background-color 0.3s, transform 0.3s; /* Transição para o hover */
+    width: 48px; 
+    height: 8px; 
+    border-radius: 9px; 
+    background-color: #b3e5fc; 
+    border: none;    
 }
 
 /* Dot ativo com destaque */
 .slick-dots li.slick-active button {
-    background-color: #03a9f4; /* Cor ativa */
-    transform: scale(1.3); /* Aumenta o tamanho para destacar */
+    background-color: #03a9f4; 
+    transform: translateY(4px); 
 }
 
 /* Hover nos dots */
@@ -507,9 +545,9 @@ Botões do slick - Removendo bordas */
     background-color: #03a8f473; /* Cor ao passar o mouse */
 }
 
-/* Para remover qualquer pseudo-elemento padrão */
+/* Tá com os botãozin fntasma de baixo*/
 .slick-dots li button:before {
-    content: ''; /* Remove qualquer conteúdo padrão */
+    content: ''; 
 }
 
 
@@ -518,8 +556,7 @@ Botões do slick - Removendo bordas */
 
 /* marcação 5 */
 
-.containerMenu-inferior {
-      
+.containerMenu-inferior {      
     background-color: #01579b;
     width: 100%;
     display: flex;
@@ -527,16 +564,13 @@ Botões do slick - Removendo bordas */
     /* margin: 0 auto;  */
     border-bottom-left-radius: 15px;    
     border-bottom-right-radius: 15px;
-
     flex-direction: column;  /* Permite que os elementos filhos fiquem um abaixo do outro */
     align-items: center;  /* Centraliza os elementos filhos */
-
     height: auto;
        
 }
 
-.rowMenu-inferior{
-    /* width: 100%; */
+.rowMenu-inferior{    
     max-width: 1146px;
     max-height: 90;
     flex-wrap: wrap;
@@ -545,52 +579,43 @@ Botões do slick - Removendo bordas */
     
 }
 
-.slickerMenor {
-    display: flex;  /* Ativa o Flexbox */
-    justify-content: center;  
-    flex-wrap: wrap;  
-    /* width: 100%;   */
-
-    overflow-x: auto;  /* Adiciona rolagem horizontal se necessário */
-    padding: 10px 0;  /* Espaçamento vertical */
+.slick-slider-servicos {
+    display: flex;
+    align-items: center;
 }
 
-.slickerMenor .slick-slider {
-    position: relative;
-    display: block;
+
+.slick-slide {
+    height: auto; /* Garante que as slides ocupem apenas o espaço da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.slickerMenor .slick-list a {
-    
-    padding: 15px;
-    max-width: 166px;  
-    max-height: 86px;  
-    text-align: center;  
-    
-    color: inherit;  
+.slick-slide, .slick-list {
+    padding: 0;
+    margin: 0; 
+    height: 100% !important;   
 }
 
-/* .slick-slider img {
-    width: 100%;
-    height: auto; 
-    display: block;
-} */
+
 
 
 .slickerMaior, .slickerMaior row, .slicker-slider row {
-    padding: 0; /* Remove o padding da coluna */
-    margin: 0; /* Remove a margem da coluna */
-    height: 100%; /* Define altura para ocupar todo o espaço disponível */
-    margin: 0;
+    padding: 0 ; /* Remove o padding da coluna */   
+    height: 100% ; /* Define altura para ocupar todo o espaço disponível */
+    margin: 0 ;
 }
-
-
 
 .slick-slider img {
     width: 100%;
-    height: 100%; /* Pode ajustar conforme necessário */
+    height: 100% ; 
     object-fit: fill; 
-    display: block !important; /* Força a imagem a não gerar espaçamento */
+    display: block;
+}
+
+.slick-slider div {
+    margin: 0; /* Remove margens dos divs que contêm as imagens */
 }
 .prevBtn {
     background-image: url('assets/btn-esq.png');
@@ -599,10 +624,6 @@ Botões do slick - Removendo bordas */
 
 .nextBtn{
     background-image: url('assets/btn-dir.png');
-}
-
-.btnSlickInferior{
-    cursor: pointer;
 }
 
 /* fim marcação 5 */
@@ -615,9 +636,9 @@ Botões do slick - Removendo bordas */
     right: 20px;
     top: 150px;
     z-index: 99999999;
-  }
+}
   
-  .icone {
+.icone {
     display: inline-block;
     width: 40px; 
     height: 40px; 
@@ -625,6 +646,85 @@ Botões do slick - Removendo bordas */
     background-size: contain; 
     background-repeat: no-repeat; 
     
-  }
+}
 
 /* fim libras */
+
+/* marcação 6 */
+
+
+.containerMenu-inferior .row{
+    max-width: 1146px;
+    height: auto;
+    
+}
+
+
+
+
+.slickerMenor {
+    /* overflow: hidden; */
+    position: relative;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-block: 15px;
+    position: relative;
+}
+
+
+.botaoMenuServicos {
+    background-color: #f0f0f0;       
+    display: inline-block;     
+    max-width: 170px;
+    height: 90;
+    border-radius: 15px;      
+}
+
+
+.botaoMenuServicos img{
+    margin-top: 10px;    
+}
+
+/* .botaoMenuServicos span{   
+    border: solid purple;
+    align-items: center;
+} */
+
+
+
+.botaoMenuServicos img {
+    width: 100%; 
+    max-width: 30px;
+    height: auto; 
+}
+
+.slick-prev-servicos {
+    left: -60px; 
+    
+}
+
+.slick-next-servicos {
+    right: -60px;
+}
+
+.slick-slider-servicos .slick-list a {
+    padding-inline: 19px;
+    
+}
+
+.slick-prev-servicos, .slick-next-servicos {
+    position: absolute; 
+    top: 50%;     
+    z-index: 10 !important; 
+}
+
+.slick-slider-servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* fim marcação 6 */

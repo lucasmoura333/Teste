@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Processo Seletivo MPX</title>
+    <title>LUCAS SITE - Processo Seletivo MPX</title>
 
     <!-- Bootstrap CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,9 +28,9 @@
 
     
 
-    <!--Acessibilidade-->
+    <!--Header-->
     <header class="container-fluid">
-        <div class="container-fluid row">
+        <div class="container-fluid row justify-content-center">
             <!-- Itens de acessibilidade -->
             <div class="col">
                 <ul class="nav nav-topo">
@@ -77,22 +77,26 @@
     <!-- Container 01  -->
     <div class="container-fluid container-maior">
         <div class="container-fluid row bloco-maior">
-            <!-- 1. Menu maior -->
+            <!-- 1. Menu maior -->            
             <div class="container containerMenu-superior">
-                <div class="row rowMenu-superior d-flex justify-content-between">
-                    <!-- BOTÃO 01, esquerda , tentativa de separar metade/metade-->
-                    <div class="col-12 col-lg-3 mb-3 mb-lg-0">
-                        <div class="container botaoMenuSuperiorLogo">
-                            <img src="assets/ouvidoria.png" alt="" class="img-fluid">
+                <div class="row rowMenu-superior d-flex align-items-center">
+                    <!-- Logo do Cliente, à esquerda -->
+                    <div class="col-12 col-lg-auto mb-3 mb-lg-0">
+                        <div class="botaoMenuSuperior" style="margin-right: 325px; min-width: 260px; min-height:  95;">
+                            <figure>
+                                <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                            </figure>
+                            <a class="tituloSuperior" href="#">Logo do Cliente</a>
                         </div>
                     </div>
-
-                    <div class="col-12 col-lg-9">
+            
+                    <!-- Botões à direita -->
+                    <div class="col-12 col-lg">
                         <div class="row justify-content-end">
-                            <!-- A metade de "lá" possui 3 colunas de 4 colunas cada -->
+                            <!-- Botão 01 -->
                             <div class="col-12 col-md-4 mb-3">
                                 <a href="#">
-                                    <div class="container botaoMenuSuperior">
+                                    <div class="botaoMenuSuperior">
                                         <figure>
                                             <img src="assets/ouv.png" alt="" class="img-fluid">
                                         </figure>
@@ -100,11 +104,11 @@
                                     </div>
                                 </a>
                             </div>
-
-                            <!-- Essa quebra é pra tentar manter a proporcionalidade dos botões -->
+            
+                            <!-- Botão 02 -->
                             <div class="col-12 col-md-4 mb-3">
                                 <a href="#">
-                                    <div class="container botaoMenuSuperior">
+                                    <div class="botaoMenuSuperior">
                                         <figure>
                                             <img src="assets/transp.png" alt="" class="img-fluid">
                                         </figure>
@@ -112,10 +116,11 @@
                                     </div>
                                 </a>
                             </div>
-
+            
+                            <!-- Botão 03 -->
                             <div class="col-12 col-md-4 mb-3">
                                 <a href="#">
-                                    <div class="container botaoMenuSuperior">
+                                    <div class="botaoMenuSuperior">
                                         <figure>
                                             <img src="assets/ouv-2.png" alt="" class="img-fluid">
                                         </figure>
@@ -127,11 +132,12 @@
                     </div>
                 </div>
             </div>
+            
 
             <!-- SUBMENU COM DROPDOWN -->
             <div class="container-fluid submenu">
-                <div class="row align-items-center rowSubMenu">
-                    <div class="col">
+                <div class="row justify-content-center align-items-center rowSubMenu">
+                     <div class="col-auto">
                         <div class="dropdown">
                             <button class="btn btn-submenu dropdown-toggle" data-bs-toggle="dropdown">
                                 Prefeitura
@@ -144,7 +150,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                     <div class="col-auto">
                         <div class="dropdown">
                             <button class="btn btn-submenu dropdown-toggle" data-bs-toggle="dropdown">
                                 Municipio
@@ -157,7 +163,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                     <div class="col-auto">
                         <div class="dropdown">
                             <button class="btn btn-submenu dropdown-toggle" data-bs-toggle="dropdown">
                                 Secretarias
@@ -170,14 +176,14 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                     <div class="col-auto">
                         <div class="dropdown">
                             <button class="btn btn-submenu">
                                 Noticias
                             </button>
                         </div>
                     </div>
-                    <div class="col">
+                     <div class="col-auto">
                         <div class="dropdown">
                             <button class="btn btn-submenu dropdown-toggle" data-bs-toggle="dropdown">
                                 Imprensa
@@ -189,7 +195,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col">
+                     <div class="col-auto">
                         <div class="dropdown">
                             <button class="btn btn-submenu dropdown-toggle" data-bs-toggle="dropdown">
                                 Contato
@@ -205,8 +211,8 @@
             </div>
             <!-- Carousel Vitrine -->
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col slickerMaior">
+                <div class="row" >
+                    <div class="col slickerMaior" >
                         <div class="slick-slider">
                             <div><img src="assets/vitrine.png" alt=""></div>
                             <div><img src="assets/vitrine.png" alt=""></div>
@@ -216,118 +222,129 @@
                 </div>
             </div>
 
-            <!--Slicker de serviços -->
-            <div class="container-fluid containerMenu-inferior">
-                
-                <!-- Slider de serviços -->
-                <div class="row ">
-                    <div class="col slickerMenor">
-                        <div class="slick-slider">
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 1</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 2</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 3</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 4</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 5</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 6</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 7</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 8</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 9</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 10</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 11</span>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="container botaoMenuSuperior">
-                                    <figure>
-                                        <img src="assets/logoCliente.png" alt="" class="img-fluid">
-                                    </figure>
-                                    <span class="tituloSuperior">Serviço 12</span>
-                                </div>
-                            </a>
-                        <div class="slick-slider">
-                    </div>
-                </div>
-            
-                
-            </div>
-            
+                <!-- Slicker de serviços -->
+                <div class="container-fluid containerMenu-inferior" style="padding: 25px;">            
+                    <div class="row justify-content-center position-relative" >                     
 
+                        <!-- Coluna que contém o slider -->
+                        <div class="col slickerMenor">
+                            <div class="container slick-slider-servicos">
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior" style="padding-bottom: 10px;">Serviço 0</span>
+                                    </div>
+                                </a>
 
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 1</span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 2</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 3</span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 4</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 5</span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 6</span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 7</span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 8</span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 9</span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 10</span>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 11</span>
+                                    </div>
+                                </a>
+                
+                                <a href="#">
+                                    <div class="container botaoMenuServicos">
+                                        <figure>
+                                            <img src="assets/logoCliente.png" alt="" class="img-fluid">
+                                        </figure>
+                                        <span class="tituloSuperior">Serviço 12</span>
+                                    </div>
+                                </a>  
+                                <!-- Outros serviços aqui -->
+                            </div>
+                        </div>
+                       
+                    </div>        
+                </div>                
+                <!-- Fim slicker de serviços -->
+            <!-- Fim slickerserviços -->
         </div>
     </div>
 
