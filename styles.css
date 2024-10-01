@@ -728,3 +728,163 @@ Botões do slick - Removendo bordas */
 }
 
 /* fim marcação 6 */
+
+
+/* marcação 7 */
+
+.colNoticias{
+    position: relative;   
+    padding: 30px;
+    
+}
+
+.Noticias {
+    position: relative;
+    z-index: 1;
+    width: 129px;
+    height: 39px;
+    flex-grow: 0;    
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #01579b;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+.Vinheta {
+    width: 120px;
+    height: 16px;
+    background-color: #e1f5fe;
+    position: relative;
+    top: -15px; 
+    left: -1.5px;
+    z-index: 0; 
+    border-radius: 20px;    
+}
+
+/* noticias */
+
+.noticiaMaior{
+    text-align: left;
+    max-width: 558px;
+    max-height: 410px; 
+    margin-bottom: 30px;
+    border-radius: 24px;
+    border: solid 2px whitesmoke;
+    box-sizing: border-box;
+
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* padding-inline: 10px; */
+}
+
+.noticiaMaior figure {
+    margin: 0; /* Remove a margem do figure */
+    padding: 0; /* Remove o padding do figure */
+    width: 100%; /* Garante que a imagem ocupe a largura total */
+}
+
+.noticiaMaior img {
+    border-radius: 24px; 
+    /* width: 100%; */
+    max-height: 410px;
+    max-height: 316;
+    height: auto; 
+    display: block; 
+}
+
+
+
+
+.noticiaMaior:hover img {
+    /* Faz a imagem e o texto "escalarem" junto com o container */
+    transform: scale(1.02); 
+    
+}
+
+.noticiaMaior:hover .tituloNoticiaMaior {
+    color: #01579b; /* O texto muda de cor ao passar o mouse */
+}
+
+
+.tituloNoticiaMaior:active {
+    color: #000000; 
+    text-decoration: none;
+    transform: scale(1.0);
+}
+
+
+.tituloNoticiaMaior{
+    width: 498px;
+    height: 48px;
+    flex-grow: 0;
+    margin: 16px 30px 15px;    
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;    
+    color: #616161; 
+
+}
+
+
+
+.data-bg {
+    position: absolute;
+    max-width: 128px;
+    max-height: 32px;
+    top: 30px;  
+    left: 30px;  
+    background-color: #4fc3f7;
+    padding: 6px 12px; 
+    border-radius: 25px; 
+    font-size: 14px;
+    font-weight: normal;
+    color: #001c33;
+    z-index: 1;
+}
+
+.btnMais{
+    max-width: 226px;
+    max-height: 48px;
+    flex-grow: 0;
+    margin: 32px 506px 0 324px;
+    padding: 14px 40px 14px 44px;
+    border-radius: 16px;
+    background-color: #ffb300;
+}
+
+.btnMais:hover{
+    background-color: #FFC107;
+}
+
+.btnMais:active {
+    background-color: #FFB300;
+    color: #000000; 
+    text-decoration: none;
+}
+
+.btnMais {
+    width: 142px;
+    height: 20px;   
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    color: #331600;
+}
+
+
+
+
+/* fim marcação 7 */
