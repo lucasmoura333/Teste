@@ -11,7 +11,7 @@
     text-align: center;    
     transition: transform .2s;
     flex-wrap: wrap;
-
+    word-wrap: break-word;
     font-size: 12px;    
 }
 
@@ -24,7 +24,7 @@ a {
 /* teste começa  sumir com o espaçamento bizarro na borda de baixo*/
 
 
-.slick-slider, .slick-track, .slick-slide, .slick-slide > div {
+.slick-slider-vitrini, .slick-track, .slick-slide {
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -470,13 +470,15 @@ a {
 Botões do slick - Removendo bordas */
 
 .slick-prev, .slick-next {
-    background: transparent !important; /* Remove qualquer fundo */
-    border: none !important; /* Remove as bordas */
-    outline: none !important; /* Remove outline ao focar */
+    background: transparent !important;
+    border: none !important; 
+    outline: none !important; 
 }
 
-/* Personalize os botões de navegação customizados */
-.slick-prev-custom, .slick-next-custom, .slick-prev-servicos, .slick-next-servicos {
+/* Botões de naegação personalizados */
+.slick-prev-custom, .slick-next-custom,
+ .slick-prev-servicos, .slick-next-servicos, 
+ .slick-prev-noticias, .slick-next-noticias {
     background: none;
     border: none;
     position: absolute;
@@ -500,9 +502,10 @@ Botões do slick - Removendo bordas */
 }
 
 .slick-prev-custom:hover img, .slick-next-custom:hover img,
+.slick-prev-servicos:hover img, .slick-next-servicos:hover img
 .slick-prev-servicos:hover img, .slick-next-servicos:hover img {
-    opacity: 0.8; 
-    transform: scale(1.05); 
+    opacity: 0.9; 
+    transform: scale(1.02); 
 }
 
 
@@ -561,7 +564,6 @@ Botões do slick - Removendo bordas */
     width: 100%;
     display: flex;
     justify-content: space-between; 
-    /* margin: 0 auto;  */
     border-bottom-left-radius: 15px;    
     border-bottom-right-radius: 15px;
     flex-direction: column;  /* Permite que os elementos filhos fiquem um abaixo do outro */
@@ -770,47 +772,41 @@ Botões do slick - Removendo bordas */
 /* noticias */
 
 .noticiaMaior{
-    text-align: left;
-    max-width: 558px;
+    text-align: left;    
+    max-width: 100%;
     max-height: 410px; 
     margin-bottom: 30px;
     border-radius: 24px;
     border: solid 2px whitesmoke;
     box-sizing: border-box;
-
     position: relative;    
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
+    padding: 0;
 
-    /* padding-inline: 10px; */
+    overflow: hidden;
 }
 
 .noticiaMaior figure {
-    margin: 0; /* Remove a margem do figure */
-    padding: 0; /* Remove o padding do figure */
-    width: 100%; /* Garante que a imagem ocupe a largura total */
+    width: 100%; 
 }
 
 .noticiaMaior img {
-    border-radius: 24px; 
-    /* width: 100%; */
-    max-height: 410px;
-    max-height: 316;
+    width: 100%;
+    border-radius: 24px;         
+    max-height: 410px;    
     height: auto; 
     display: block; 
 }
 
 
 
-
 .noticiaMaior:hover img {
     /* Faz a imagem e o texto "escalarem" junto com o container */
-    transform: scale(1.02); 
+    transform: scale(1.01); 
     
 }
 
-.noticiaMaior:hover .tituloNoticiaMaior {
+.noticiaMaior:hover .tituloNoticiaMaior, .noticiaMenor:hover .tituloNoticiaMenor {
     color: #01579b; /* O texto muda de cor ao passar o mouse */
 }
 
@@ -822,32 +818,52 @@ Botões do slick - Removendo bordas */
 }
 
 
-.tituloNoticiaMaior{
-    width: 498px;
-    height: 48px;
-    flex-grow: 0;
-    margin: 16px 30px 15px;    
-    font-size: 20px;
+.tituloNoticiaMaior {
+    display: block; 
+    width: auto;
+    margin: 16px 0 0; 
+    font-size: 18px;
     font-weight: 600;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    text-align: left;    
-    color: #616161; 
-
+    color: #616161;
+    text-align: left;
+    word-wrap: break-word;   
+    
+    padding-left: 10px;
 }
+
+/* Adicionando responsividade */
+@media (min-width: 768px) {
+    
+    .noticiaMaior {
+        min-height: 250px; 
+        height: auto; 
+    }
+}
+
+/* Ajusta o comportamento da grid para resoluções maiores */
+@media (min-width: 1400px) {
+    .containerNoticiarioMaior .col-md-6 {
+        max-width: 50%; 
+        flex: 0 0 50%; 
+    }
+    
+    .noticiaMaior {
+        min-height: 450px; 
+        height: auto; 
+    }
+}
+
 
 
 
 .data-bg {
     position: absolute;
-    max-width: 128px;
-    max-height: 32px;
+    max-width: 125px;
+    max-height: 28px;
     top: 30px;  
     left: 30px;  
     background-color: #4fc3f7;
-    padding: 6px 12px; 
+    padding: 4px 10px; 
     border-radius: 25px; 
     font-size: 14px;
     font-weight: normal;
@@ -855,36 +871,109 @@ Botões do slick - Removendo bordas */
     z-index: 1;
 }
 
-.btnMais{
+.btnMais {
     max-width: 226px;
     max-height: 48px;
-    flex-grow: 0;
-    margin: 32px 506px 0 324px;
-    padding: 14px 40px 14px 44px;
+    margin: 32px auto 0 auto; 
+    padding: 14px 40px;
     border-radius: 16px;
     background-color: #ffb300;
+
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #331600;
+    display: block; 
 }
 
-.btnMais:hover{
+.btnMais:hover {
     background-color: #FFC107;
 }
 
 .btnMais:active {
     background-color: #FFB300;
-    color: #000000; 
-    text-decoration: none;
-}
-
-.btnMais {
-    width: 142px;
-    height: 20px;   
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    color: #331600;
 }
 
 
 
 
 /* fim marcação 7 */
+
+/* marcação 8 */
+
+.slickerNoticia{
+    display: flex;
+    overflow: visible;
+    border: solid whitesmoke;
+    border-radius: 35px;
+    margin: 10px;
+    /* padding: 10px; */
+}
+
+.noticiaMenor figure {
+    margin: 0; 
+    padding: 0; 
+    width: 100%;
+}
+
+.noticiaMenor img {
+    border-radius: 24px;     
+    max-height: 410px;    
+    height: auto; 
+    /* display: block;  */
+}
+
+.noticiaMenor{
+    /* para aparecer o bg-data  */
+    position: relative; 
+    padding: 10px;
+}
+
+
+.tituloNoticiaMenor{
+    width: 100% !important; 
+    height: 48px!important;
+    margin: 16px 30px 15px;    
+    font-size: 20px;
+    font-weight: 600;    
+    font-stretch: normal;    
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left ; 
+    word-wrap: break-word;   
+    color: #616161;
+}
+
+.tituloNoticiaMenor:hover {
+    text-decoration: underline; 
+}
+
+
+.slick-prev-noticias {
+    left: -30px;
+}
+
+.slick-next-noticias {
+    right: -30px;
+}
+
+.slick-slider-noticias .slick-list a {
+    padding-inline: 19px;
+    
+}
+
+.slick-prev-noticias, .slick-next-noticias {
+    
+    border: solid whitesmoke;
+    border-radius: 50%;
+}
+
+
+.slick-prev-noticias:hover , .slick-next-noticias:hover{
+    border-color: rgba(245, 245, 245, 0.952);    
+    transform: translateY(-50%) scale(1.1); /* Misteriosamente se nao colocar o translateY, buga :) */
+        
+}
+
+
+/* fim marcação 8 */

@@ -1,7 +1,7 @@
 $(document).ready(function() {
   // Certifique-se de inicializar o slick apenas uma vez
   if (!$('.slick-slider').hasClass('slick-initialized')) {
-    $('.slick-slider').slick({
+    $('.slick-slider-vitrini').slick({
         dots: true,
         arrows: true,
         prevArrow: '<button class="slick-prev-custom"><img src="assets/btn-esq.png" alt="Prev"></button>',
@@ -83,15 +83,48 @@ $(document).ready(function(){
             }
         ]
     });
-
-    // Funções dos botões de navegação externos
-    // $('.slick-prev-servicos').on('click', function() {
-    //     $('.slick-slider-servicos').slick('slickPrev');
-    // });
-
-    // $('.slick-next-servicos').on('click', function() {
-    //     $('.slick-slider-servicos').slick('slickNext');
-    // });
 });
+
+
+$(document).ready(function(){    
+    $('.slickerNoticia').slick({
+        slidesToShow: 4,     
+        slidesToScroll: 2,          
+        arrows: true, 
+        autoplay: true,      
+        prevArrow: '<button class="slick-prev-noticias"><img src="assets/btn-esq.png" alt="Prev"></button>',
+        nextArrow: '<button class="slick-next-noticias"><img src="assets/btn-dir.png" alt="Next"></button>',       
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 4,
+                    
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,                     
+                }
+            }
+        ]
+    });
+});
+
 
 
