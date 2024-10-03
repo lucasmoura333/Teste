@@ -127,4 +127,45 @@ $(document).ready(function(){
 });
 
 
+$(document).ready(function(){    
+    $('.slickerGaleria').slick({
+        slidesToShow: 3,     
+        slidesToScroll: 1,          
+        arrows: true,
+        centerMode: true, 
+        prevArrow: '<button class="slick-prev-galeria"><img src="assets/btn-esq.png" alt="Prev"></button>',
+        nextArrow: '<button class="slick-next-galeria"><img src="assets/btn-dir.png" alt="Next"></button>',       
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                    
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    arrows: false,                     
+                }
+            }
+        ]
+    });
+});
+
+
 

@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 /* Se num importar a fonte, não vai né jão.... */
 
@@ -22,8 +21,6 @@ a {
 
 
 /* teste começa  sumir com o espaçamento bizarro na borda de baixo*/
-
-
 .slick-slider-vitrini, .slick-track, .slick-slide {
     margin: 0 !important;
     padding: 0 !important;
@@ -45,11 +42,11 @@ a {
 }
 
 .nav-topo .nav-item {
-    margin-right: 30px; /* Espaçamento à direita entre os itens */
+    margin-right: 30px;
 }
 
 .nav-topo .nav-item:last-child {
-    margin-right: 0; /* Remove o espaçamento do último item */
+    margin-right: 0; 
 }
 
 /* Itens da navegação */
@@ -69,8 +66,6 @@ a {
     color: #333;
     white-space: nowrap;
 }
-
-
 
 .nav-item a {
     text-decoration: none;
@@ -213,73 +208,48 @@ a {
     color: inherit;
 }
 
-
-
-
-/* bobera pra deixar botão PesquisaSiter inato para digitar sem nenhuma sombra interna */
-
 .PesquisaSite:focus-within .form-control,
 .PesquisaSite:focus-within .btn-search {
     background-color: #fafafa;
-    /* Mantém a cor de fundo original */
     color: #333;
-    /* Mantém a cor do texto original */
     border-color: #e0e0e0;
-    /* Mantém a cor da borda original */
     box-shadow: none;
-    /* Remove qualquer sombra de foco se existir */
 }
 
-/* Garante que o hover não ative para o botão enquanto o formulário estiver em foco */
 .PesquisaSite:focus-within .btn-search:hover {
     background-color: #fafafa;
-    /* Restaura a cor de fundo original */
     color: #333;
-    /* Restaura a cor do texto original */
     box-shadow: none;
-    /* Remove qualquer sombra de hover se existir */
 }
 
-/* Garante que o hover não ative para o campo de input enquanto o formulário estiver em foco */
 .PesquisaSite:focus-within .form-control:hover {
     background-color: #fafafa;
-    /* Restaura a cor de fundo original */
     color: #333;
-    /* Restaura a cor do texto original */
     border-color: #e0e0e0;
-    /* Restaura a cor da borda original */
 }
 
-
 /* <<<< -- marcação 1 , acima é o header --- >>>> */
-
-
 .container-maior {
     display: flex;
     justify-content: center; 
     align-items: center;     
     width: 100%;
     height: 100%;    
-     
-    
 }
 
 .blocoMaior{
     width: 100%;
     padding: 0;
     margin: 0;
-    
 }
 
-
 /* <<<<<<<<<< Marcação 2>>>> */
-
 .containerMenu-superior {
       
     background-color: #01579b;
     width: 100%;
     display: flex;
-    /* justify-content: space-between;  */
+    
     margin: 0 auto; 
     border-top-left-radius: 15px;    
     border-top-right-radius: 15px;
@@ -287,15 +257,14 @@ a {
 }
 
 .containerMenu-superior > div {
-    flex: 0 1 auto; /* Permite que os itens ocupem o espaço necessário */
+    flex: 0 1 auto; 
     min-width: 150px; 
-    margin: 0 15px; /* Margens laterais para espaçamento */
+    margin: 0 15px;
 }
 
 
 
 .containerMenu-superior .rowMenu-superior  {
-    /* margin-top: 16px;  */
     text-align: center;   
 }
 
@@ -352,13 +321,13 @@ a {
 
 
 .img-fluid {
-    mix-blend-mode: normal; /* Mistura a cor de fundo com a imagem */
+    mix-blend-mode: normal; 
     transition: mix-blend-mode 0.3s;
 }
 
 .botaoMenuSuperior:hover .img-fluid, .botaoMenuSuperior:active .img-fluid,
 .botaoMenuServicos:hover .img-fluid, .botaoMenuServicos:active .img-fluid {
-    mix-blend-mode: normal; /* Restaura a imagem original ao passar o mouse */
+    mix-blend-mode: normal; 
 }
 
 
@@ -392,10 +361,10 @@ a {
     }
 }
 
-/* Ajuste específico para o botaoMenuSuperiorLogo */
+
 .botaoMenuSuperiorLogo {
-    margin-right: 20px; /* Espaçamento específico para o logo */
-    text-align: left; /* Certifica-se de que o texto está alinhado à esquerda */
+    margin-right: 20px; 
+    text-align: left; 
 }
 
 
@@ -407,19 +376,16 @@ a {
     }
 
     .rowMenu-superior {
-        flex-direction: column; /* Para telas menores, empilha os botões */
-        align-items: start; /* Centraliza os itens verticalmente */
+        flex-direction: column; 
+        align-items: start; 
     }
 }
 
 
 
-/* Fim marcação 2 >>>> */
+/* Fim marcação 2 */
 
-
-
-
-/* marcação 3 >>>>> SUBMENU  COM DROPDOWN>>>>>>> */
+/* marcação 3 */
 
 .submenu .btn-submenu{
     margin: 0 auto;
@@ -446,8 +412,6 @@ a {
     padding-right: 2rem;
 }
 
-
-
 .btn-submenu:hover{
     background-color: #01579B;
     color: #fff;
@@ -458,27 +422,21 @@ a {
     color: #fff;
     transform: scale(1.1); 
     border-radius: 3px;
-}
-    
+}  
 
 /* Fim marcação 3 */
-
-
-/* Marcação 4>>> */
-
-/* Remove os botões originais do slick 
-Botões do slick - Removendo bordas */
-
+/* Marcação 4 */
 .slick-prev, .slick-next {
     background: transparent !important;
     border: none !important; 
     outline: none !important; 
 }
 
-/* Botões de naegação personalizados */
+
 .slick-prev-custom, .slick-next-custom,
  .slick-prev-servicos, .slick-next-servicos, 
- .slick-prev-noticias, .slick-next-noticias {
+ .slick-prev-noticias, .slick-next-noticias,
+ .slick-prev-galeria, .slick-next-galeria {
     background: none;
     border: none;
     position: absolute;
@@ -491,12 +449,12 @@ Botões do slick - Removendo bordas */
     display: block;
 }
 
-/* Botão anterior à esquerda */
+
 .slick-prev-custom {
     left: 64px;
 }
 
-/* Botão próximo à direita */
+
 .slick-next-custom {
     right: 64px;
 }
@@ -507,10 +465,6 @@ Botões do slick - Removendo bordas */
     opacity: 0.9; 
     transform: scale(1.02); 
 }
-
-
-
-/* Dots customizados - retangulares e centralizados */
 
 .slick-dots {
     position: absolute;
@@ -526,9 +480,8 @@ Botões do slick - Removendo bordas */
 /* Cada dot */
 .slick-dots li {
     margin: 0 10px; 
-    /* flex: 0 1 auto;  */
 }
-/* Estilo dos dots */
+
 .slick-dots li button {
     width: 48px; 
     height: 8px; 
@@ -537,28 +490,24 @@ Botões do slick - Removendo bordas */
     border: none;    
 }
 
-/* Dot ativo com destaque */
+
 .slick-dots li.slick-active button {
     background-color: #03a9f4; 
     transform: translateY(4px); 
 }
 
-/* Hover nos dots */
+
 .slick-dots li button:hover {
-    background-color: #03a8f473; /* Cor ao passar o mouse */
+    background-color: #03a8f473; 
 }
 
 /* Tá com os botãozin fntasma de baixo*/
 .slick-dots li button:before {
     content: ''; 
 }
-
-
 /* fim marcação 4 <<<< */
 
-
 /* marcação 5 */
-
 .containerMenu-inferior {      
     background-color: #01579b;
     width: 100%;
@@ -566,8 +515,8 @@ Botões do slick - Removendo bordas */
     justify-content: space-between; 
     border-bottom-left-radius: 15px;    
     border-bottom-right-radius: 15px;
-    flex-direction: column;  /* Permite que os elementos filhos fiquem um abaixo do outro */
-    align-items: center;  /* Centraliza os elementos filhos */
+    flex-direction: column;  
+    align-items: center;  
     height: auto;
        
 }
@@ -588,7 +537,7 @@ Botões do slick - Removendo bordas */
 
 
 .slick-slide {
-    height: auto; /* Garante que as slides ocupem apenas o espaço da imagem */
+    height: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -604,8 +553,8 @@ Botões do slick - Removendo bordas */
 
 
 .slickerMaior, .slickerMaior row, .slicker-slider row {
-    padding: 0 ; /* Remove o padding da coluna */   
-    height: 100% ; /* Define altura para ocupar todo o espaço disponível */
+    padding: 0 ;   
+    height: 100% ; 
     margin: 0 ;
 }
 
@@ -627,12 +576,8 @@ Botões do slick - Removendo bordas */
 .nextBtn{
     background-image: url('assets/btn-dir.png');
 }
-
 /* fim marcação 5 */
-
-
 /* inicio libras */
-
 .btnAcesso {
     position: fixed;
     right: 20px;
@@ -647,25 +592,16 @@ Botões do slick - Removendo bordas */
     background-image: url('assets/libras-1.png'); /* Ajuste o caminho conforme necessário */
     background-size: contain; 
     background-repeat: no-repeat; 
-    
 }
-
 /* fim libras */
 
 /* marcação 6 */
-
-
 .containerMenu-inferior .row{
     max-width: 1146px;
     height: auto;
-    
 }
 
-
-
-
 .slickerMenor {
-    /* overflow: hidden; */
     position: relative;    
     display: flex;
     justify-content: center;
@@ -684,17 +620,9 @@ Botões do slick - Removendo bordas */
     border-radius: 15px;      
 }
 
-
 .botaoMenuServicos img{
     margin-top: 10px;    
 }
-
-/* .botaoMenuServicos span{   
-    border: solid purple;
-    align-items: center;
-} */
-
-
 
 .botaoMenuServicos img {
     width: 100%; 
@@ -731,13 +659,10 @@ Botões do slick - Removendo bordas */
 
 /* fim marcação 6 */
 
-
 /* marcação 7 */
-
 .colNoticias{
     position: relative;   
-    padding: 30px;
-    
+    padding: 30px;    
 }
 
 .Noticias {
@@ -771,6 +696,10 @@ Botões do slick - Removendo bordas */
 
 /* noticias */
 
+.NoticiasContainer{
+    position: relative; 
+    text-align: left;
+}
 .noticiaMaior{
     text-align: left;    
     max-width: 100%;
@@ -798,10 +727,7 @@ Botões do slick - Removendo bordas */
     display: block; 
 }
 
-
-
 .noticiaMaior:hover img {
-    /* Faz a imagem e o texto "escalarem" junto com o container */
     transform: scale(1.01); 
     
 }
@@ -827,7 +753,6 @@ Botões do slick - Removendo bordas */
     color: #616161;
     text-align: left;
     word-wrap: break-word;   
-    
     padding-left: 10px;
 }
 
@@ -840,7 +765,6 @@ Botões do slick - Removendo bordas */
     }
 }
 
-/* Ajusta o comportamento da grid para resoluções maiores */
 @media (min-width: 1400px) {
     .containerNoticiarioMaior .col-md-6 {
         max-width: 50%; 
@@ -852,9 +776,6 @@ Botões do slick - Removendo bordas */
         height: auto; 
     }
 }
-
-
-
 
 .data-bg {
     position: absolute;
@@ -870,44 +791,15 @@ Botões do slick - Removendo bordas */
     color: #001c33;
     z-index: 1;
 }
-
-.btnMais {
-    max-width: 226px;
-    max-height: 48px;
-    margin: 32px auto 0 auto; 
-    padding: 14px 40px;
-    border-radius: 16px;
-    background-color: #ffb300;
-
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
-    color: #331600;
-    display: block; 
-}
-
-.btnMais:hover {
-    background-color: #FFC107;
-}
-
-.btnMais:active {
-    background-color: #FFB300;
-}
-
-
-
-
 /* fim marcação 7 */
-
 /* marcação 8 */
-
 .slickerNoticia{
     display: flex;
     overflow: visible;
     border: solid whitesmoke;
     border-radius: 35px;
     margin: 10px;
-    /* padding: 10px; */
+    
 }
 
 .noticiaMenor figure {
@@ -920,31 +812,25 @@ Botões do slick - Removendo bordas */
     border-radius: 24px;     
     max-height: 410px;    
     height: auto; 
-    /* display: block;  */
 }
 
 .noticiaMenor{
     /* para aparecer o bg-data  */
     position: relative; 
     padding: 10px;
+    /* lembrete diario pra deixar de ser burro pq se o pai n alinha, o filho tbm n vai... */
+    text-align: left; 
 }
 
-
 .tituloNoticiaMenor{
-    width: 100% !important; 
-    height: 48px!important;
-    margin: 16px 30px 15px;    
+    position: relative;      
     font-size: 20px;
-    font-weight: 600;    
-    font-stretch: normal;    
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left ; 
     word-wrap: break-word;   
     color: #616161;
 }
 
-.tituloNoticiaMenor:hover {
+.tituloNoticiaMenor:hover{
     text-decoration: underline; 
 }
 
@@ -959,21 +845,167 @@ Botões do slick - Removendo bordas */
 
 .slick-slider-noticias .slick-list a {
     padding-inline: 19px;
-    
 }
 
 .slick-prev-noticias, .slick-next-noticias {
-    
     border: solid whitesmoke;
     border-radius: 50%;
 }
 
-
 .slick-prev-noticias:hover , .slick-next-noticias:hover{
     border-color: rgba(245, 245, 245, 0.952);    
     transform: translateY(-50%) scale(1.1); /* Misteriosamente se nao colocar o translateY, buga :) */
-        
+}
+
+/* fim marcação 8 */
+
+/* marcação 9 */
+
+.btnMais {
+    max-width: 226px;
+    max-height: 48px;
+    padding: 14px 40px;
+    border-radius: 16px;
+    background-color: #ffb300;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #331600;
+    display: block; 
+    outline: none;
+    margin: 32px;
+}
+
+.btnMais:hover {
+    background-color: #FFC107;
+}
+
+.btnMais:active {
+    background-color: #FFB300;
+    border: none;
+    outline: none;
+}
+
+.containerGaleria{
+    background-color:#01579b;
+    border-radius: 25px;
 }
 
 
-/* fim marcação 8 */
+.colGaleria{
+    position: relative;   
+    padding: 30px;    
+}
+
+/* TODO: LEMBRETE DE REAPROVITAR ESSA TECNICA USADA NA GALERIA  POIS TEM MAIS 3 VINHETAS NO FUTURO*/
+.GaleriaContainer {
+    position: relative; /*ESSE BRABO AQUI ME QUEBROU UM GALHO */
+    text-align: left; 
+    padding-left: 370px;
+    padding-top: 45px;
+}
+
+
+.Galeria {
+    position: relative;
+    z-index: 2;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    margin-bottom: 5px;
+    padding-left: 5px;    
+}
+
+.VinhetaGaleria {
+    position: relative;
+    width: 240px;
+    height: 16px;
+    background-color: #0277bd;    
+    top: -15px; 
+    left: 3px;
+    z-index: 1; 
+    border-radius: 20px;    
+}
+
+/* somente galeria */
+
+.containerSlickGaleria {
+    width: 100%; /* Ocupar toda a largura da linha */
+    
+}
+
+.galeriaSlicker-Item {
+    position: relative;
+    z-index: 0;
+    /* width: 100%; 
+    height: auto; */
+}
+
+.slickerGaleria .galeriaSlicker-Item {
+    width: 100%;
+    position: relative; /* Para posicionar o título */    
+}
+
+.galeriaSlicker-Item img {
+    width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
+
+.galeriaSlicker-Item:hover img , .tituloGaleriaSlicker-Item:hover{
+    transform: scale(1.02);
+    text-decoration: underline;
+}
+
+.tituloGaleriaSlicker-Item{
+  position: absolute;
+  max-width: 550px;
+  height: auto;
+  flex-grow: 0;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  z-index:1;
+  /* bottom: 30px;   */
+  bottom: 0; /* Posicionar no rodapé da imagem */
+  left: 0;
+  width: 100%; /* Ocupar toda a largura da imagem */
+
+}
+
+
+.slick-prev-galeria {
+    left: 65px;
+}
+
+.slick-next-galeria {
+    right: 65px;
+}
+
+.slick-slider-galeria .slick-list a {
+    padding-inline: 19px;
+}
+
+.slick-prev-galeria, .slick-next-galeria {
+    border: solid whitesmoke;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev-galeria:hover , .slick-next-galeria:hover{
+    border-color: rgba(245, 245, 245, 0.952);    
+    transform: translateY(-50%) scale(1.1); /* Misteriosamente se nao colocar o translateY, buga :) */
+}
+
+/* fim marcação 9 */
