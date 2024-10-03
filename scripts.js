@@ -52,7 +52,8 @@ $(document).ready(function(){
         slidesToScroll: 2,          
         arrows: true,       
         prevArrow: '<button class="slick-prev-servicos"><img src="assets/btn-esq.png" alt="Prev"></button>',
-        nextArrow: '<button class="slick-next-servicos"><img src="assets/btn-dir.png" alt="Next"></button>',       
+        nextArrow: '<button class="slick-next-servicos"><img src="assets/btn-dir.png" alt="Next"></button>',
+        infinite: true,       
         responsive: [
             {
                 breakpoint: 1200,
@@ -91,9 +92,11 @@ $(document).ready(function(){
         slidesToShow: 4,     
         slidesToScroll: 2,          
         arrows: true, 
-        autoplay: true,      
+        autoplay: true,     
+         
         prevArrow: '<button class="slick-prev-noticias"><img src="assets/btn-esq.png" alt="Prev"></button>',
-        nextArrow: '<button class="slick-next-noticias"><img src="assets/btn-dir.png" alt="Next"></button>',       
+        nextArrow: '<button class="slick-next-noticias"><img src="assets/btn-dir.png" alt="Next"></button>',
+        infinite: true,       
         responsive: [
             {
                 breakpoint: 1200,
@@ -131,10 +134,11 @@ $(document).ready(function(){
     $('.slickerGaleria').slick({
         slidesToShow: 3,     
         slidesToScroll: 1,          
-        arrows: true,
-        centerMode: true, 
+        arrows: true,   
+        centerMode: true,     
         prevArrow: '<button class="slick-prev-galeria"><img src="assets/btn-esq.png" alt="Prev"></button>',
-        nextArrow: '<button class="slick-next-galeria"><img src="assets/btn-dir.png" alt="Next"></button>',       
+        nextArrow: '<button class="slick-next-galeria"><img src="assets/btn-dir.png" alt="Next"></button>',
+        infinite: true,       
         responsive: [
             {
                 breakpoint: 1200,

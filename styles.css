@@ -889,10 +889,12 @@ a {
 .containerGaleria{
     background-color:#01579b;
     border-radius: 25px;
+   
+    /* text-align: left;  talvez reativar depois*/
 }
 
 
-.colGaleria{
+.colGaleria, .colEventos{
     position: relative;   
     padding: 30px;    
 }
@@ -935,15 +937,15 @@ a {
 /* somente galeria */
 
 .containerSlickGaleria {
-    width: 100%; /* Ocupar toda a largura da linha */
+    width: 100%; /* morreu mas passa bem */
     
 }
 
 .galeriaSlicker-Item {
     position: relative;
     z-index: 0;
-    /* width: 100%; 
-    height: auto; */
+    width: 100%; 
+    height: auto;
 }
 
 .slickerGaleria .galeriaSlicker-Item {
@@ -978,19 +980,19 @@ a {
   color: white;
   z-index:1;
   /* bottom: 30px;   */
-  bottom: 0; /* Posicionar no rodapé da imagem */
-  left: 0;
-  width: 100%; /* Ocupar toda a largura da imagem */
+  bottom: 25px; /* Posicionar no rodapé da imagem */
+  left: 25px;
+  width: 80%; /* Ocupar toda a largura da imagem */
 
 }
 
 
 .slick-prev-galeria {
-    left: 65px;
+    left: 60px;
 }
 
 .slick-next-galeria {
-    right: 65px;
+    right: 60px;
 }
 
 .slick-slider-galeria .slick-list a {
@@ -1009,3 +1011,116 @@ a {
 }
 
 /* fim marcação 9 */
+
+/* marcação 10 */
+
+.EventosContainer {
+    text-align: left; 
+    padding-top: 32px;
+    padding-bottom: 30px;
+    padding-left: 370px;
+}
+
+.Eventos {
+    position: relative;
+    z-index: 2;
+    font-size: 32px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #01579b;
+    margin-bottom: 5px;
+    padding-left: 5px;    
+}
+
+.VinhetaEventos {
+    position: relative;
+    width: 340px;
+    height: 16px;
+    background-color: #e1f5fe;    
+    top: -15px; 
+    left: 3px;
+    z-index: 1; 
+    border-radius: 20px;    
+}
+/* teste */
+
+.eventoAgenda {
+    border-right: solid whitesmoke 1px;
+    border-width: 1px;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+
+    text-align: left !important;
+}
+
+
+.no-border {
+    border: none !important;
+}
+
+
+.eventoAgenda:hover {
+    transform: scale(1.02);    
+}
+
+.numeroEvento {
+    font-size: 32px;
+    font-weight: bold;
+    color: #01579b;   /* Cor destacada */
+    display: inline-block;
+    margin-right: 10px;
+
+    text-align: left !important;
+}
+
+.dataEvento h3 {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #01579b;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dataEvento p {
+    font-size: 16px;
+    font-weight: normal;
+    color: #01579b;
+
+    text-align: left;
+}
+
+.eventoAgenda figure img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.tituloEvento {
+    font-weight: bold;
+    font-size: 20px;
+    color: #4A4A4A;
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+
+    text-align: left;
+}
+
+.tituloEvento:hover {
+    color: #0A3A9E;
+}
+
+.localEvento {
+    font-size: 14px;
+    color: #616161;
+
+    text-align: left;
+}
+
+
+
+
+/* fim marcação 10 */
