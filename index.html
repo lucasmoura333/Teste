@@ -1,25 +1,29 @@
 <!doctype html>
 <html lang="pt-BR">
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>LUCAS SITE - Processo Seletivo MPX</title>
 
+    <!-- jQuery (carregado antes do script principal) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Bootstrap CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- SLICK -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <!-- SLICK (carregado logo após o jQuery) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+    <!-- Estilos e Scripts Locais -->
     <link href="styles.css" rel="stylesheet">
     <script src="scripts.js" defer></script>
 
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS (mantém defer para carregamento após o HTML) -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </head>
 
 
@@ -526,10 +530,9 @@
 
     <!-- Container 03 , Galerias-->
     <div class="container-fluid ">
-        <div class="container-fluid containerGaleria" style="display: block; padding-inline: 30px;">
+        <div class="container-fluid containerGaleria" style="display: block;">            
             
-            
-            <div class="row">
+            <div class="row pb-5">
                 <div class="col py-3 colGaleria">
                     <div class="GaleriaContainer">
                         <span class="Galeria">Galeria de Fotos</span>
@@ -542,86 +545,85 @@
             
 
             <!-- Slicker de Fotos -->
-            <!-- <div class="container containerSlickGaleria" style="margin: 0; padding: 0;"> -->
-            <div class="row ">
-                <div class="container slickerGaleria d-flex g-5" style="border: solid;">                        
-                    <div class="col-xs-4 " style="border: solid purple; padding-inline: 10px; max-width:550px; max-height: 282;">
-                        <a href="#">
-                            <div class="galeriaSlicker-Item">
-                                <div class="data-bg">13/06/2020</div>
-                                <figure>
-                                    <img src="assets/dir.png" alt="" class="img-fluid w-100">
-                                </figure>
-                                <a class="tituloGaleriaSlicker-Item" href="#">Iniciando seu blog de viagem com o Vasco</a>
-                            </div>
-                        </a>
-                    </div>
+            <!-- <div class="col-xs-4 " style="border: solid purple; padding-inline: 10px; max-width:550px; max-height: 282;"> -->
 
-                    <div class="col-xs-4 " style="border: solid purple; padding-inline: 10px; max-width:550px; max-height: 282;">
-                        <a href="#">
-                            <div class="galeriaSlicker-Item">
-                                <div class="data-bg">13/04/2020</div>
-                                <figure>
-                                    <img src="assets/foto-center-3.png" alt="" class="img-fluid w-100">
-                                </figure>
-                                <a class="tituloGaleriaSlicker-Item" href="#">Como escolher o cliente certo para o seu negócio fotográfico?</a>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="col-xs-4 " style="border: solid purple; padding-inline: 10px; max-width:550px; max-height: 282;">
-                        <a href="#">
-                            <div class="galeriaSlicker-Item">
-                                <div class="data-bg">13/04/2020</div>
-                                <figure>
-                                    <img src="assets/dir-2.png" alt="" class="img-fluid w-100">
-                                </figure>
-                                <a class="tituloGaleriaSlicker-Item" href="#">Como construir uma comunidade leal online e offline</a>
-                            </div>
-                        </a>
-                    </div> 
-                    
-                    <div class="col-xs-4 " style="border: solid purple; padding-inline: 10px; max-width:550px; max-height: 282;">
-                        <a href="#">
-                            <div class="galeriaSlicker-Item">
-                                <div class="data-bg">13/06/2020</div>
-                                <figure>
-                                    <img src="assets/dir.png" alt="" class="img-fluid w-100">
-                                </figure>
-                                <a class="tituloGaleriaSlicker-Item" href="#">Iniciando seu blog de viagem com o Vasco</a>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div class="col-xs-4 " style="border: solid purple; padding-inline: 10px; max-width:550px; max-height: 282;">
-                        <a href="#">
-                            <div class="galeriaSlicker-Item">
-                                <div class="data-bg">13/04/2020</div>
-                                <figure>
-                                    <img src="assets/foto-center-3.png" alt="" class="img-fluid w-100">
-                                </figure>
-                                <a class="tituloGaleriaSlicker-Item" href="#">Como escolher o cliente certo para o seu negócio fotográfico?</a>
-                            </div>
-                        </a>
-                    </div>
-                    
-                    <div class="col-xs-4 " style="border: solid purple; padding-inline: 10px; max-width:550px; max-height: 282;">
-                        <a href="#">
-                            <div class="galeriaSlicker-Item">
-                                <div class="data-bg">13/04/2020</div>
-                                <figure>
-                                    <img src="assets/dir-2.png" alt="" class="img-fluid w-100">
-                                </figure>
-                                <a class="tituloGaleriaSlicker-Item" href="#">Como construir uma comunidade leal online e offline</a>
-                            </div>
-                        </a>
-                    </div>                        
+            <div class="container-fluid slickerGaleria">                        
+                <div class="col">
+                    <a href="#">
+                        <div class="galeriaSlicker-Item">
+                            <div class="data-bg-2">13/06/2020</div>
+                            <figure>
+                                <img src="assets/dir.png" alt="" class="img-fluid w-100">
+                            </figure>
+                            <a class="tituloGaleriaSlicker-Item" href="#">Iniciando seu blog de viagem com o Vasco</a>
+                        </div>
+                    </a>
                 </div>
-            </div>                
-            <!-- </div> -->
+
+                <div class="col">
+                    <a href="#">
+                        <div class="galeriaSlicker-Item">
+                            <div class="data-bg-2">13/04/2020</div>
+                            <figure>
+                                <img src="assets/foto-center-3.png" alt="" class="img-fluid w-100">
+                            </figure>
+                            <a class="tituloGaleriaSlicker-Item" href="#">Como escolher o cliente certo para o seu negócio fotográfico?</a>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col">
+                    <a href="#">
+                        <div class="galeriaSlicker-Item">
+                            <div class="data-bg-2">13/04/2020</div>
+                            <figure>
+                                <img src="assets/dir-2.png" alt="" class="img-fluid w-100">
+                            </figure>
+                            <a class="tituloGaleriaSlicker-Item" href="#">Como construir uma comunidade leal online e offline</a>
+                        </div>
+                    </a>
+                </div> 
+                
+                <div class="col">
+                    <a href="#">
+                        <div class="galeriaSlicker-Item">
+                            <div class="data-bg-2">13/06/2020</div>
+                            <figure>
+                                <img src="assets/dir.png" alt="" class="img-fluid w-100">
+                            </figure>
+                            <a class="tituloGaleriaSlicker-Item" href="#">Iniciando seu blog de viagem com o Vasco</a>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="#">
+                        <div class="galeriaSlicker-Item">
+                            <div class="data-bg-2">13/04/2020</div>
+                            <figure>
+                                <img src="assets/foto-center-3.png" alt="" class="img-fluid w-100">
+                            </figure>
+                            <a class="tituloGaleriaSlicker-Item" href="#">Como escolher o cliente certo para o seu negócio fotográfico?</a>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col">
+                    <a href="#">
+                        <div class="galeriaSlicker-Item">
+                            <div class="data-bg-2">13/04/2020</div>
+                            <figure>
+                                <img src="assets/dir-2.png" alt="" class="img-fluid w-100">
+                            </figure>
+                            <a class="tituloGaleriaSlicker-Item" href="#">Como construir uma comunidade leal online e offline</a>
+                        </div>
+                    </a>
+                </div>                        
+            </div>
+            
 
             <div class="container">
-                <div class="row py-3 justify-content-center">
+                <div class="row pt-2 pb-5 justify-content-center">
                     <div class="col-auto mx-auto text-center">
                         <button class="btn" style="border: none;">
                             <span class="btnMais verClarin">
@@ -730,32 +732,21 @@
                     </div>
 
                     <div class="row">
-                        <div class="youtube">
-                            <figure>
-                                <img src="assets/foto-center-5.png" alt="" class="img-fluid w-100">
-                            </figure>
+                        <div class="youtube position-relative">                            
 
+                            <a href="https://www.youtube.com/results?search_query=Como+a+escrita+influencia+sua+marca+pessoal%3F" target="_blank">
+                                <figure class="position-relative">
+                                    <img src="assets/foto-center-5.png" alt="" class="img-fluid w-100">
+                                    <span class="play-icon"></span>
+                                </figure>
+                            </a>
+                            <p class="tituloGalerias">Como a escrita influencia sua marca pessoal?</p>
                         </div>
-                        <p class="tituloGalerias">Como a escrita influencia sua marca pessoal?</p>
-
+                        
                     </div>
-
-                    <div class="container p-0 m-0">
-                        <div class="row py-3 justify-content-center">
-                            <div class="col-auto mx-auto text-center">
-                                <button class="btn" style="border: none;">
-                                    <span class="btnMais verClarin">
-                                        Veja mais vídeos
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
                 <div class="col-12 col-md-6">
-                    
                     <div class="row">
                         <div class="col py-3 colObras">
                             <div class="ObraContainer">
@@ -764,35 +755,38 @@
                             </div>                        
                         </div>
                     </div>
-
                     <a href="#">
-                        <div class="galeriaSlicker-Item">
-                            <div class="data-bg">13/04/2020</div>
+                        <div class="Obras-Item">
+                            <div class="data-bg-3">13/04/2020</div>
                             <figure>
                                 <img src="assets/foto-center-4.png" alt="" class="img-fluid w-100">
                             </figure>
                             <p class="tituloGalerias">Por que não usaos sites prontos</p>
                         </div>
                     </a>
+                </div>
+            </div>
 
-                    <div class="container">
-                        <div class="row py-5 justify-content-center">
-                            <div class="col-auto mx-auto text-centerbackground-color: #ffd54f;">
-                                <button class="btn" style="border: none; ">
-                                    <span class="btnMais verClarin" >
-                                        Veja mais obras
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
+            <div class="row tigrinho">
+                <div class="col-12 col-md-6">
+                    <button class="btn" style="border: none;">
+                        <span class="btnMais verClarin">
+                            Veja mais vídeos
+                        </span>
+                    </button>
+                        
+                </div>                
+                    <div class="col-12 col-md-6">
+                        <button class="btn" style="border: none; ">
+                            <span class="btnMais verClarin" >
+                                Veja mais obras
+                            </span>
+                        </button>                        
                     </div>
-
                 </div>
 
             </div>
         </div>
-
-
     </div>
 
     <!-- Container 04 - parallax -->
@@ -828,96 +822,96 @@
         </div>
     </div>
 
-    <div class="container-fluid blocoAzulInferior-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4">
-                    <h4>Horário de Atendimento</h4>
-                    <p>Segunda à Sexta, 07h às 11h e das 13h às 17h</p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h4>Endereço</h4>
-                    <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <h4>Fale com a Prefeitura</h4>
-                    <p class="m-0">(66) 3535-3535</p>
-                    <p>(66) 9 9999-9999</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid blocoAzulInferior-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-3">
-                    <h4>Imprensa</h4>
-                    <p>Notícias</p>
-                    <p>Agenda da Cidade</p>
-                    <p>Galeria de Fotos</p>
-                    <p>Galeria de Vídeos</p>
-                    <h5>Contato</h5>
-                    <p>Ouvidoria E-SIC</p>
-                    <p>Telefones Úteis</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h4>Prefeitura</h4>
-                    <p>Equipe do Governo</p>
-                    <p>Fotos da Prefeitura</p>
-                    <p>Galeria de Prefeitos</p>
-                    <p>Conheça Nosso Prefeito</p>
-                    <p>Conheça Nosso Vice Prefeito</p>
-                    <p>Competência, estrutura e organizacional</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h4>Município</h4>
-                    <p>Economia</p>
-                    <p>Simbolos</p>
-                    <p>Como Chegar</p>
-                    <p>Galeria de Obras</p>
-                    <p>História do Município</p>
-                    <p>Hino, Bandeira e Brasão</p>
-                    <p>Conheça Nosso Município</p>
-                </div>
-                <div class="col-12 col-md-3">
-                    <h4>Secretarias</h4>
-                    <p>Administração</p>
-                    <p>Agricultura e Desenvolvimento Economico Sustentável</p>
-                    <p>Assistência Social</p>
-                    <p>Educação</p>
-                    <p>Esportes</p>
-                    <p>Finanças</p>
-                    <p>Infraestrutura</p>
-                    <p>Meio Ambiente, Turismo e Cultura</p>
-                    <p>Planejamento, Tecnologia e Informática</p>
-                    <p>Saúde</p>
+    <!-- container 05 - Textos + mapa -->
+    <div class="container-fluid" style="width: 99%;">
+        <div class="container-fluid blocoAzulInferior-1">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-12 col-md-4">
+                        <h1>Horário de Atendimento</h1>
+                        <p>Segunda à Sexta, 07h às 11h e das 13h às 17h</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h1>Endereço</h1>
+                        <p>Rua das azaleias, 257 - Jardim Botânico - Sinop/MT</p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h1>Fale com a Prefeitura</h1>
+                        <p>(66) 3535-3535</p>
+                        <p>(66) 9 9999-9999</p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div class="container-fluid blocoAzulInferior-2">
+            <div class="container">
+                <div class="row pt-3 pb-5">
+                    <div class="col-12 col-md-3">
+                        <h1>Imprensa</h1>
+                        <p>Notícias</p>
+                        <p>Agenda da Cidade</p>
+                        <p>Galeria de Fotos</p>
+                        <p>Galeria de Vídeos</p>
+                        <h1>Contato</h1>
+                        <p>Ouvidoria E-SIC</p>
+                        <p>Telefones Úteis</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h1>Prefeitura</h1>
+                        <p>Equipe do Governo</p>
+                        <p>Fotos da Prefeitura</p>
+                        <p>Galeria de Prefeitos</p>
+                        <p>Conheça Nosso Prefeito</p>
+                        <p>Conheça Nosso Vice Prefeito</p>
+                        <p>Competência, estrutura e organizacional</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h1>Município</h1>
+                        <p>Economia</p>
+                        <p>Simbolos</p>
+                        <p>Como Chegar</p>
+                        <p>Galeria de Obras</p>
+                        <p>História do Município</p>
+                        <p>Hino, Bandeira e Brasão</p>
+                        <p>Conheça Nosso Município</p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <h1>Secretarias</h1>
+                        <p>Administração</p>
+                        <p>Agricultura e Desenvolvimento Economico Sustentável</p>
+                        <p>Assistência Social</p>
+                        <p>Educação</p>
+                        <p>Esportes</p>
+                        <p>Finanças</p>
+                        <p>Infraestrutura</p>
+                        <p>Meio Ambiente, Turismo e Cultura</p>
+                        <p>Planejamento, Tecnologia e Informática</p>
+                        <p>Saúde</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mapinha">
+            <div class="row ">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62471.87829017978!2d-55.547580230996246!3d-11.870762418091678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a77fe80bc27573%3A0x1207800617733e83!2sSinop%2C%20MT!5e0!3m2!1spt-BR!2sbr!4v1728053227397!5m2!1spt-BR!2sbr" max-width="1890px" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>    
+        </div>
     </div>
 
-    
-    
-
-        
-
-
-    
-
-    
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="container" style="background-color: black; border: solid purple; margin-top: 10px; padding-top: 35px;">
-            <h1 style="color: deeppink;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut hic blanditiis est corrupti, ab quam mollitia quod omnis delectus incidunt earum nostrum dolore numquam beatae sed, nam minima. Distinctio, a?</h1>
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="container pe">
+            <div class="row align-content-center">
+                <div class="col-12 col-md-6">
+                    <p>©Ano - Nome do cliente - Todos os direitos reservados.</p>
+                </div>
+                <div class="col-12 col-md-6 pezinho">
+                    <img src="assets/logo-mpx.png" alt="">
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
-    
-
-
-
+    </footer>
 
 
 </body>

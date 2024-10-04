@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-/* Se num importar a fonte, não vai né jão.... */
+/* Se num importar a fonte, não vai né.... */
 
 /* Estilos gerais */
 * {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter';    
-    text-align: center;    
+    font-family: 'Inter';
+    text-align: center;
     transition: transform .2s;
     flex-wrap: wrap;
     word-wrap: break-word;
-    font-size: 12px;    
+    font-size: 12px;
 }
 
 a {
@@ -20,8 +20,11 @@ a {
 }
 
 
+
 /* teste começa  sumir com o espaçamento bizarro na borda de baixo*/
-.slick-slider-vitrini, .slick-track, .slick-slide {
+.slick-slider-vitrini,
+.slick-track,
+.slick-slide {
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -32,7 +35,7 @@ a {
 /* Nav header */
 .nav-topo {
     display: flex;
-    align-items: center; 
+    align-items: center;
     flex-wrap: wrap;
     background-color: #fff;
     max-width: 100%;
@@ -46,7 +49,7 @@ a {
 }
 
 .nav-topo .nav-item:last-child {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 /* Itens da navegação */
@@ -56,7 +59,7 @@ a {
     align-items: center;
     width: 166px;
     height: 38px;
-    margin: 10px;    
+    margin: 10px;
     padding: 0 15px;
     border-radius: 12px;
     border: solid 1px #e0e0e0;
@@ -79,13 +82,13 @@ a {
 
 @media screen and (max-width: 1199.9px) {
     .nav-topo .nav-item {
-      margin: 0.25rem;
+        margin: 0.25rem;
     }
 }
-  
+
 @media only screen and (max-width: 991px) {
     .nav-topo .nav-item {
-      max-width: 100%;
+        max-width: 100%;
     }
 }
 
@@ -96,7 +99,7 @@ a {
 }
 
 .form-control {
-    flex: 1;    
+    flex: 1;
     height: 38px;
     padding: 0 10px;
     border: 1px solid #e0e0e0;
@@ -231,13 +234,13 @@ a {
 /* <<<< -- marcação 1 , acima é o header --- >>>> */
 .container-maior {
     display: flex;
-    justify-content: center; 
-    align-items: center;     
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
 
-.blocoMaior{
+.blocoMaior {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -245,139 +248,152 @@ a {
 
 /* <<<<<<<<<< Marcação 2>>>> */
 .containerMenu-superior {
-      
+
     background-color: #01579b;
     width: 100%;
     display: flex;
-    
-    margin: 0 auto; 
-    border-top-left-radius: 15px;    
+
+    margin: 0 auto;
+    border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-       
+
 }
 
-.containerMenu-superior > div {
-    flex: 0 1 auto; 
-    min-width: 150px; 
+.containerMenu-superior>div {
+    flex: 0 1 auto;
+    min-width: 150px;
     margin: 0 15px;
 }
 
 
 
-.containerMenu-superior .rowMenu-superior  {
-    text-align: center;   
+.containerMenu-superior .rowMenu-superior {
+    text-align: center;
 }
 
-.botaoMenuSuperior, .botaoMenuSuperiorLogo{ 
-    display:inline-block; 
+.botaoMenuSuperior,
+.botaoMenuSuperiorLogo {
+    display: inline-block;
     background-color: #fff;
-    border-radius: 25px;  
-    margin-top: 16px;    
+    border-radius: 25px;
+    margin-top: 16px;
     padding-top: 10px;
-    padding-bottom: 10px;    
+    padding-bottom: 10px;
     min-width: 30px;
-        
+
 }
 
-.botaoMenuSuperiorLogo{
+.botaoMenuSuperiorLogo {
     margin-right: 20px;
 }
 
-.botaoMenuSuperior img , .botaoMenuServicos img{
-    margin: 0 auto;  
-    width: 28px; 
-    height: 28px; 
-    object-fit: cover; 
+.botaoMenuSuperior img,
+.botaoMenuServicos img {
+    margin: 0 auto;
+    width: 28px;
+    height: 28px;
+    object-fit: cover;
 
-    transition: filter 0.2s ease;  
+    transition: filter 0.2s ease;
 }
 
 
-.tituloSuperior{
-    border-radius: 24px;  
-    font-weight: bold;  
-    margin: 10px 0; /* Define margem superior e inferior uniformemente */
-    font-size: 16px;    
+.tituloSuperior {
+    border-radius: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    /* Define margem superior e inferior uniformemente */
+    font-size: 16px;
 
 }
 
-.tituloSuperior:hover path img.img-fluid{
+.tituloSuperior:hover path img.img-fluid {
     text-align: center;
     margin: auto;
 }
 
 
 /* teste */
-.botaoMenuSuperior:hover .tituloSuperior, .botaoMenuSuperior:active .tituloSuperior, .botaoMenuSuperior:hover path, 
-.botaoMenuServicos:hover .tituloSuperior, .botaoMenuServicos:active .tituloSuperior, .botaoMenuServicos:hover path {
-    color: #01579B; /* Muda a cor ao passar o mouse ou clicar */
+.botaoMenuSuperior:hover .tituloSuperior,
+.botaoMenuSuperior:active .tituloSuperior,
+.botaoMenuSuperior:hover path,
+.botaoMenuServicos:hover .tituloSuperior,
+.botaoMenuServicos:active .tituloSuperior,
+.botaoMenuServicos:hover path {
+    color: #01579B;
+    /* Muda a cor ao passar o mouse ou clicar */
 }
 
 /* Efeito hover para a imagem */
-.botaoMenuSuperior:hover img, .botaoMenuSuperior:active img , .botaoMenuServicos:hover img, .botaoMenuServicos:active img{
+.botaoMenuSuperior:hover img,
+.botaoMenuSuperior:active img,
+.botaoMenuServicos:hover img,
+.botaoMenuServicos:active img {
     color: #01579B;
     filter: brightness(0) saturate(100%) invert(34%) sepia(87%) saturate(1072%) hue-rotate(186deg) brightness(94%) contrast(100%);
 }
 
 
 .img-fluid {
-    mix-blend-mode: normal; 
+    mix-blend-mode: normal;
     transition: mix-blend-mode 0.3s;
 }
 
-.botaoMenuSuperior:hover .img-fluid, .botaoMenuSuperior:active .img-fluid,
-.botaoMenuServicos:hover .img-fluid, .botaoMenuServicos:active .img-fluid {
-    mix-blend-mode: normal; 
+.botaoMenuSuperior:hover .img-fluid,
+.botaoMenuSuperior:active .img-fluid,
+.botaoMenuServicos:hover .img-fluid,
+.botaoMenuServicos:active .img-fluid {
+    mix-blend-mode: normal;
 }
 
 
 
 .botaoMenuSuperiorLogo {
-    margin-left: 0; 
+    margin-left: 0;
     display: flex;
     justify-content: center;
-    align-items: flex-end; 
+    align-items: flex-end;
 }
 
 .botaoMenuSuperior {
-    display: inline-block; 
+    display: inline-block;
     background-color: #fff;
     text-align: center;
-    
-    border-radius: 25px;  
-    margin-top: 16px;    
-    padding: 10px;    
+
+    border-radius: 25px;
+    margin-top: 16px;
+    padding: 10px;
     min-width: 166px;
-    min-height: 99px;    
+    min-height: 99px;
 }
 
 /* Responsividade */
 
 @media (min-width: 992px) {
     .containerMenu-superior {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         justify-content: flex-start;
     }
 }
 
 
 .botaoMenuSuperiorLogo {
-    margin-right: 20px; 
-    text-align: left; 
+    margin-right: 20px;
+    text-align: left;
 }
 
 
 
 @media (max-width: 768px) {
     .botaoMenuSuperiorLogo {
-        
+
         text-align: left !important;
     }
 
     .rowMenu-superior {
-        flex-direction: column; 
-        align-items: start; 
+        flex-direction: column;
+        align-items: start;
     }
 }
 
@@ -387,22 +403,24 @@ a {
 
 /* marcação 3 */
 
-.submenu .btn-submenu{
+.submenu .btn-submenu {
     margin: 0 auto;
 }
 
-.submenu, .dropdown-menu{
+.submenu,
+.dropdown-menu {
     background-color: #0277bd;
 }
 
-.rowSubMenu{
+.rowSubMenu {
     padding: 14px;
     justify-content: center;
     display: flex;
     gap: 20px;
 }
 
-.btn-submenu, .dropdown-item{
+.btn-submenu,
+.dropdown-item {
     text-align: center;
     color: #fff;
 }
@@ -412,31 +430,41 @@ a {
     padding-right: 2rem;
 }
 
-.btn-submenu:hover{
+.btn-submenu:hover {
     background-color: #01579B;
     color: #fff;
 }
 
 .dropdown-item:hover {
-    background-color: #4671e6;
+    background-color: #01579B;
     color: #fff;
-    transform: scale(1.1); 
+    transform: scale(1);
     border-radius: 3px;
-}  
 
-/* Fim marcação 3 */
-/* Marcação 4 */
-.slick-prev, .slick-next {
-    background: transparent !important;
-    border: none !important; 
-    outline: none !important; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.2);
 }
 
 
-.slick-prev-custom, .slick-next-custom,
- .slick-prev-servicos, .slick-next-servicos, 
- .slick-prev-noticias, .slick-next-noticias,
- .slick-prev-galeria, .slick-next-galeria {
+
+
+/* Fim marcação 3 */
+/* Marcação 4 */
+.slick-prev,
+.slick-next {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+}
+
+
+.slick-prev-custom,
+.slick-next-custom,
+.slick-prev-servicos,
+.slick-next-servicos,
+.slick-prev-noticias,
+.slick-next-noticias,
+.slick-prev-galeria,
+.slick-next-galeria {
     background: none;
     border: none;
     position: absolute;
@@ -459,19 +487,21 @@ a {
     right: 64px;
 }
 
-.slick-prev-custom:hover img, .slick-next-custom:hover img,
-.slick-prev-servicos:hover img, .slick-next-servicos:hover img
-.slick-prev-servicos:hover img, .slick-next-servicos:hover img {
-    opacity: 0.9; 
-    transform: scale(1.02); 
+.slick-prev-custom:hover img,
+.slick-next-custom:hover img,
+.slick-prev-servicos:hover img,
+.slick-next-servicos:hover img .slick-prev-servicos:hover img,
+.slick-next-servicos:hover img {
+    opacity: 0.9;
+    transform: scale(1.02);
 }
 
 .slick-dots {
     position: absolute;
-    bottom: 30px; 
-    width: 100%; 
+    bottom: 30px;
+    width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     list-style: none;
     gap: 20px;
 }
@@ -479,55 +509,56 @@ a {
 
 /* Cada dot */
 .slick-dots li {
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 .slick-dots li button {
-    width: 48px; 
-    height: 8px; 
-    border-radius: 9px; 
-    background-color: #b3e5fc; 
-    border: none;    
+    width: 48px;
+    height: 8px;
+    border-radius: 9px;
+    background-color: #b3e5fc;
+    border: none;
 }
 
 
 .slick-dots li.slick-active button {
-    background-color: #03a9f4; 
-    transform: translateY(4px); 
+    background-color: #03a9f4;
+    transform: translateY(4px);
 }
 
 
 .slick-dots li button:hover {
-    background-color: #03a8f473; 
+    background-color: #03a8f473;
 }
 
 /* Tá com os botãozin fntasma de baixo*/
 .slick-dots li button:before {
-    content: ''; 
+    content: '';
 }
+
 /* fim marcação 4 <<<< */
 
 /* marcação 5 */
-.containerMenu-inferior {      
+.containerMenu-inferior {
     background-color: #01579b;
     width: 100%;
     display: flex;
-    justify-content: space-between; 
-    border-bottom-left-radius: 15px;    
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    flex-direction: column;  
-    align-items: center;  
+    flex-direction: column;
+    align-items: center;
     height: auto;
-       
+
 }
 
-.rowMenu-inferior{    
+.rowMenu-inferior {
     max-width: 1146px;
     max-height: 90;
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    
+
 }
 
 .slick-slider-servicos {
@@ -537,45 +568,51 @@ a {
 
 
 .slick-slide {
-    height: auto; 
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slick-slide, .slick-list {
+.slick-slide,
+.slick-list {
     padding: 0;
-    margin: 0; 
-    height: 100% !important;   
+    margin: 0;
+    height: 100% !important;
 }
 
 
 
 
-.slickerMaior, .slickerMaior row, .slicker-slider row {
-    padding: 0 ;   
-    height: 100% ; 
-    margin: 0 ;
+.slickerMaior,
+.slickerMaior row,
+.slicker-slider row {
+    padding: 0;
+    height: 100%;
+    margin: 0;
 }
 
 .slick-slider img {
     width: 100%;
-    height: 100% ; 
-    object-fit: fill; 
+    height: 100%;
+    object-fit: fill;
     display: block;
 }
 
 .slick-slider div {
-    margin: 0; /* Remove margens dos divs que contêm as imagens */
+    margin: 0;
+    /* Remove margens dos divs que contêm as imagens */
 }
+
 .prevBtn {
     background-image: url('assets/btn-esq.png');
 
 }
 
-.nextBtn{
+.nextBtn {
     background-image: url('assets/btn-dir.png');
 }
+
 /* fim marcação 5 */
 /* inicio libras */
 .btnAcesso {
@@ -584,25 +621,27 @@ a {
     top: 150px;
     z-index: 99999999;
 }
-  
+
 .icone {
     display: inline-block;
-    width: 40px; 
-    height: 40px; 
-    background-image: url('assets/libras-1.png'); /* Ajuste o caminho conforme necessário */
-    background-size: contain; 
-    background-repeat: no-repeat; 
+    width: 40px;
+    height: 40px;
+    background-image: url('assets/libras-1.png');
+    /* Ajuste o caminho conforme necessário */
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
 /* fim libras */
 
 /* marcação 6 */
-.containerMenu-inferior .row{
+.containerMenu-inferior .row {
     max-width: 1146px;
     height: auto;
 }
 
 .slickerMenor {
-    position: relative;    
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -613,26 +652,26 @@ a {
 
 
 .botaoMenuServicos {
-    background-color: #f0f0f0;       
-    display: inline-block;     
+    background-color: #f0f0f0;
+    display: inline-block;
     max-width: 170px;
     height: 90;
-    border-radius: 15px;      
-}
-
-.botaoMenuServicos img{
-    margin-top: 10px;    
+    border-radius: 15px;
 }
 
 .botaoMenuServicos img {
-    width: 100%; 
+    margin-top: 10px;
+}
+
+.botaoMenuServicos img {
+    width: 100%;
     max-width: 30px;
-    height: auto; 
+    height: auto;
 }
 
 .slick-prev-servicos {
-    left: -60px; 
-    
+    left: -60px;
+
 }
 
 .slick-next-servicos {
@@ -641,13 +680,14 @@ a {
 
 .slick-slider-servicos .slick-list a {
     padding-inline: 19px;
-    
+
 }
 
-.slick-prev-servicos, .slick-next-servicos {
-    position: absolute; 
-    top: 50%;     
-    z-index: 10 !important; 
+.slick-prev-servicos,
+.slick-next-servicos {
+    position: absolute;
+    top: 50%;
+    z-index: 10 !important;
 }
 
 .slick-slider-servicos {
@@ -660,9 +700,9 @@ a {
 /* fim marcação 6 */
 
 /* marcação 7 */
-.colNoticias{
-    position: relative;   
-    padding: 30px;    
+.colNoticias {
+    position: relative;
+    padding: 30px;
 }
 
 .Noticias {
@@ -670,7 +710,7 @@ a {
     z-index: 1;
     width: 129px;
     height: 39px;
-    flex-grow: 0;    
+    flex-grow: 0;
     font-size: 32px;
     font-weight: bold;
     font-stretch: normal;
@@ -688,27 +728,28 @@ a {
     height: 16px;
     background-color: #e1f5fe;
     position: relative;
-    top: -15px; 
+    top: -15px;
     left: -1.5px;
-    z-index: 0; 
-    border-radius: 20px;    
+    z-index: 0;
+    border-radius: 20px;
 }
 
 /* noticias */
 
-.NoticiasContainer{
-    position: relative; 
+.NoticiasContainer {
+    position: relative;
     text-align: left;
 }
-.noticiaMaior{
-    text-align: left;    
+
+.noticiaMaior {
+    text-align: left;
     max-width: 100%;
-    max-height: 410px; 
+    max-height: 410px;
     margin-bottom: 30px;
     border-radius: 24px;
     border: solid 2px whitesmoke;
     box-sizing: border-box;
-    position: relative;    
+    position: relative;
     display: block;
     padding: 0;
 
@@ -716,64 +757,67 @@ a {
 }
 
 .noticiaMaior figure {
-    width: 100%; 
+    width: 100%;
 }
 
 .noticiaMaior img {
     width: 100%;
-    border-radius: 24px;         
-    max-height: 410px;    
-    height: auto; 
-    display: block; 
+    border-radius: 24px;
+    max-height: 410px;
+    height: auto;
+    display: block;
 }
 
 .noticiaMaior:hover img {
-    transform: scale(1.01); 
-    
+    transform: scale(1.01);
+
 }
 
-.noticiaMaior:hover .tituloNoticiaMaior, .noticiaMenor:hover .tituloNoticiaMenor, .tituloGalerias:hover {
-    color: #01579b; /* O texto muda de cor ao passar o mouse */
+.noticiaMaior:hover .tituloNoticiaMaior,
+.noticiaMenor:hover .tituloNoticiaMenor,
+.tituloGalerias:hover {
+    color: #01579b;
+    /* O texto muda de cor ao passar o mouse */
 }
 
 
 .tituloNoticiaMaior:active {
-    color: #000000; 
+    color: #000000;
     text-decoration: none;
     transform: scale(1.0);
 }
 
 
 .tituloNoticiaMaior {
-    display: block; 
+    display: block;
     width: auto;
-    margin: 16px 0 0; 
+    margin: 16px 0 0;
     font-size: 18px;
     font-weight: 600;
     color: #616161;
     text-align: left;
-    word-wrap: break-word;   
+    word-wrap: break-word;
     padding-left: 10px;
 }
 
 /* Adicionando responsividade */
 @media (min-width: 768px) {
-    
+
     .noticiaMaior {
-        min-height: 250px; 
-        height: auto; 
+        min-height: 250px;
+        height: auto;
     }
 }
 
 @media (min-width: 1400px) {
     .containerNoticiarioMaior .col-md-6 {
-        max-width: 50%; 
-        flex: 0 0 50%; 
+        max-width: 50%;
+        flex: 0 0 50%;
     }
-    
+
     .noticiaMaior {
-        min-height: 450px; 
-        height: auto; 
+        min-height: 450px;
+        height: auto;
     }
 }
 
@@ -781,57 +825,88 @@ a {
     position: absolute;
     max-width: 125px;
     max-height: 28px;
-    top: 30px;  
-    left: 30px;  
+    top: 30px;
+    left: 30px;
     background-color: #4fc3f7;
-    padding: 4px 10px; 
-    border-radius: 25px; 
+    padding: 4px 10px;
+    border-radius: 25px;
     font-size: 14px;
     font-weight: normal;
     color: #001c33;
     z-index: 1;
 }
+
+.data-bg-2 {
+    position: absolute;
+    max-width: 125px;
+    max-height: 28px;
+    top: 30px;
+    left: 90px;
+    background-color: #4fc3f7;
+    padding: 4px 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #001c33;
+    z-index: 1;
+}
+
+.data-bg-3 {
+    position: absolute;
+    max-width: 125px;
+    max-height: 28px;
+    top: 30px;
+    left: 40px;
+    background-color: #4fc3f7;
+    padding: 4px 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #001c33;
+    z-index: 1;
+}
+
 /* fim marcação 7 */
 /* marcação 8 */
-.slickerNoticia{
+.slickerNoticia {
     display: flex;
     overflow: visible;
     border: solid whitesmoke;
     border-radius: 35px;
     margin: 10px;
-    
+
 }
 
 .noticiaMenor figure {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
 .noticiaMenor img {
-    border-radius: 24px;     
-    max-height: 410px;    
-    height: auto; 
+    border-radius: 24px;
+    max-height: 410px;
+    height: auto;
 }
 
-.noticiaMenor{
+.noticiaMenor {
     /* para aparecer o bg-data  */
-    position: relative; 
+    position: relative;
     padding: 10px;
     /* lembrete diario pra deixar de ser burro pq se o pai n alinha, o filho tbm n vai... */
-    text-align: left; 
+    text-align: left;
 }
 
-.tituloNoticiaMenor{
-    position: relative;      
+.tituloNoticiaMenor {
+    position: relative;
     font-size: 20px;
-    text-align: left ; 
-    word-wrap: break-word;   
+    text-align: left;
+    word-wrap: break-word;
     color: #616161;
 }
 
-.tituloNoticiaMenor:hover{
-    text-decoration: underline; 
+.tituloNoticiaMenor:hover {
+    text-decoration: underline;
 }
 
 
@@ -847,14 +922,17 @@ a {
     padding-inline: 19px;
 }
 
-.slick-prev-noticias, .slick-next-noticias {
+.slick-prev-noticias,
+.slick-next-noticias {
     border: solid whitesmoke;
     border-radius: 50%;
 }
 
-.slick-prev-noticias:hover , .slick-next-noticias:hover{
-    border-color: rgba(245, 245, 245, 0.952);    
-    transform: translateY(-50%) scale(1.1); /* Misteriosamente se nao colocar o translateY, buga :) */
+.slick-prev-noticias:hover,
+.slick-next-noticias:hover {
+    border-color: rgba(245, 245, 245, 0.952);
+    transform: translateY(-50%) scale(1.1);
+    /* Misteriosamente se nao colocar o translateY, buga :) */
 }
 
 /* fim marcação 8 */
@@ -871,7 +949,7 @@ a {
     font-weight: bold;
     text-align: center;
     color: #331600;
-    display: block; 
+    display: block;
     outline: none;
     /* margin: 32px; */
 }
@@ -886,23 +964,27 @@ a {
     outline: none;
 }
 
-.containerGaleria{
-    background-color:#01579b;
+.containerGaleria {
+    background-color: #01579b;
     border-radius: 25px;
-   
+
     /* text-align: left;  talvez reativar depois*/
 }
 
 
-.colGaleria, .colEventos, .colObras, .colVideos{
-    position: relative;   
-    padding: 30px;    
+.colGaleria,
+.colEventos,
+.colObras,
+.colVideos {
+    position: relative;
+    padding: 30px;
 }
 
 /* TODO: LEMBRETE DE REAPROVITAR ESSA TECNICA USADA NA GALERIA  POIS TEM MAIS 3 VINHETAS NO FUTURO*/
 .GaleriaContainer {
-    position: relative; /*ESSE BRABO AQUI ME QUEBROU UM GALHO */
-    text-align: left; 
+    position: relative;
+    /*ESSE BRABO AQUI ME QUEBROU UM GALHO */
+    text-align: left;
     padding-left: 370px;
     padding-top: 45px;
 }
@@ -920,72 +1002,90 @@ a {
     text-align: left;
     color: white;
     margin-bottom: 5px;
-    padding-left: 5px;    
+    padding-left: 5px;
 }
 
 .VinhetaGaleria {
     position: relative;
     width: 240px;
     height: 16px;
-    background-color: #0277bd;    
-    top: -15px; 
+    background-color: #0277bd;
+    top: -15px;
     left: 3px;
-    z-index: 1; 
-    border-radius: 20px;    
+    z-index: 1;
+    border-radius: 20px;
 }
 
-/* somente galeria */
-
-.containerSlickGaleria {
-    width: 100%; /* morreu mas passa bem */
-    
-}
 
 .galeriaSlicker-Item {
     position: relative;
     z-index: 0;
-    width: 100%; 
+    width: 100%;
     height: auto;
+    overflow: hidden;
+    padding-inline: 40px;
+    /* Para posicionar o título */
 }
 
-.slickerGaleria .galeriaSlicker-Item {
-    width: 100%;
-    position: relative; /* Para posicionar o título */    
+.Obras-Item {
+    position: relative;
+    z-index: 0;
+    height: auto;
+
 }
+
+.Obras-Item:hover p {
+    color: #01579b;
+}
+
+.tigrinho {
+    padding-bottom: 45px;
+    padding-top: 25px;
+}
+
+
+/*Começo Gambiarra pro center-mode funcionar */
+.slick-center .galeriaSlicker-Item {
+    transform: scale(1.2);
+}
+
+.slickerGaleria .slick-slide {
+    transform: scale(0.85);
+
+}
+
+/* Gambiarra pro center-mode funcionar */
 
 .galeriaSlicker-Item img {
-    width: 100%; 
-    height: auto;
+    height: 340px;
     object-fit: cover;
+    border-radius: 25px;
 }
 
-.galeriaSlicker-Item:hover img , .tituloGaleriaSlicker-Item:hover{
-    transform: scale(1.02);
+.galeriaSlicker-Item:hover img {
+    transform: scale(1.05);
+}
+
+.galeriaSlicker-Item:hover a {
     text-decoration: underline;
 }
 
-.tituloGaleriaSlicker-Item{
-  position: absolute;
-  max-width: 550px;
-  height: auto;
-  flex-grow: 0;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: white;
-  z-index:1;
-  /* bottom: 30px;   */
-  bottom: 25px; /* Posicionar no rodapé da imagem */
-  left: 25px;
-  width: 80%; /* Ocupar toda a largura da imagem */
+.tituloGaleriaSlicker-Item {
+    position: absolute;
+    max-width: 500px;
+    height: auto;
+    font-size: 24px;
+    font-weight: 600;
+
+    text-align: left;
+    color: white;
+    z-index: 1;
+
+    bottom: 35px;
+    left: 110px;
+    width: 60%;
 
 }
-
 
 .slick-prev-galeria {
     left: 60px;
@@ -999,15 +1099,18 @@ a {
     padding-inline: 19px;
 }
 
-.slick-prev-galeria, .slick-next-galeria {
+.slick-prev-galeria,
+.slick-next-galeria {
     border: solid whitesmoke;
     border-radius: 50%;
     transform: translateY(-50%);
 }
 
-.slick-prev-galeria:hover , .slick-next-galeria:hover{
-    border-color: rgba(245, 245, 245, 0.952);    
-    transform: translateY(-50%) scale(1.1); /* Misteriosamente se nao colocar o translateY, buga :) */
+.slick-prev-galeria:hover,
+.slick-next-galeria:hover {
+    border-color: rgba(245, 245, 245, 0.952);
+    transform: translateY(-50%) scale(1.1);
+    /* Misteriosamente se nao colocar o translateY, buga :) */
 }
 
 /* fim marcação 9 */
@@ -1015,7 +1118,7 @@ a {
 /* marcação 10 */
 
 .EventosContainer {
-    text-align: left; 
+    text-align: left;
     padding-top: 32px;
     padding-bottom: 30px;
     padding-left: 370px;
@@ -1033,19 +1136,20 @@ a {
     text-align: left;
     color: #01579b;
     margin-bottom: 5px;
-    padding-left: 5px;    
+    padding-left: 5px;
 }
 
 .VinhetaEventos {
     position: relative;
     width: 340px;
     height: 16px;
-    background-color: #e1f5fe;    
-    top: -15px; 
+    background-color: #e1f5fe;
+    top: -15px;
     left: 3px;
-    z-index: 1; 
-    border-radius: 20px;    
+    z-index: 1;
+    border-radius: 20px;
 }
+
 /* teste */
 
 .eventoAgenda {
@@ -1064,13 +1168,14 @@ a {
 
 
 .eventoAgenda:hover {
-    transform: scale(1.02);    
+    transform: scale(1.02);
 }
 
 .numeroEvento {
     font-size: 32px;
     font-weight: bold;
-    color: #01579b;   /* Cor destacada */
+    color: #01579b;
+    /* Cor destacada */
     display: inline-block;
     margin-right: 10px;
 
@@ -1099,6 +1204,7 @@ a {
 }
 
 .tituloEvento {
+    width: 60%;
     font-weight: bold;
     font-size: 20px;
     color: #4A4A4A;
@@ -1119,16 +1225,17 @@ a {
 
     text-align: left;
 }
+
 /* fim marcação 10 */
 
 
 /* marcação 11 */
 
-.verClarin{
+.verClarin {
     background-color: #ffd54f;
 }
 
-.tituloGalerias{
+.tituloGalerias {
     max-width: 80%;
     font-size: 24px;
     font-weight: 600;
@@ -1144,11 +1251,12 @@ a {
 }
 
 .VideoContainer {
-    text-align: left;     
+    text-align: left;
     padding-bottom: 30px;
 }
+
 .ObraContainer {
-    text-align: left;    
+    text-align: left;
     padding-bottom: 30px;
 }
 
@@ -1173,11 +1281,11 @@ a {
     position: relative;
     width: 276px;
     height: 16px;
-    background-color: #e1f5fe;    
-    top: -15px; 
+    background-color: #e1f5fe;
+    top: -15px;
     left: 3px;
-    z-index: 1; 
-    border-radius: 20px;    
+    z-index: 1;
+    border-radius: 20px;
 }
 
 .Obras {
@@ -1199,12 +1307,13 @@ a {
     position: relative;
     width: 256px;
     height: 16px;
-    background-color: #e1f5fe;    
-    top: -15px; 
+    background-color: #e1f5fe;
+    top: -15px;
     left: 3px;
-    z-index: 1; 
-    border-radius: 20px;    
+    z-index: 1;
+    border-radius: 20px;
 }
+
 /* fim marcação 11 */
 
 /* marcação 12 */
@@ -1213,10 +1322,10 @@ a {
     max-width: 99%;
     min-height: 450px;
     border-radius: 25px;
-    
+
     padding-inline: 15px;
     background-image: url("assets/image-5.png");
-  
+
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -1224,14 +1333,14 @@ a {
 
     position: relative;
     display: flex;
-    justify-content: center; /* Centraliza a div .quadradao horizontalmente */    
-    
+    justify-content: center;
+
 }
 
-.quadradao{
+.quadradao {
     left: 666px;
     position: relative;
-    max-width: 940px;    
+    max-width: 940px;
     background-color: #fafafa;
     text-align: left;
 
@@ -1242,52 +1351,52 @@ a {
     padding-right: 80px;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
-.verDesativado{   
+.verDesativado {
     min-width: 262px;
     min-height: 48px;
     padding: 14px 40px;
-    border-radius: 16px;    
+    border-radius: 16px;
     font-size: 16px;
     font-weight: normal;
     text-align: center;
-    display: block; 
+    display: block;
     outline: none;
-    background-color: #039be5 ;
-    color: #001c33 ;
+    background-color: #039be5;
+    color: #001c33;
     opacity: 0.6;
 }
 
-.textao{
+.textao {
     position: relative;
     text-align: left;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: start;   
+    align-items: start;
     left: 40px;
 
     margin: 50px;
-    
+
 }
 
-.textao h1{
-    font-size: 50px;    
+.textao h1 {
+    font-size: 50px;
     text-align: left;
-    font-weight: 300; 
+    font-weight: 300;
     color: #000
 }
 
-.textao h2{
+.textao h2 {
     font-size: 60px;
-    font-weight: 900;   
+    font-weight: 900;
     text-align: left;
-    color: #000;    
+    color: #000;
 }
 
-.textao p{
+.textao p {
     width: auto;
     height: 24px;
     font-size: 20px;
@@ -1295,35 +1404,153 @@ a {
     color: #616161;
 }
 
-.textao .row{
+.textao .row {
     left: -100px;
     display: flex;
-    justify-content: flex-start;  
-    gap: 20px;                    
+    justify-content: flex-start;
+    gap: 20px;
 }
-   
-   
+
+
 .textao .row .col-auto {
-    margin: 0;                   
-    padding: 0;                  
+    margin: 0;
+    padding: 0;
+}
+
+.blocoAzulInferior-1 p:hover,
+.blocoAzulInferior-2 p:hover {
+    text-decoration: underline;
 }
 
 
-.blocoAzulInferior-1{
+.blocoAzulInferior-1 {
     margin-top: 80px;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
-    background-color:#0277bd;
+    background-color: #0277bd;
     color: white;
-    max-width: 99%;
+    /* max-width: 99%; */
 }
 
-.blocoAzulInferior-2{
-    background-color: #01579b ;
-    color: white;
-    max-width: 99%;
+.blocoAzulInferior-1 h1 {
+    max-width: 281px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
 }
 
+
+.blocoAzulInferior-1 p {
+    text-align: left;
+    margin: 0;
+}
+
+.blocoAzulInferior-2 {
+    position: relative;
+    background-color: #01579b;
+    color: white;
+}
+
+
+.blocoAzulInferior-2 h1 {
+
+    font-size: 26px;
+    /* font-weight: bold; */
+    font-weight: 900 !important;
+    text-align: left !important;
+
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.blocoAzulInferior-2 p {
+    max-width: 55% !important;
+    font-size: 10px;
+    line-height: 1.25 !important;
+    font-weight: 300 !important;
+    text-align: left;
+
+}
 
 
 /* fim marcação 12 */
+
+/* marcacao 13 */
+
+.pe {
+    margin-top: 15px;
+    margin-bottom: 28px;
+}
+
+.pe p {
+    position: relative;
+    top: 25%;
+
+    width: 950px;
+    height: 24px;
+    font-size: 16px;
+    text-align: left;
+    color: #212529;
+}
+
+.pe img {
+    width: 118px;
+    height: 48px;
+    object-fit: contain;
+
+}
+
+.mapinha {
+    padding: 0;
+    margin: 0;
+}
+
+.mapinha iframe {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+/* player */
+.youtube a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.youtube:hover,
+.Obras-Item:hover {
+    transform: scale(1.01);
+}
+
+.youtube:hover p {
+    color: #01579b;
+}
+
+.youtube img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 50px;
+    background: black;
+    opacity: 0.8;
+    border-radius: 10px;
+    justify-content: center;
+
+}
+
+.play-icon::before {
+    content: '\25B6';
+    font-size: 30px;
+    color: white;
+}
+
+/* fim marcacao 13 */
