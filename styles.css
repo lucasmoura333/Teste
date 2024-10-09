@@ -253,6 +253,7 @@ html, body {
 
 /* <<<<<<<<<< Marcação 2>>>> */
 .containerMenu-superior {
+    justify-content: center;
 
     background-color: #01579b;
     width: 100%;
@@ -304,6 +305,7 @@ html, body {
 
 
 .tituloSuperior {
+    display: block;
     border-radius: 24px;
     font-weight: bold;
     margin: 10px 0;
@@ -369,36 +371,42 @@ html, body {
     margin-top: 16px;
     padding: 10px;
     min-width: 166px;
-    min-height: 99px;
+    min-height: 110px;
 }
+
+.logo{
+    margin-right: 340px; 
+    min-width: 260px !important;   
+    margin-bottom: 15px !important;  
+}
+
 
 /* Responsividade */
 
-@media (min-width: 992px) {
-    .containerMenu-superior {
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
+
+
+
+
+/* Responsividade para telas menores que 1199.9px */
+@media screen and (max-width: 1199.9px) {
+    .logo {
+        margin-right: 50px !important; 
     }
-}
-
-
-.botaoMenuSuperiorLogo {
-    margin-right: 20px;
-    text-align: left;
-}
-
-
-
-@media (max-width: 768px) {
-    .botaoMenuSuperiorLogo {
-
-        text-align: left !important;
-    }
-
     .rowMenu-superior {
-        flex-direction: column;
-        align-items: start;
+        justify-content: center; 
+    }
+}
+
+/* Responsividade para telas menores que 991px */
+@media screen and (max-width: 991px) {
+    .botaoMenuSuperior{
+        /* border: solid purple; */
+        width: 100%;
+        height: 10px;
+    }
+    .rowMenu-superior {
+        /* border: solid green; */
+        justify-content: center;
     }
 }
 
