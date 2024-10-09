@@ -382,11 +382,6 @@ html, body {
 
 
 /* Responsividade */
-
-
-
-
-
 /* Responsividade para telas menores que 1199.9px */
 @media screen and (max-width: 1199.9px) {
     .logo {
@@ -400,12 +395,10 @@ html, body {
 /* Responsividade para telas menores que 991px */
 @media screen and (max-width: 991px) {
     .botaoMenuSuperior{
-        /* border: solid purple; */
         width: 100%;
         height: 10px;
     }
     .rowMenu-superior {
-        /* border: solid green; */
         justify-content: center;
     }
 }
@@ -457,7 +450,12 @@ html, body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.2);
 }
 
-
+@media screen and (max-width: 768px) {
+    .slick-slider-vitrini .slick-dots {
+        margin-bottom: 30px;
+        padding: 30px ;
+    }       
+}
 
 
 /* Fim marcação 3 */
@@ -561,7 +559,8 @@ html, body {
     border-bottom-right-radius: 15px;
     flex-direction: column;
     align-items: center;
-    height: auto;
+    margin-bottom: 30px;
+    overflow: hidden;
 
 }
 
@@ -577,6 +576,7 @@ html, body {
 .slick-slider-servicos {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 
@@ -593,9 +593,6 @@ html, body {
     margin: 0;
     height: 100% !important;
 }
-
-
-
 
 .slickerMaior,
 .slickerMaior row,
@@ -617,14 +614,7 @@ html, body {
     /* Remove margens dos divs que contêm as imagens */
 }
 
-.prevBtn {
-    background-image: url('assets/btn-esq.png');
 
-}
-
-.nextBtn {
-    background-image: url('assets/btn-dir.png');
-}
 
 /* fim marcação 5 */
 /* inicio libras */
@@ -709,6 +699,89 @@ html, body {
     align-items: center;
     width: 100%;
 }
+
+@media screen and (max-width: 992px) {
+    .slick-slider-servicos .slick-dots {
+        max-width: 100%; 
+        height: 50%;
+        bottom: -70px;
+    }
+
+    .containerMenu-inferior{
+        height: 250px;
+        overflow: hidden;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .slick-slider-servicos {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .containerMenu-inferior {
+        padding: 10px;
+        display: block;
+        flex-wrap: wrap;
+    }
+
+
+    .slick-dots {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        bottom: -50px !important;
+    }
+
+    .slick-slider-servicos .slick-dots {
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+        padding: 10px; 
+        box-sizing: border-box; 
+        max-width: 100%;
+        margin: 0 auto; 
+    }
+
+    .slick-slider-servicos {
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .containerMenu-inferior {
+        padding: 20px; 
+        display: block;
+        min-height: 250px;
+        position: relative;
+        
+    }
+
+
+    .slick-slider-servicos .slick-dots {
+        position: absolute;
+        bottom: -25px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        padding: 10px 0;
+    }
+
+    .slick-slider-servicos {
+        padding-bottom: 60px; /* Garante espaço suficiente para os dots no final do container */
+    }
+   
+}
+
+
+
+
 
 /* fim marcação 6 */
 
