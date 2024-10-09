@@ -12,6 +12,8 @@
     flex-wrap: wrap;
     word-wrap: break-word;
     font-size: 12px;
+    /* overflow-x: hidden; */
+
 }
 
 a {
@@ -20,11 +22,14 @@ a {
 }
 
 
+/* Evitar overflow global */
+html, body {
+    overflow-x: auto; /* Remova o hidden globalmente */
+}
+
 
 /* teste começa  sumir com o espaçamento bizarro na borda de baixo*/
-.slick-slider-vitrini,
-.slick-track,
-.slick-slide {
+.slick-slider-vitrini .slick-track, .slick-slide {
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -45,11 +50,23 @@ a {
 }
 
 .nav-topo .nav-item {
-    margin-right: 30px;
+    /* margin-right: 30px; */
+    max-width: auto; 
+    justify-content: center;
 }
 
 .nav-topo .nav-item:last-child {
     margin-right: 0;
+}
+
+/* .nav-topo .nav-item {
+    justify-content: center;
+    max-width: auto; 
+} */
+
+
+.nav-item {
+    width: auto; 
 }
 
 /* Itens da navegação */
@@ -57,7 +74,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 166px;
+    /* width: 166px; */
+    width: auto; 
     height: 38px;
     margin: 10px;
     padding: 0 15px;
@@ -80,17 +98,7 @@ a {
     color: #0056b3;
 }
 
-@media screen and (max-width: 1199.9px) {
-    .nav-topo .nav-item {
-        margin: 0.25rem;
-    }
-}
 
-@media only screen and (max-width: 991px) {
-    .nav-topo .nav-item {
-        max-width: 100%;
-    }
-}
 
 /* Estilização da área de PesquisaSite */
 .PesquisaSite {
@@ -156,42 +164,29 @@ a {
     background-color: #f0f0f0;
 }
 
-/* Ajustes de responsividade para resoluções menores */
-@media (max-width: 1145px) {
-    .nav-topo {
-        justify-content: flex-start;
-    }
-
-    .nav-item {
-        margin: 5px;
-        padding: 0 10px;
-        width: 100%;
-    }
-
-    .PesquisaSite {
-        max-width: 100%;
-    }
-}
-
-/* Ajustes para resoluções maiores */
-@media (min-width: 1145px) {
-    .nav-topo {
+/* Para telas abaixo de 1199px */
+@media screen and (max-width: 1199.9px) {
+    .nav-topo .nav-item {
+        flex-wrap: wrap;
         justify-content: center;
-        padding: 0 20px;
     }
 
     .nav-item {
-        margin: 5px;
-        padding: 0 10px;
-        width: auto;
+        flex: 1 0 200px; 
+        width: auto;         
     }
 
-    .PesquisaSite {
-        flex-grow: 0;
-        max-width: 166;
-        margin-left: auto;
-    }
 }
+
+/* Para telas abaixo de 991px */
+@media screen and (max-width: 991px) {
+    .nav-topo .nav-item {
+        max-width: 100%; 
+    }
+
+}
+
+
 
 .nav-item:last-child {
     border: none;
@@ -1339,7 +1334,7 @@ a {
 
 .quadradao {
     left: 666px;
-    position: relative;
+    /* position: relative; */
     max-width: 940px;
     background-color: #fafafa;
     text-align: left;
