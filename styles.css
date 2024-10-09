@@ -24,14 +24,15 @@ a {
 
 /* Evitar overflow global */
 html, body {
-    overflow-x: auto; /* Remova o hidden globalmente */
+    overflow-x: auto; 
 }
 
-
-/* teste começa  sumir com o espaçamento bizarro na borda de baixo*/
-.slick-slider-vitrini .slick-track, .slick-slide {
+.slick-slider-vitrini,
+.slick-slider-vitrini .slick-track,
+.slick-slider-vitrini .slick-slide {
     margin: 0 !important;
     padding: 0 !important;
+    overflow: hidden; 
 }
 
 
@@ -59,11 +60,6 @@ html, body {
     margin-right: 0;
 }
 
-/* .nav-topo .nav-item {
-    justify-content: center;
-    max-width: auto; 
-} */
-
 
 .nav-item {
     width: auto; 
@@ -87,6 +83,7 @@ html, body {
     color: #333;
     white-space: nowrap;
 }
+
 
 .nav-item a {
     text-decoration: none;
@@ -185,6 +182,19 @@ html, body {
     }
 
 }
+
+@media screen and (max-width: 494px) {
+    .nav-topo {
+        justify-content: center;
+    }
+
+    .nav-topo .nav-item {
+        flex: 1 0 33%;
+        /* margin: 5px;  */
+        justify-content: center;
+    }
+}
+
 
 
 
