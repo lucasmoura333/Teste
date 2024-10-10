@@ -1623,7 +1623,6 @@ html, body {
 .parallax {
     max-width: 99%;
     min-height: 450px;
-    /* border-radius: 25px; */
     padding: 15px;
     background-image: url("assets/image-5.png");
     background-attachment: fixed;
@@ -1631,22 +1630,19 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: flex;
+    /* display: flex; */
+    display: block;
     justify-content: center;
 
 }
 
 .quadradao {
-    left: 666px !important;
+    position: relative;
+    top: -30px;
     max-width: 940px;
     background-color: #fafafa;
     text-align: left;
-
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-
-    padding: 20px;
-    padding-right: 80px;
+    margin-right: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1715,6 +1711,22 @@ html, body {
     padding: 0;
 }
 
+@media screen and (max-width: 1221px) {
+
+    .quadradao{
+        flex: 0 1;
+    }
+   .quadradao .row{
+    left: -50px !important;
+    padding: 10px;
+   }
+
+
+
+}
+
+
+/* teste parallax */
 
 
 
@@ -1890,9 +1902,6 @@ html, body {
     top: 50%; 
     margin-bottom: 45px;
     padding-bottom: 35px;
-
-    margin-inline: 10px;
-
 
 }
 

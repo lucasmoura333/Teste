@@ -150,7 +150,7 @@ $(document).ready(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,        
-        centerMode: false,
+        centerMode: true,
         autoplay:false,
         infinite:true,
         cssEase: 'ease',
