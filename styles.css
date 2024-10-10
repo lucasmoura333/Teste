@@ -693,9 +693,20 @@ html, body {
 }
 
 @media screen and (max-width: 1200px) {
-    .slick-slider-servicos {
+    .slick-slider-servicos, .slickerGaleria {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    .slick-slider-servicos .slick-dots{
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap;
+        bottom: -50px !important;
+        padding: 10px; 
+        box-sizing: border-box; 
+        max-width: 100%;
+        margin: 0 auto; 
     }
 }
 
@@ -706,7 +717,14 @@ html, body {
         max-width: 100%; 
         height: 50%;
         bottom: -65px;
+        padding-bottom: 20px;
     }
+
+    
+
+    .slickerGaleria .slick-dots li {
+      margin: 0 6px;
+   }
 
     .containerMenu-inferior{
         height: 250px;
@@ -724,16 +742,7 @@ html, body {
         flex-wrap: wrap;
     }
 
-    .slick-slider-servicos .slick-dots {
-        display: flex;
-        justify-content: center; 
-        flex-wrap: wrap;
-        bottom: -50px !important;
-        padding: 10px; 
-        box-sizing: border-box; 
-        max-width: 100%;
-        margin: 0 auto; 
-    }
+    
 
     .slick-slider-servicos {
         padding-bottom: 30px;
@@ -768,7 +777,7 @@ html, body {
         
     }
     
-    .slickerMenor{
+    .slickerMenor, .slickerGaleria{
         padding: 10px;
         overflow: visible;
     }
@@ -884,7 +893,7 @@ html, body {
 
 @media screen and (max-width: 576px) {
 
-    .slickerNoticia .slick-slide, .slickerNoticia .slick-list {
+    /* .slickerNoticia .slick-slide, .slickerNoticia .slick-list {
         height: 100% !important;
 
     }
@@ -897,18 +906,18 @@ html, body {
         
     }
 
-    /* .slickerNoticia .slick-dots {
+    .slickerNoticia .slick-dots {
         position: relative;
         width: 90%;
         bottom: 25px;        
         margin-bottom: 30px;         
         justify-content: center;  
-    } */
+    } 
 
     .slickerNoticia .slick-dots {
         position: relative;
-        padding-bottom: 30px; /* Aumenta o espaço entre os dots e outros elementos */
-        padding-top: 10px; /* Espaço adicional */
+        padding-bottom: 30px; 
+        padding-top: 10px; 
     }
     
 
@@ -922,40 +931,74 @@ html, body {
     }
     
     .slickerNoticia {
-        padding-bottom: 50px; /* Ajusta o espaço inferior para acomodar os dots */
-    }
+        padding-bottom: 50px; 
+    } */
    
 }
 
 
-@media (min-width: 768px) {
-
-    .noticiaMaior {
-        min-height: 250px;
-        height: auto;
+@media screen and (max-width: 768px) {
+/* 
+    .slickerNoticia .slick-list {
+        height: auto !important; 
     }
+
+    .slickerNoticia .slick-dots {
+        position: relative;
+        bottom: -10px;
+        margin-bottom: 15px; 
+    } */
+
+
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
+   .slickerNoticia .slick-list {
+        height: auto !important;
+    }
+
+    .slickerNoticia .slick-dots {
+        position: relative;
+        bottom: -20px; 
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+    }
+
     .containerNoticiaMenor {
         width: auto;
+        flex-wrap: wrap;
+        overflow: visible;
     }
 
     .slickerNoticia{
         padding-bottom: 100px;
-    }
+        width: auto;
+        height: auto;
+        overflow: visible;
+        
+    } 
 
 }
 
 @media (min-width: 1400px) {
-    .containerNoticiarioMaior .col-md-6 {
-        max-width: 50%;
+  .containerNoticiarioMaior {
+        max-width: 100%;
         flex: 0 0 50%;
     }
 
     .noticiaMaior {
         min-height: 450px;
         height: auto;
+    } 
+
+    .tituloNoticiaMaior{
+        width: 90%;
+        padding-left: 30px;
+        padding-top: 20px;
+        bottom: 20px;
+        position: relative;
+        
     }
 }
 
@@ -1292,12 +1335,12 @@ html, body {
 }
 
 @media screen and (max-width: 494px) {
-    .EventosContainer {
+    .EventosContainer, .GaleriaContainer {
         padding-left: 20px; 
         padding-right: 20px;
     }
 
-    .Eventos {
+    .Eventos, .Galeria {
         font-size: 24px; 
         padding-left: 0; 
     }
@@ -1307,15 +1350,19 @@ html, body {
         height: 12px;
         top: -10px;
     }
+
+    .VinhetaGaleria{
+        min-width: 65%;
+    }
 }
 
 @media screen and (max-width: 991px) {
-    .EventosContainer {
+    .EventosContainer, .GaleriaContainer {
         padding-left: 50px; 
         padding-right: 50px;
     }
 
-    .Eventos {
+    .Eventos, .Galeria {
         font-size: 28px; 
         padding-left: 0; 
     }
@@ -1324,6 +1371,11 @@ html, body {
         width: 40%; 
         height: 14px;
         top: -12px; 
+    }
+
+    .VinhetaGaleria{
+        max-width: 30%;
+        
     }
 }
 

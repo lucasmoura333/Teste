@@ -4,9 +4,10 @@ $(document).ready(function() {
       $('.slick-slider-vitrini').slick({
         dots: true,
         arrows: true,
+        infinite:true,
+        cssEase: 'ease',
         prevArrow: '<button class="slick-prev-custom"><img src="assets/btn-esq.png" alt="Prev"></button>',
         nextArrow: '<button class="slick-next-custom"><img src="assets/btn-dir.png" alt="Next"></button>',
-        infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive: [
@@ -45,16 +46,19 @@ $(document).ready(function() {
     if (!$('.slick-slider-servicos').hasClass('slick-initialized')) {
       $('.slick-slider-servicos').slick({
         slidesToShow: 6,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         arrows: true,
+        autoplay:false,
+        infinite:true,
+        cssEase: 'ease',
         prevArrow: '<button class="slick-prev-servicos"><img src="assets/btn-esq.png" alt="Prev"></button>',
         nextArrow: '<button class="slick-next-servicos"><img src="assets/btn-dir.png" alt="Next"></button>',
-        infinite: true,
         responsive: [
           {
             breakpoint: 1200,
             settings: {
-              slidesToShow: 4,
+              slidesToShow: 6,
+              slidesToScroll: 2,
               arrows: true,
             }
           },
@@ -62,13 +66,16 @@ $(document).ready(function() {
             breakpoint: 992,
               settings: {
                 slidesToShow: 4,
+                slidesToScroll: 1,
                 dots:true,
+                arrows: false,
               }
           },
           {
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
+              slidesToScroll: 1,
               arrows: false,
               dots:true,
             }
@@ -77,6 +84,7 @@ $(document).ready(function() {
             breakpoint: 576,
             settings: {
               slidesToShow: 1,
+              slidesToScroll: 1,
               arrows: false,
               dots: true,
             }
@@ -90,11 +98,11 @@ $(document).ready(function() {
       $('.slickerNoticia').slick({
         slidesToShow: 4,
         slidesToScroll: 2,
+        infinite:true,
         arrows: true,
         autoplay: true,
         prevArrow: '<button class="slick-prev-noticias"><img src="assets/btn-esq.png" alt="Prev"></button>',
         nextArrow: '<button class="slick-next-noticias"><img src="assets/btn-dir.png" alt="Next"></button>',
-        infinite: true,
         responsive: [
           {
             breakpoint: 1200,
@@ -106,7 +114,9 @@ $(document).ready(function() {
             breakpoint: 992,
             settings: {
               dots: true,
+              arrows: false,
               slidesToShow: 2,
+              slidesToScroll: 1,
             }
           },
           {
@@ -114,15 +124,20 @@ $(document).ready(function() {
             settings: {
               dots: true,
               arrows: false,
+              autoplay: false,
               slidesToShow: 1,
+              slidesToScroll: 1,
             }
           },
           {
             breakpoint: 576,
             settings: {
               slidesToShow: 1,
+              slidesToScroll: 1,
               dots: true,
+              autoplay: false,
               arrows: false,
+              
             }
           }
         ]
@@ -134,12 +149,13 @@ $(document).ready(function() {
       $('.slickerGaleria').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        arrows: true,
-        centerMode: true,
-        centerPadding: '10px',
+        arrows: true,        
+        centerMode: false,
+        autoplay:false,
+        infinite:true,
+        cssEase: 'ease',
         prevArrow: '<button class="slick-prev-galeria"><img src="assets/btn-esq.png" alt="Prev"></button>',
         nextArrow: '<button class="slick-next-galeria"><img src="assets/btn-dir.png" alt="Next"></button>',
-        infinite: true,
         responsive: [
           {
             breakpoint: 1200,
@@ -150,14 +166,16 @@ $(document).ready(function() {
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 2,
+              arrows: false,
+              centerMode: true,
               dots: true,
             }
           },
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               centerMode: false,
               arrows: false,
               dots: true,
