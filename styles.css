@@ -102,6 +102,7 @@ html, body {
 .PesquisaSite {
     display: flex;
     align-items: center;
+    background-color: red !important;
 }
 
 .form-control {
@@ -175,13 +176,11 @@ html, body {
     }
 
     .pesquisa-item{
-        background-color: red !important;
         justify-content: center !important;
         align-items: center !important;
         width: auto !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        
+        margin-inline: 0 !important;
+        padding-inline: 0 !important;        
     }
 
 }
@@ -534,9 +533,11 @@ html, body {
 }
 
 .slick-dots li button {
-    width: 48px;
-    height: 8px;
-    border-radius: 9px;
+    width: 46px;
+    height: 6px;
+    border-radius: 12px;
+    padding-inline: 5px;
+    margin: 2px 12px;
     background-color: #b3e5fc;
     border: none;
 }
@@ -745,8 +746,21 @@ html, body {
    }
 
     .containerMenu-inferior{
-        height: 250px;
         overflow: hidden;
+
+        padding-bottom: 50px;
+        
+    }
+
+    .slickerMenor{
+        padding-bottom: 50px;
+        padding-top: 0;
+    }
+
+    .slickerMenor .slick-dots{
+        flex-wrap: wrap;
+        width: 80%;
+        
     }
 
 }
@@ -762,8 +776,27 @@ html, body {
 
     
 
-    .slick-slider-servicos {
+    .slick-slider-servicos, .slickerNoticia {
         padding-bottom: 30px;
+    }
+
+    .slickerMenor{
+        position: relative;
+       
+    }
+
+
+    .slickerNoticia .slick-dots  {
+        position: relative;
+        bottom: -40px; 
+        width: 90%;
+        padding-bottom: 10px;
+       
+    } 
+
+
+    .slickerGaleria{
+        position: relative;
     }
 }
 
@@ -794,10 +827,26 @@ html, body {
         padding-bottom: 60px; 
         
     }
+    .containerMenu-inferior{
+        height: auto;
+    }
     
-    .slickerMenor, .slickerGaleria{
-        padding: 10px;
+    .slickerMenor{
         overflow: visible;
+        padding-bottom: 100px;
+ 
+    }
+
+    .slickerMenor .slick-dots{
+        top: 120px;
+        flex-wrap: wrap;
+        left: 30px;
+        justify-content: center;
+    }
+
+    .slickerGaleria{
+        overflow: visible;
+
     }
    
 }
@@ -851,7 +900,7 @@ html, body {
 .noticiaMaior {
     text-align: left;
     max-width: 100%;
-    max-height: 410px;
+    height: 100%;
     margin-bottom: 30px;
     border-radius: 24px;
     border: solid 2px whitesmoke;
@@ -909,66 +958,7 @@ html, body {
 
 /* Adicionando responsividade */
 
-@media screen and (max-width: 576px) {
 
-    /* .slickerNoticia .slick-slide, .slickerNoticia .slick-list {
-        height: 100% !important;
-
-    }
-    .containerNoticiaMenor {
-        padding: 20px; 
-        display: block;
-        position: relative;
-        overflow: visible !important;  
-        flex-wrap: wrap;  
-        
-    }
-
-    .slickerNoticia .slick-dots {
-        position: relative;
-        width: 90%;
-        bottom: 25px;        
-        margin-bottom: 30px;         
-        justify-content: center;  
-    } 
-
-    .slickerNoticia .slick-dots {
-        position: relative;
-        padding-bottom: 30px; 
-        padding-top: 10px; 
-    }
-    
-
-    .slickerNoticia .slick-dots li {
-        margin: 0 6px;
-    }
-
-    .slickerNoticia {
-        padding-bottom: 60px; 
-        
-    }
-    
-    .slickerNoticia {
-        padding-bottom: 50px; 
-    } */
-   
-}
-
-
-@media screen and (max-width: 768px) {
-/* 
-    .slickerNoticia .slick-list {
-        height: auto !important; 
-    }
-
-    .slickerNoticia .slick-dots {
-        position: relative;
-        bottom: -10px;
-        margin-bottom: 15px; 
-    } */
-
-
-}
 
 @media screen and (max-width: 992px) {
    .slickerNoticia .slick-list, .slickerGaleria .slick-list {
@@ -978,7 +968,7 @@ html, body {
     .slickerNoticia .slick-dots  {
         position: relative;
         bottom: -20px; 
-        margin-bottom: 20px;
+        margin-bottom: 40px;
         justify-content: center;
         text-align: center;
     }
@@ -1024,18 +1014,19 @@ html, body {
 
 }
 
-@media (min-width: 1400px) {
+@media screen and (max-width: 1400px)  {
   .containerNoticiarioMaior {
         max-width: 100%;
         flex: 0 0 50%;
     }
 
     .noticiaMaior {
-        min-height: 450px;
-        height: auto;
+        height: 90%;
     } 
 
     .tituloNoticiaMaior{
+        font-size: 12px;
+        font-weight: 400;
         width: 90%;
         padding-left: 30px;
         padding-top: 20px;
@@ -1043,7 +1034,14 @@ html, body {
         position: relative;
         
     }
+
+    .tituloGaleriaSlicker-Item{
+        left: 60px !important;
+        width: 70% !important;
+    }
 }
+
+
 
 
 
@@ -1266,9 +1264,44 @@ html, body {
 }
 
 .tigrinho {
-    padding-bottom: 45px;
-    padding-top: 25px;
+    flex: auto;
+    margin-bottom: 35px;
+    
 }
+
+@media (max-width: 991px) {
+
+    .tigrinho {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .tituloGalerias{
+        font-size: 18px !important;
+        max-width: 100px;
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+@media (min-width: 1200px) {
+
+
+    .tigrinho {
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .tituloGalerias{
+        font-size: 18px !important;
+        max-width: 100px;
+        /* color: purple !important; */
+        margin-bottom: 0 !important;
+        padding: 0 !important;
+    }
+}
+
+
 
 
 /*Começo Gambiarra pro center-mode funcionar */
@@ -1384,18 +1417,16 @@ html, body {
     }
 
     .Eventos, .Galeria {
-        font-size: 24px; 
+        font-size: 20px !important; 
         padding-left: 0; 
     }
 
     .VinhetaEventos {
-        width: 75%; 
-        height: 12px;
-        top: -10px;
+        width: 210px !important;
     }
 
     .VinhetaGaleria{
-        min-width: 65%;
+        width: 150px !important;
     }
 }
 
@@ -1408,16 +1439,17 @@ html, body {
     .Eventos, .Galeria {
         font-size: 28px; 
         padding-left: 0; 
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: clip; 
     }
 
     .VinhetaEventos {
-        width: 40%; 
-        height: 14px;
-        top: -12px; 
+        width: 290px 
     }
 
     .VinhetaGaleria{
-        max-width: 30%;
+        width: 200px
         
     }
 }
@@ -1512,13 +1544,11 @@ html, body {
     font-size: 24px;
     font-weight: 600;
     font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #000;
-
-    padding-left: 30px;
+    border: solid #ffff;
+    margin-left: 30px;
+    padding-bottom: 35px;
 
 }
 
@@ -1593,16 +1623,13 @@ html, body {
 .parallax {
     max-width: 99%;
     min-height: 450px;
-    border-radius: 25px;
-
-    padding-inline: 15px;
+    /* border-radius: 25px; */
+    padding: 15px;
     background-image: url("assets/image-5.png");
-
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     position: relative;
     display: flex;
     justify-content: center;
@@ -1610,8 +1637,7 @@ html, body {
 }
 
 .quadradao {
-    left: 666px;
-    /* position: relative; */
+    left: 666px !important;
     max-width: 940px;
     background-color: #fafafa;
     text-align: left;
@@ -1839,6 +1865,18 @@ html, body {
     height: 80%; 
     width: 2px; 
     background-color: whitesmoke; 
+}
+
+.bordaWhiteSmoke2{
+    border: solid whitesmoke;
+    border-radius: 25px;
+    top: 50%; 
+    margin-bottom: 45px;
+    padding-bottom: 35px;
+
+    margin-inline: 10px;
+
+
 }
 
 /* fim marcacao 13 */
