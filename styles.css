@@ -51,9 +51,10 @@ html, body {
 }
 
 .nav-topo .nav-item {
-    /* margin-right: 30px; */
     max-width: auto; 
     justify-content: center;
+    padding-inline: 10px ;
+    margin: 10px;
 }
 
 .nav-topo .nav-item:last-child {
@@ -173,13 +174,28 @@ html, body {
         width: auto;         
     }
 
+    .pesquisa-item{
+        background-color: red !important;
+        justify-content: center !important;
+        align-items: center !important;
+        width: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        
+    }
+
 }
 
 /* Para telas abaixo de 991px */
 @media screen and (max-width: 991px) {
     .nav-topo .nav-item {
+        flex: 1 0 33%;
         max-width: 100%; 
+        margin: 0 10px;
     }
+
+    
+    
 
 }
 
@@ -190,9 +206,11 @@ html, body {
 
     .nav-topo .nav-item {
         flex: 1 0 33%;
-        /* margin: 5px;  */
+        margin: 5px; 
         justify-content: center;
     }
+
+    
 }
 
 
@@ -953,11 +971,11 @@ html, body {
 }
 
 @media screen and (max-width: 992px) {
-   .slickerNoticia .slick-list {
+   .slickerNoticia .slick-list, .slickerGaleria .slick-list {
         height: auto !important;
     }
 
-    .slickerNoticia .slick-dots {
+    .slickerNoticia .slick-dots  {
         position: relative;
         bottom: -20px; 
         margin-bottom: 20px;
@@ -965,7 +983,7 @@ html, body {
         text-align: center;
     }
 
-    .containerNoticiaMenor {
+    .containerNoticiaMenor, .containerGaleria {
         width: auto;
         flex-wrap: wrap;
         overflow: visible;
@@ -978,6 +996,31 @@ html, body {
         overflow: visible;
         
     } 
+
+    .slickerGaleria .slick-dots{
+        position: relative;
+        bottom: -20px; 
+        justify-content: center;
+        padding-inline: 10px;
+        text-align: center;
+    }
+
+    .tituloGaleriaSlicker-Item{
+        position: absolute;
+        max-width: 200px;
+        height: auto;
+        font-size: 12px;
+        font-weight: 400;
+    
+        text-align: left;
+        color: white;
+        z-index: 1;
+    
+        bottom: 35px;
+        left: 60px !important;
+        width: 60%;
+
+    }
 
 }
 
