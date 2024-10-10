@@ -1712,17 +1712,48 @@ html, body {
 }
 
 @media screen and (max-width: 1221px) {
-
-    .quadradao{
-        flex: 0 1;
-    }
    .quadradao .row{
-    left: -50px !important;
     padding: 10px;
    }
 
+   .textao{
+    left: 0;
+    margin: 10px;
+   }
 
+}
 
+@media screen and (max-width: 767px) {
+    .textao .row{
+        /* border: solid; */
+        /* padding-left: 40px; */
+    }
+    .textao h1 {
+        font-size: 20px;
+        padding-left: 40px;
+        margin: 0;
+        /* font-weight: 300; */
+    }
+    
+    .textao h2 {
+        padding-left: 40px;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    
+    .textao p {
+        padding-left: 40px;
+        margin: 0;
+        width: auto;
+        height: 14px;
+        font-size: 10px;
+    }
+
+    .quadradao{
+        max-width: 300px;
+        padding-left: 10px;
+    }
 }
 
 
@@ -1797,7 +1828,9 @@ html, body {
         font-size: 8px;
         padding-left: 10px;
     }
- }
+}
+
+
 
 
 /* fim marcação 12 */
