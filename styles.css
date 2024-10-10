@@ -450,14 +450,6 @@ html, body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.2);
 }
 
-@media screen and (max-width: 768px) {
-    .slick-slider-vitrini .slick-dots {
-        margin-bottom: 30px;
-        padding: 30px ;
-    }       
-}
-
-
 /* Fim marcação 3 */
 /* Marcação 4 */
 .slick-prev,
@@ -700,11 +692,20 @@ html, body {
     width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+    .slick-slider-servicos {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .slick-slider-servicos .slick-dots {
+        justify-content: center;
+        margin-right: 0;
         max-width: 100%; 
         height: 50%;
-        bottom: -70px;
+        bottom: -65px;
     }
 
     .containerMenu-inferior{
@@ -713,14 +714,6 @@ html, body {
     }
 
 }
-
-@media screen and (max-width: 1200px) {
-    .slick-slider-servicos {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
 
 
 @media screen and (max-width: 768px) {
@@ -731,18 +724,11 @@ html, body {
         flex-wrap: wrap;
     }
 
-
-    .slick-dots {
-        justify-content: center;
-        flex-wrap: wrap;
-
-        bottom: -50px !important;
-    }
-
     .slick-slider-servicos .slick-dots {
         display: flex;
         justify-content: center; 
         flex-wrap: wrap;
+        bottom: -50px !important;
         padding: 10px; 
         box-sizing: border-box; 
         max-width: 100%;
@@ -759,27 +745,35 @@ html, body {
         padding: 20px; 
         display: block;
         min-height: 250px;
+        min-height: calc(250px + 80px); 
         position: relative;
+        overflow: visible !important;    
         
     }
 
-
     .slick-slider-servicos .slick-dots {
         position: absolute;
-        bottom: -25px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        display: flex;
-        padding: 10px 0;
+        bottom: -25px;        
+        padding-top: 35px;
+        margin-bottom: 50px;         
+        justify-content: center;  
+    }
+
+    .slick-slider-servicos .slick-dots li {
+        margin: 0 6px;
     }
 
     .slick-slider-servicos {
-        padding-bottom: 60px; /* Garante espaço suficiente para os dots no final do container */
+        padding-bottom: 60px; 
+        
+    }
+    
+    .slickerMenor{
+        padding: 10px;
+        overflow: visible;
     }
    
 }
-
-
 
 
 
@@ -887,12 +881,70 @@ html, body {
 }
 
 /* Adicionando responsividade */
+
+@media screen and (max-width: 576px) {
+
+    .slickerNoticia .slick-slide, .slickerNoticia .slick-list {
+        height: 100% !important;
+
+    }
+    .containerNoticiaMenor {
+        padding: 20px; 
+        display: block;
+        position: relative;
+        overflow: visible !important;  
+        flex-wrap: wrap;  
+        
+    }
+
+    /* .slickerNoticia .slick-dots {
+        position: relative;
+        width: 90%;
+        bottom: 25px;        
+        margin-bottom: 30px;         
+        justify-content: center;  
+    } */
+
+    .slickerNoticia .slick-dots {
+        position: relative;
+        padding-bottom: 30px; /* Aumenta o espaço entre os dots e outros elementos */
+        padding-top: 10px; /* Espaço adicional */
+    }
+    
+
+    .slickerNoticia .slick-dots li {
+        margin: 0 6px;
+    }
+
+    .slickerNoticia {
+        padding-bottom: 60px; 
+        
+    }
+    
+    .slickerNoticia {
+        padding-bottom: 50px; /* Ajusta o espaço inferior para acomodar os dots */
+    }
+   
+}
+
+
 @media (min-width: 768px) {
 
     .noticiaMaior {
         min-height: 250px;
         height: auto;
     }
+}
+
+@media screen and (max-width: 991px) {
+    .containerNoticiaMenor {
+        width: auto;
+    }
+
+    .slickerNoticia{
+        padding-bottom: 100px;
+    }
+
 }
 
 @media (min-width: 1400px) {
@@ -906,6 +958,8 @@ html, body {
         height: auto;
     }
 }
+
+
 
 .data-bg {
     position: absolute;
@@ -959,8 +1013,6 @@ html, body {
     overflow: visible;
     border: solid whitesmoke;
     border-radius: 35px;
-    margin: 10px;
-
 }
 
 .noticiaMenor figure {
@@ -981,6 +1033,7 @@ html, body {
     padding: 10px;
     /* lembrete diario pra deixar de ser burro pq se o pai n alinha, o filho tbm n vai... */
     text-align: left;
+    padding-bottom: 30px;
 }
 
 .tituloNoticiaMenor {
@@ -1021,6 +1074,10 @@ html, body {
     /* Misteriosamente se nao colocar o translateY, buga :) */
 }
 
+    
+    
+
+
 /* fim marcação 8 */
 
 /* marcação 9 */
@@ -1054,7 +1111,6 @@ html, body {
     background-color: #01579b;
     border-radius: 25px;
 
-    /* text-align: left;  talvez reativar depois*/
 }
 
 
@@ -1066,7 +1122,6 @@ html, body {
     padding: 30px;
 }
 
-/* TODO: LEMBRETE DE REAPROVITAR ESSA TECNICA USADA NA GALERIA  POIS TEM MAIS 3 VINHETAS NO FUTURO*/
 .GaleriaContainer {
     position: relative;
     /*ESSE BRABO AQUI ME QUEBROU UM GALHO */
@@ -1234,6 +1289,42 @@ html, body {
     left: 3px;
     z-index: 1;
     border-radius: 20px;
+}
+
+@media screen and (max-width: 494px) {
+    .EventosContainer {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+
+    .Eventos {
+        font-size: 24px; 
+        padding-left: 0; 
+    }
+
+    .VinhetaEventos {
+        width: 75%; 
+        height: 12px;
+        top: -10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .EventosContainer {
+        padding-left: 50px; 
+        padding-right: 50px;
+    }
+
+    .Eventos {
+        font-size: 28px; 
+        padding-left: 0; 
+    }
+
+    .VinhetaEventos {
+        width: 40%; 
+        height: 14px;
+        top: -12px; 
+    }
 }
 
 /* teste */
@@ -1637,6 +1728,22 @@ html, body {
     content: '\25B6';
     font-size: 30px;
     color: white;
+}
+
+.bordaWhiteSmoke{
+    position: relative;
+    
+}
+
+.bordaWhiteSmoke::before {
+    content: "";
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    right: 0; 
+    height: 80%; 
+    width: 2px; 
+    background-color: whitesmoke; 
 }
 
 /* fim marcacao 13 */

@@ -105,19 +105,23 @@ $(document).ready(function() {
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 4,
+              dots: true,
+              slidesToShow: 2,
             }
           },
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 3,
+              dots: true,
+              arrows: false,
+              slidesToShow: 1,
             }
           },
           {
             breakpoint: 576,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
+              dots: true,
               arrows: false,
             }
           }
@@ -147,22 +151,26 @@ $(document).ready(function() {
             breakpoint: 992,
             settings: {
               slidesToShow: 3,
+              dots: true,
             }
           },
           {
             breakpoint: 768,
             settings: {
               slidesToShow: 2,
-              centerMode: true,
+              centerMode: false,
+              arrows: false,
+              dots: true,
               centerPadding: '0',
             }
           },
           {
             breakpoint: 576,
             settings: {
-              slidesToShow: 2,
+              slidesToShow: 1,
               arrows: false,
-              centerMode: true,
+              dots: true,
+              centerMode: false,
               centerPadding: '0',
             }
           }
