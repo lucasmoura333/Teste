@@ -12,8 +12,6 @@
     flex-wrap: wrap;
     word-wrap: break-word;
     font-size: 12px;
-    /* overflow-x: hidden; */
-
 }
 
 a {
@@ -21,10 +19,13 @@ a {
     color: #000000;
 }
 
-
 /* Evitar overflow global */
 html, body {
     overflow-x: auto; 
+}
+
+.container {
+    max-width: 100%; 
 }
 
 .slick-slider-vitrini,
@@ -34,9 +35,6 @@ html, body {
     padding: 0 !important;
     overflow: hidden; 
 }
-
-
-/* fim teste */
 
 /* Nav header */
 .nav-topo {
@@ -136,18 +134,18 @@ html, body {
 
 .btn-search:hover {
     background-color: #f0f0f0;
-    /* Leve mudança de cor ao passar o mouse */
+    
 }
 
 .btn-search:active {
     background-color: #e0e0e0;
     transform: scale(0.98);
-    /* Simula um clique com leve encolhimento */
+    
 }
 
 .btn-search:hover .loupe-icon {
     transform: scale(1.1);
-    /* Amplia a lupa ao passar o mouse */
+   
 }
 
 .loupe-icon {
@@ -163,7 +161,7 @@ html, body {
     background-color: #f0f0f0;
 }
 
-/* Para telas abaixo de 1199px */
+
 @media screen and (max-width: 1199.9px) {
     .nav-topo .nav-item {
         flex-wrap: wrap;
@@ -185,16 +183,13 @@ html, body {
 
 }
 
-/* Para telas abaixo de 991px */
+
 @media screen and (max-width: 991px) {
     .nav-topo .nav-item {
         flex: 1 0 33%;
         max-width: 100%; 
         margin: 0 10px;
     }
-
-    
-    
 
 }
 
@@ -208,12 +203,7 @@ html, body {
         margin: 5px; 
         justify-content: center;
     }
-
-    
 }
-
-
-
 
 .nav-item:last-child {
     border: none;
@@ -253,7 +243,7 @@ html, body {
     border-color: #e0e0e0;
 }
 
-/* <<<< -- marcação 1 , acima é o header --- >>>> */
+/* <<<< -- marcação 1 */
 .container-maior {
     display: flex;
     justify-content: center;
@@ -271,11 +261,9 @@ html, body {
 /* <<<<<<<<<< Marcação 2>>>> */
 .containerMenu-superior {
     justify-content: center;
-
     background-color: #01579b;
     width: 100%;
     display: flex;
-
     margin: 0 auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -287,8 +275,6 @@ html, body {
     min-width: 150px;
     margin: 0 15px;
 }
-
-
 
 .containerMenu-superior .rowMenu-superior {
     text-align: center;
@@ -336,8 +322,6 @@ html, body {
     margin: auto;
 }
 
-
-/* teste */
 .botaoMenuSuperior:hover .tituloSuperior,
 .botaoMenuSuperior:active .tituloSuperior,
 .botaoMenuSuperior:hover path,
@@ -370,8 +354,6 @@ html, body {
     mix-blend-mode: normal;
 }
 
-
-
 .botaoMenuSuperiorLogo {
     margin-left: 0;
     display: flex;
@@ -397,9 +379,6 @@ html, body {
     margin-bottom: 15px !important;  
 }
 
-
-/* Responsividade */
-/* Responsividade para telas menores que 1199.9px */
 @media screen and (max-width: 1199.9px) {
     .logo {
         margin-right: 50px !important; 
@@ -409,7 +388,6 @@ html, body {
     }
 }
 
-/* Responsividade para telas menores que 991px */
 @media screen and (max-width: 991px) {
     .botaoMenuSuperior{
         width: 100%;
@@ -419,13 +397,8 @@ html, body {
         justify-content: center;
     }
 }
-
-
-
 /* Fim marcação 2 */
-
 /* marcação 3 */
-
 .submenu .btn-submenu {
     margin: 0 auto;
 }
@@ -469,22 +442,13 @@ html, body {
 
 /* Fim marcação 3 */
 /* Marcação 4 */
-.slick-prev,
-.slick-next {
+.slick-prev,.slick-next {
     background: transparent !important;
     border: none !important;
     outline: none !important;
 }
 
-
-.slick-prev-custom,
-.slick-next-custom,
-.slick-prev-servicos,
-.slick-next-servicos,
-.slick-prev-noticias,
-.slick-next-noticias,
-.slick-prev-galeria,
-.slick-next-galeria {
+.slick-prev-custom, .slick-next-custom, .slick-prev-servicos, .slick-next-servicos, .slick-prev-noticias, .slick-next-noticias, .slick-prev-galeria, .slick-next-galeria {
     background: none;
     border: none;
     position: absolute;
@@ -497,21 +461,15 @@ html, body {
     display: block;
 }
 
-
 .slick-prev-custom {
     left: 64px;
 }
-
 
 .slick-next-custom {
     right: 64px;
 }
 
-.slick-prev-custom:hover img,
-.slick-next-custom:hover img,
-.slick-prev-servicos:hover img,
-.slick-next-servicos:hover img .slick-prev-servicos:hover img,
-.slick-next-servicos:hover img {
+.slick-prev-custom:hover img, .slick-next-custom:hover img, .slick-prev-servicos:hover img, .slick-next-servicos:hover img .slick-prev-servicos:hover img, .slick-next-servicos:hover img {
     opacity: 0.9;
     transform: scale(1.02);
 }
@@ -525,7 +483,6 @@ html, body {
     list-style: none;
     gap: 20px;
 }
-
 
 /* Cada dot */
 .slick-dots li {
@@ -557,22 +514,16 @@ html, body {
 .slick-dots li button:before {
     content: '';
 }
-
 /* fim marcação 4 <<<< */
-
 /* marcação 5 */
 .containerMenu-inferior {
     background-color: #01579b;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    display: block;
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
     overflow: hidden;
-
 }
 
 .rowMenu-inferior {
@@ -581,7 +532,6 @@ html, body {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-
 }
 
 .slick-slider-servicos {
@@ -590,27 +540,11 @@ html, body {
     position: relative;
 }
 
-
 .slick-slide {
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.slick-slide,
-.slick-list {
-    padding: 0;
-    margin: 0;
-    height: 100% !important;
-}
-
-.slickerMaior,
-.slickerMaior row,
-.slicker-slider row {
-    padding: 0;
-    height: 100%;
-    margin: 0;
 }
 
 .slick-slider img {
@@ -619,14 +553,6 @@ html, body {
     object-fit: fill;
     display: block;
 }
-
-.slick-slider div {
-    margin: 0;
-    /* Remove margens dos divs que contêm as imagens */
-}
-
-
-
 /* fim marcação 5 */
 /* inicio libras */
 .btnAcesso {
@@ -640,14 +566,12 @@ html, body {
     display: inline-block;
     width: 40px;
     height: 40px;
+    opacity: 80%;
     background-image: url('assets/libras-1.png');
-    /* Ajuste o caminho conforme necessário */
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 /* fim libras */
-
 /* marcação 6 */
 .containerMenu-inferior .row {
     max-width: 1146px;
@@ -663,7 +587,6 @@ html, body {
     padding-block: 15px;
     position: relative;
 }
-
 
 .botaoMenuServicos {
     background-color: #f0f0f0;
@@ -739,17 +662,15 @@ html, body {
         padding-bottom: 20px;
     }
 
-    
-
     .slickerGaleria .slick-dots li {
       margin: 0 6px;
+      left: -20px;
+      max-width: 90%;
    }
 
     .containerMenu-inferior{
         overflow: hidden;
-
         padding-bottom: 50px;
-        
     }
 
     .slickerMenor{
@@ -760,7 +681,6 @@ html, body {
     .slickerMenor .slick-dots{
         flex-wrap: wrap;
         width: 80%;
-        
     }
 
 }
@@ -774,8 +694,6 @@ html, body {
         flex-wrap: wrap;
     }
 
-    
-
     .slick-slider-servicos, .slickerNoticia {
         padding-bottom: 30px;
     }
@@ -785,15 +703,12 @@ html, body {
        
     }
 
-
     .slickerNoticia .slick-dots  {
         position: relative;
         bottom: -40px; 
         width: 90%;
         padding-bottom: 10px;
-       
     } 
-
 
     .slickerGaleria{
         position: relative;
@@ -808,7 +723,6 @@ html, body {
         min-height: calc(250px + 80px); 
         position: relative;
         overflow: visible !important;    
-        
     }
 
     .slick-slider-servicos .slick-dots {
@@ -834,7 +748,6 @@ html, body {
     .slickerMenor{
         overflow: visible;
         padding-bottom: 100px;
- 
     }
 
     .slickerMenor .slick-dots{
@@ -846,15 +759,9 @@ html, body {
 
     .slickerGaleria{
         overflow: visible;
-
     }
-   
 }
-
-
-
 /* fim marcação 6 */
-
 /* marcação 7 */
 .colNoticias {
     position: relative;
@@ -926,23 +833,19 @@ html, body {
 
 .noticiaMaior:hover img {
     transform: scale(1.01);
-
 }
 
 .noticiaMaior:hover .tituloNoticiaMaior,
 .noticiaMenor:hover .tituloNoticiaMenor,
 .tituloGalerias:hover {
     color: #01579b;
-    /* O texto muda de cor ao passar o mouse */
 }
-
 
 .tituloNoticiaMaior:active {
     color: #000000;
     text-decoration: none;
     transform: scale(1.0);
 }
-
 
 .tituloNoticiaMaior {
     display: block;
@@ -955,10 +858,6 @@ html, body {
     word-wrap: break-word;
     padding-left: 10px;
 }
-
-/* Adicionando responsividade */
-
-
 
 @media screen and (max-width: 992px) {
    .slickerNoticia .slick-list, .slickerGaleria .slick-list {
@@ -984,7 +883,6 @@ html, body {
         width: auto;
         height: auto;
         overflow: visible;
-        
     } 
 
     .slickerGaleria .slick-dots{
@@ -1001,17 +899,13 @@ html, body {
         height: auto;
         font-size: 12px;
         font-weight: 400;
-    
         text-align: left;
         color: white;
         z-index: 1;
-    
         bottom: 35px;
         left: 60px !important;
         width: 60%;
-
     }
-
 }
 
 @media screen and (max-width: 1400px)  {
@@ -1032,7 +926,6 @@ html, body {
         padding-top: 20px;
         bottom: 20px;
         position: relative;
-        
     }
 
     .tituloGaleriaSlicker-Item{
@@ -1040,10 +933,6 @@ html, body {
         width: 70% !important;
     }
 }
-
-
-
-
 
 .data-bg {
     position: absolute;
@@ -1112,7 +1001,6 @@ html, body {
 }
 
 .noticiaMenor {
-    /* para aparecer o bg-data  */
     position: relative;
     padding: 10px;
     /* lembrete diario pra deixar de ser burro pq se o pai n alinha, o filho tbm n vai... */
@@ -1145,27 +1033,18 @@ html, body {
     padding-inline: 19px;
 }
 
-.slick-prev-noticias,
-.slick-next-noticias {
+.slick-prev-noticias, .slick-next-noticias {
     border: solid whitesmoke;
     border-radius: 50%;
 }
 
-.slick-prev-noticias:hover,
-.slick-next-noticias:hover {
+.slick-prev-noticias:hover, .slick-next-noticias:hover {
     border-color: rgba(245, 245, 245, 0.952);
     transform: translateY(-50%) scale(1.1);
     /* Misteriosamente se nao colocar o translateY, buga :) */
 }
-
-    
-    
-
-
 /* fim marcação 8 */
-
 /* marcação 9 */
-
 .btnMais {
     max-width: 226px;
     max-height: 48px;
@@ -1178,7 +1057,6 @@ html, body {
     color: #331600;
     display: block;
     outline: none;
-    /* margin: 32px; */
 }
 
 .btnMais:hover {
@@ -1194,21 +1072,15 @@ html, body {
 .containerGaleria {
     background-color: #01579b;
     border-radius: 25px;
-
 }
 
-
-.colGaleria,
-.colEventos,
-.colObras,
-.colVideos {
+.colGaleria, .colEventos,.colObras,.colVideos {
     position: relative;
     padding: 30px;
 }
 
 .GaleriaContainer {
     position: relative;
-    /*ESSE BRABO AQUI ME QUEBROU UM GALHO */
     text-align: left;
     padding-left: 370px;
     padding-top: 45px;
@@ -1249,7 +1121,6 @@ html, body {
     height: auto;
     overflow: hidden;
     padding-inline: 40px;
-    /* Para posicionar o título */
 }
 
 .Obras-Item {
@@ -1270,7 +1141,6 @@ html, body {
 }
 
 @media (max-width: 991px) {
-
     .tigrinho {
         text-align: center;
         padding-bottom: 0px;
@@ -1285,8 +1155,6 @@ html, body {
 }
 
 @media (min-width: 1200px) {
-
-
     .tigrinho {
         text-align: center;
         padding-bottom: 0px;
@@ -1295,14 +1163,10 @@ html, body {
     .tituloGalerias{
         font-size: 18px !important;
         max-width: 100px;
-        /* color: purple !important; */
         margin-bottom: 0 !important;
         padding: 0 !important;
     }
 }
-
-
-
 
 /*Começo Gambiarra pro center-mode funcionar */
 .slick-center .galeriaSlicker-Item {
@@ -1311,11 +1175,8 @@ html, body {
 
 .slickerGaleria .slick-slide {
     transform: scale(0.85);
-
 }
-
 /* Gambiarra pro center-mode funcionar */
-
 .galeriaSlicker-Item img {
     height: 340px;
     object-fit: cover;
@@ -1336,15 +1197,12 @@ html, body {
     height: auto;
     font-size: 24px;
     font-weight: 600;
-
     text-align: left;
     color: white;
     z-index: 1;
-
     bottom: 35px;
     left: 110px;
     width: 60%;
-
 }
 
 .slick-prev-galeria {
@@ -1359,24 +1217,19 @@ html, body {
     padding-inline: 19px;
 }
 
-.slick-prev-galeria,
-.slick-next-galeria {
+.slick-prev-galeria,.slick-next-galeria {
     border: solid whitesmoke;
     border-radius: 50%;
     transform: translateY(-50%);
 }
 
-.slick-prev-galeria:hover,
-.slick-next-galeria:hover {
+.slick-prev-galeria:hover,.slick-next-galeria:hover {
     border-color: rgba(245, 245, 245, 0.952);
     transform: translateY(-50%) scale(1.1);
     /* Misteriosamente se nao colocar o translateY, buga :) */
 }
-
 /* fim marcação 9 */
-
 /* marcação 10 */
-
 .EventosContainer {
     text-align: left;
     padding-top: 32px;
@@ -1450,21 +1303,16 @@ html, body {
 
     .VinhetaGaleria{
         width: 200px
-        
     }
 }
-
-/* teste */
 
 .eventoAgenda {
     border-right: solid whitesmoke 1px;
     border-width: 1px;
     padding: 15px;
     transition: all 0.2s ease-in-out;
-
     text-align: left !important;
 }
-
 
 .no-border {
     border: none !important;
@@ -1482,7 +1330,6 @@ html, body {
     /* Cor destacada */
     display: inline-block;
     margin-right: 10px;
-
     text-align: left !important;
 }
 
@@ -1498,7 +1345,6 @@ html, body {
     font-size: 16px;
     font-weight: normal;
     color: #01579b;
-
     text-align: left;
 }
 
@@ -1515,7 +1361,6 @@ html, body {
     display: block;
     margin-bottom: 10px;
     text-decoration: none;
-
     text-align: left;
 }
 
@@ -1529,12 +1374,8 @@ html, body {
 
     text-align: left;
 }
-
 /* fim marcação 10 */
-
-
 /* marcação 11 */
-
 .verClarin {
     background-color: #ffd54f;
 }
@@ -1576,7 +1417,6 @@ html, body {
     text-align: left;
     color: #01579b;
     margin-bottom: 5px;
-    /* padding-left: 5px;     */
 }
 
 .VinhetaVideos {
@@ -1602,7 +1442,6 @@ html, body {
     text-align: left;
     color: #01579b;
     margin-bottom: 5px;
-    /* padding-left: 5px;     */
 }
 
 .VinhetaObras {
@@ -1615,11 +1454,8 @@ html, body {
     z-index: 1;
     border-radius: 20px;
 }
-
 /* fim marcação 11 */
-
 /* marcação 12 */
-
 .parallax {
     max-width: 99%;
     min-height: 450px;
@@ -1630,7 +1466,6 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    /* display: flex; */
     display: block;
     justify-content: center;
 
@@ -1671,7 +1506,6 @@ html, body {
     justify-content: flex-start;
     align-items: start;
     left: 40px;
-
     margin: 50px;
 
 }
@@ -1724,15 +1558,10 @@ html, body {
 }
 
 @media screen and (max-width: 767px) {
-    .textao .row{
-        /* border: solid; */
-        /* padding-left: 40px; */
-    }
     .textao h1 {
         font-size: 20px;
         padding-left: 40px;
         margin: 0;
-        /* font-weight: 300; */
     }
     
     .textao h2 {
@@ -1757,16 +1586,9 @@ html, body {
 }
 
 
-/* teste parallax */
-
-
-
-
-.blocoAzulInferior-1 p:hover,
-.blocoAzulInferior-2 p:hover {
+.blocoAzulInferior-1 p:hover,.blocoAzulInferior-2 p:hover {
     text-decoration: underline;
 }
-
 
 .blocoAzulInferior-1 {
     margin-top: 80px;
@@ -1784,7 +1606,6 @@ html, body {
     text-align: left;
 }
 
-
 .blocoAzulInferior-1 p {
     text-align: left;
     margin: 0;
@@ -1795,7 +1616,6 @@ html, body {
     background-color: #01579b;
     color: white;
 }
-
 
 .blocoAzulInferior-2 h1 {
 
@@ -1813,51 +1633,38 @@ html, body {
     line-height: 1.25 !important;
     font-weight: 300 !important;
     text-align: left;
-
 }
 
 @media screen and (max-width: 992px) {
-
-   
-    
     .blocoAzulInferior-1 h1, .blocoAzulInferior-2 h1 {
         font-size: 18px;
+        padding-left: 50px;
     }
-    
+
     .blocoAzulInferior-1 p, .blocoAzulInferior-2 p {
         font-size: 8px;
-        padding-left: 10px;
+        padding-left: 60px;
     }
 }
-
-
-
-
 /* fim marcação 12 */
-
 /* marcacao 13 */
-
-.pe {
-    margin-top: 15px;
-    margin-bottom: 28px;
+footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
 }
 
-.pe p {
-    position: relative;
-    top: 25%;
-
-    width: 950px;
-    height: 24px;
-    font-size: 16px;
+footer p {
+    font-size: 14px;
     text-align: left;
+    padding-left: 333px;
+    margin-bottom: 0;
     color: #212529;
+    word-wrap: break-word; 
 }
 
-.pe img {
-    width: 118px;
-    height: 48px;
-    object-fit: contain;
-
+footer .pezinho img {
+    max-width: 150px; 
+    max-height: 50px;
 }
 
 .mapinha {
@@ -1870,7 +1677,7 @@ html, body {
     border-bottom-right-radius: 25px;
 }
 
-/* player */
+
 .youtube a {
     display: block;
     position: relative;
@@ -1915,7 +1722,6 @@ html, body {
 
 .bordaWhiteSmoke{
     position: relative;
-    
 }
 
 .bordaWhiteSmoke::before {
@@ -1935,7 +1741,5 @@ html, body {
     top: 50%; 
     margin-bottom: 45px;
     padding-bottom: 35px;
-
 }
-
 /* fim marcacao 13 */
