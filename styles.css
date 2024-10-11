@@ -26,6 +26,10 @@ html, body {
     max-width: 100%; 
 }
 
+.main .container-fluid{
+    width: 99%;
+}
+
 .slick-slider-vitrini .slick-dots{
     left: -25px;
     width: 100%;
@@ -106,12 +110,6 @@ html, body {
 
 
 /* Estilização da área de PesquisaSite */
-.PesquisaSite {
-    display: flex;
-    align-items: center;
-    background-color: red !important;
-}
-
 .form-control {
     flex: 1;
     height: 38px;
@@ -120,10 +118,6 @@ html, body {
     border-right: none;
     border-radius: 12px 0 0 12px;
     background-color: #fafafa;
-}
-
-.form-control::placeholder {
-    color: #888;
 }
 
 .form-control:focus {
@@ -171,65 +165,11 @@ html, body {
 }
 
 
-@media screen and (max-width: 1199.9px) {
-    .nav-topo .nav-item {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-item {
-        flex: 1 0 200px; 
-        width: auto;         
-    }
-
-    .pesquisa-item{
-        justify-content: center !important;
-        align-items: center !important;
-        width: auto !important;
-        margin-inline: 0 !important;
-        padding-inline: 0 !important;        
-    }
-
-}
-
-
-@media screen and (max-width: 991px) {
-    .nav-topo .nav-item {
-        flex: 1 0 33%;
-        max-width: 100%; 
-        margin: 0 10px;
-    }
-
-}
-
-@media screen and (max-width: 494px) {
-    .nav-topo {
-        justify-content: center;
-    }
-
-    .nav-topo .nav-item {
-        flex: 1 0 33%;
-        margin: 5px; 
-        justify-content: center;
-    }
-}
-
 .nav-item:last-child {
     border: none;
     background-color: initial;
     /* remove a bagaceira bugada da ultima coluna */
     margin-left: 0;
-}
-
-.nav-item:last-child:hover {
-    background-color: initial;
-    color: inherit;
-    margin-left: 0;
-}
-
-.PesquisaSite:hover {
-    background-color: transparent;
-    color: inherit;
 }
 
 .PesquisaSite:focus-within .form-control,
@@ -262,9 +202,7 @@ html, body {
 }
 
 .blocoMaior {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    width: 98% !important;
 }
 
 /* <<<<<<<<<< Marcação 2>>>> */
@@ -289,8 +227,7 @@ html, body {
     text-align: center;
 }
 
-.botaoMenuSuperior,
-.botaoMenuSuperiorLogo {
+.botaoMenuSuperior {
     display: inline-block;
     background-color: #fff;
     border-radius: 25px;
@@ -301,9 +238,7 @@ html, body {
 
 }
 
-.botaoMenuSuperiorLogo {
-    margin-right: 20px;
-}
+
 
 .botaoMenuSuperior img,
 .botaoMenuServicos img {
@@ -583,20 +518,16 @@ html, body {
 }
 /* fim libras */
 /* marcação 6 */
-.containerMenu-inferior .row {
-    max-width: 1146px;
-    height: auto;
-}
 
-/* .slickerMenor {
+.slickerMenor {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80%;
     padding-block: 15px;
     position: relative;
-} */
+}
 
 .botaoMenuServicos {
     background-color: #f0f0f0;
@@ -788,8 +719,8 @@ html, body {
 }
 /* fim marcação 6 */
 
-.containerNoticias{
-    max-width: 75%;
+.forcarBarra{
+    max-width: 80%;
 }
 
 /* marcação 7 */
@@ -939,15 +870,6 @@ html, body {
 }
 
 @media screen and (max-width: 1400px)  {
-  .containerNoticiarioMaior {
-        /* max-width: 100%; */
-        /* flex: 0 0 50%; */
-    }
-
-    .noticiaMaior {
-        /* height: 90%; */
-    } 
-
     .tituloNoticiaMaior{
         font-size: 12px;
         font-weight: 400;
