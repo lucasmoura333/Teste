@@ -192,19 +192,6 @@ html, body {
     border-color: #e0e0e0;
 }
 
-/* <<<< -- marcação 1 */
-.container-maior {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.blocoMaior {
-    width: 98% !important;
-}
-
 /* <<<<<<<<<< Marcação 2>>>> */
 .containerMenu-superior {
     justify-content: center;
@@ -212,30 +199,15 @@ html, body {
     width: 100%;
     display: flex;
     margin: 0 auto;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
 
-}
-
-.containerMenu-superior>div {
-    flex: 0 1 auto;
-    min-width: 150px;
-    margin: 0 15px;
-}
-
-.containerMenu-superior .rowMenu-superior {
-    text-align: center;
 }
 
 .botaoMenuSuperior {
-    display: inline-block;
-    background-color: #fff;
     border-radius: 25px;
     margin-top: 16px;
     padding-top: 10px;
     padding-bottom: 10px;
     min-width: 30px;
-
 }
 
 
@@ -298,13 +270,6 @@ html, body {
     mix-blend-mode: normal;
 }
 
-.botaoMenuSuperiorLogo {
-    margin-left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
 .botaoMenuSuperior {
     display: inline-block;
     background-color: #fff;
@@ -323,16 +288,13 @@ html, body {
     margin-bottom: 15px !important;  
 }
 
-@media screen and (max-width: 1199.9px) {
-    .logo {
-        margin-right: 50px !important; 
-    }
-    .rowMenu-superior {
-        justify-content: center; 
-    }
-}
-
 @media screen and (max-width: 991px) {
+
+    .logo{
+        margin-right: 0 !important; 
+        margin-bottom: 0 !important;  
+    }
+
     .botaoMenuSuperior{
         width: 100%;
         height: 10px;
@@ -386,11 +348,6 @@ html, body {
 
 /* Fim marcação 3 */
 /* Marcação 4 */
-.slick-prev,.slick-next {
-    background: transparent !important;
-    border: none !important;
-    outline: none !important;
-}
 
 .slick-prev-custom, .slick-next-custom, .slick-prev-servicos, .slick-next-servicos, .slick-prev-noticias, .slick-next-noticias, .slick-prev-galeria, .slick-next-galeria {
     background: none;
@@ -471,13 +428,6 @@ html, body {
     overflow: hidden;
 }
 
-.rowMenu-inferior {
-    max-width: 1146px;
-    max-height: 90;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-}
 
 .slick-slider-servicos {
     display: flex;
@@ -492,12 +442,7 @@ html, body {
     align-items: center;
 }
 
-.slick-slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    display: block;
-}
+
 /* fim marcação 5 */
 /* inicio libras */
 .btnAcesso {
@@ -531,7 +476,7 @@ html, body {
 
 .botaoMenuServicos {
     background-color: #f0f0f0;
-    display: inline-block;
+    display: block;
     max-width: 170px;
     height: 90;
     border-radius: 15px;
@@ -548,12 +493,12 @@ html, body {
 }
 
 .slick-prev-servicos {
-    left: -60px;
+    left: -45px;
 
 }
 
 .slick-next-servicos {
-    right: -60px;
+    right: -45px;
 }
 
 .slick-slider-servicos .slick-list a {
@@ -561,10 +506,9 @@ html, body {
 
 }
 
-.slick-prev-servicos,
-.slick-next-servicos {
+.slick-prev-servicos, .slick-next-servicos {
     position: absolute;
-    top: 50%;
+    top: 40% !important;
     z-index: 10 !important;
 }
 
@@ -1069,10 +1013,11 @@ html, body {
 .galeriaSlicker-Item {
     position: relative;
     z-index: 0;
-    width: 100%;
+    /* width: 550px; */
     height: auto;
     overflow: hidden;
-    padding-inline: 40px;
+    padding-left: 40px;
+    padding-right: 30px;
 }
 
 .Obras-Item {
@@ -1130,7 +1075,7 @@ html, body {
 }
 /* Gambiarra pro center-mode funcionar */
 .galeriaSlicker-Item img {
-    height: 340px;
+    height: 300px;
     object-fit: cover;
     border-radius: 25px;
 }
@@ -1153,8 +1098,8 @@ html, body {
     color: white;
     z-index: 1;
     bottom: 35px;
-    left: 110px;
-    width: 60%;
+    left: 70px;
+    width: 80%;
 }
 
 .slick-prev-galeria {
@@ -1238,14 +1183,6 @@ html, body {
         padding-bottom: 30px;
     }
 
-    .Videos, .Obras {
-        font-size: 26px !important;
-    }
-    
-    .VinhetaVideos, .VinhetaObras {
-        width: 170px !important;
-    }   
-
 }
 
 @media screen and (max-width: 991px) {
@@ -1269,6 +1206,14 @@ html, body {
     .VinhetaGaleria{
         width: 200px
     }
+
+    .Videos, .Obras {
+        font-size: 26px !important;
+    }
+    
+    .VinhetaVideos, .VinhetaObras {
+        width: 170px !important;
+    }  
 }
 
 .eventoAgenda {
