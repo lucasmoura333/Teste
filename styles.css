@@ -26,6 +26,11 @@ html, body {
     max-width: 100%; 
 }
 
+.slick-slider-vitrini .slick-dots{
+    left: -25px;
+    width: 100%;
+}
+
 .slick-slider-vitrini,.slick-slider-vitrini .slick-track,.slick-slider-vitrini .slick-slide {
     margin: 0 !important;
     padding: 0 !important;
@@ -486,6 +491,7 @@ html, body {
     gap: 20px;
 }
 
+
 /* Cada dot */
 .slick-dots li {
     margin: 0 10px;
@@ -643,25 +649,20 @@ html, body {
     }
 
     .slick-slider-servicos .slick-dots{
-        display: flex;
-        justify-content: center; 
-        flex-wrap: wrap;
-        bottom: -50px !important;
-        padding: 10px; 
-        box-sizing: border-box; 
-        max-width: 100%;
-        margin: 0 auto; 
+        bottom: -80px !important;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 60%;
+       
     }
 }
 
 @media screen and (max-width: 992px) {
     .slick-slider-servicos .slick-dots {
-        justify-content: center;
-        margin-right: 0;
-        max-width: 100%; 
-        height: 50%;
-        bottom: -65px;
-        padding-bottom: 20px;
+        top: 135px;
+        width: 60% !important;
+        left: 100px !important;
     }
 
     .slickerGaleria .slick-dots li {
@@ -689,6 +690,21 @@ html, body {
 
 
 @media screen and (max-width: 768px) {
+
+    .slick-slider-servicos .slick-dots {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 20px;        
+        max-width: 80% !important;
+        margin: 20px 15px;
+        top: 100px;
+        left: 50px !important;
+    }
+
+    .botaoMenuServicos{
+        max-width: 350px;
+    }
 
     .containerMenu-inferior {
         padding: 10px;
@@ -718,6 +734,11 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
+
+    .slick-slider-servicos .slick-dots {
+        margin: auto -20px;
+    }
+
     .containerMenu-inferior {
         padding: 20px; 
         display: block;
@@ -1272,7 +1293,7 @@ html, body {
     }
 
     .Eventos, .Galeria {
-        font-size: 20px !important; 
+        font-size: 26px !important; 
         padding-left: 0; 
     }
 
@@ -1283,6 +1304,19 @@ html, body {
     .VinhetaGaleria{
         width: 150px !important;
     }
+
+    .VideoContainer, .ObraContainer {
+        padding-bottom: 30px;
+    }
+
+    .Videos, .Obras {
+        font-size: 26px !important;
+    }
+    
+    .VinhetaVideos, .VinhetaObras {
+        width: 170px !important;
+    }   
+
 }
 
 @media screen and (max-width: 991px) {
@@ -1582,8 +1616,10 @@ html, body {
     }
 
     .quadradao{
-        max-width: 300px;
-        padding-left: 10px;
+        max-width: 520px;
+        height: auto;
+        padding: auto;
+        margin: 1px 60px;
     }
 }
 
