@@ -31,7 +31,9 @@ html, body {
     width: 100%;
 }
 
-.slick-slider-vitrini,.slick-slider-vitrini .slick-track,.slick-slider-vitrini .slick-slide {
+.slick-slider-vitrini,
+.slick-slider-vitrini .slick-track,
+.slick-slider-vitrini .slick-slide {
     margin: 0 !important;
     padding: 0 !important;
     overflow: hidden; 
@@ -586,7 +588,7 @@ html, body {
     height: auto;
 }
 
-.slickerMenor {
+/* .slickerMenor {
     position: relative;
     display: flex;
     justify-content: center;
@@ -594,7 +596,7 @@ html, body {
     width: 100%;
     padding-block: 15px;
     position: relative;
-}
+} */
 
 .botaoMenuServicos {
     background-color: #f0f0f0;
@@ -672,7 +674,7 @@ html, body {
    }
 
     .containerMenu-inferior{
-        overflow: hidden;
+        /* overflow: hidden; */
         padding-bottom: 50px;
     }
 
@@ -785,6 +787,11 @@ html, body {
     }
 }
 /* fim marcação 6 */
+
+.containerNoticias{
+    max-width: 75%;
+}
+
 /* marcação 7 */
 .colNoticias {
     position: relative;
@@ -933,12 +940,12 @@ html, body {
 
 @media screen and (max-width: 1400px)  {
   .containerNoticiarioMaior {
-        max-width: 100%;
-        flex: 0 0 50%;
+        /* max-width: 100%; */
+        /* flex: 0 0 50%; */
     }
 
     .noticiaMaior {
-        height: 90%;
+        /* height: 90%; */
     } 
 
     .tituloNoticiaMaior{
