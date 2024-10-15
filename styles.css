@@ -46,9 +46,8 @@ html, body {
 .slick-slider-vitrini img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem preencha o container sem distorção */
+    object-fit: cover;
 }
-
 
 .slickerMaior{
     width: 100%;
@@ -84,7 +83,6 @@ html, body {
     width: auto; 
 }
 
-
 .nav-item {
     display: flex;
     justify-content: center;
@@ -114,9 +112,6 @@ html, body {
     color: #0056b3;
 }
 
-
-
-/* Estilização da área de PesquisaSite */
 .form-control {
     flex: 1;
     height: 38px;
@@ -155,7 +150,6 @@ html, body {
 
 .btn-search:hover .loupe-icon {
     transform: scale(1.1);
-   
 }
 
 .loupe-icon {
@@ -165,7 +159,7 @@ html, body {
     margin: auto;
 }
 
-/* Efeito hover */
+
 .form-control:hover,
 .btn-search:hover {
     background-color: #f0f0f0;
@@ -206,7 +200,6 @@ html, body {
     width: 100%;
     display: flex;
     margin: 0 auto;
-
 }
 
 .botaoMenuSuperior {
@@ -217,27 +210,21 @@ html, body {
     min-width: 30px;
 }
 
-
-
 .botaoMenuSuperior img,
 .botaoMenuServicos img {
     margin: 0 auto;
     width: 28px;
     height: 28px;
     object-fit: cover;
-
     transition: filter 0.2s ease;
 }
-
 
 .tituloSuperior {
     display: block;
     border-radius: 24px;
     font-weight: bold;
     margin: 10px 0;
-    /* Define margem superior e inferior uniformemente */
     font-size: 16px;
-
 }
 
 .tituloSuperior:hover path img.img-fluid {
@@ -252,7 +239,6 @@ html, body {
 .botaoMenuServicos:active .tituloSuperior,
 .botaoMenuServicos:hover path {
     color: #01579B;
-    /* Muda a cor ao passar o mouse ou clicar */
 }
 
 /* Efeito hover para a imagem */
@@ -281,7 +267,6 @@ html, body {
     display: inline-block;
     background-color: #fff;
     text-align: center;
-
     border-radius: 25px;
     margin-top: 16px;
     padding: 10px;
@@ -310,8 +295,7 @@ html, body {
         justify-content: center;
     }
 }
-/* Fim marcação 2 */
-/* marcação 3 */
+
 .submenu .btn-submenu {
     margin: 0 auto;
 }
@@ -349,12 +333,8 @@ html, body {
     color: #fff;
     transform: scale(1);
     border-radius: 3px;
-
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3), inset 0 1px 3px rgba(255, 255, 255, 0.2);
 }
-
-/* Fim marcação 3 */
-/* Marcação 4 */
 
 .slick-prev-custom, .slick-next-custom, .slick-prev-servicos, .slick-next-servicos, .slick-prev-noticias, .slick-next-noticias, .slick-prev-galeria, .slick-next-galeria {
     background: none;
@@ -423,8 +403,7 @@ html, body {
 .slick-dots li button:before {
     content: '';
 }
-/* fim marcação 4 <<<< */
-/* marcação 5 */
+
 .containerMenu-inferior {
     background-color: #01579b;
     width: 100%;
@@ -435,23 +414,12 @@ html, body {
     overflow: hidden;
 }
 
-
 .slick-slider-servicos {
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.slick-slide {
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* fim marcação 5 */
-/* inicio libras */
 .btnAcesso {
     position: fixed;
     right: 20px;
@@ -468,8 +436,6 @@ html, body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-/* fim libras */
-/* marcação 6 */
 
 .slickerMenor {
     position: relative;
@@ -501,7 +467,6 @@ html, body {
 
 .slick-prev-servicos {
     left: -45px;
-
 }
 
 .slick-next-servicos {
@@ -510,7 +475,6 @@ html, body {
 
 .slick-slider-servicos .slick-list a {
     padding-inline: 19px;
-
 }
 
 .slick-prev-servicos, .slick-next-servicos {
@@ -538,7 +502,6 @@ html, body {
         right: 0;
         width: 100%;
         height: 60%;
-       
     }
 }
 
@@ -556,7 +519,6 @@ html, body {
    }
 
     .containerMenu-inferior{
-        /* overflow: hidden; */
         padding-bottom: 50px;
     }
 
@@ -602,7 +564,6 @@ html, body {
 
     .slickerMenor{
         position: relative;
-       
     }
 
     .slickerNoticia .slick-dots  {
@@ -618,7 +579,6 @@ html, body {
 }
 
 @media screen and (max-width: 576px) {
-
     .slick-slider-servicos .slick-dots {
         margin: auto -20px;
     }
@@ -668,13 +628,11 @@ html, body {
         overflow: visible;
     }
 }
-/* fim marcação 6 */
 
 .forcarBarra{
     max-width: 80%;
 }
 
-/* marcação 7 */
 .colNoticias {
     position: relative;
     padding: 30px;
@@ -688,10 +646,6 @@ html, body {
     flex-grow: 0;
     font-size: 32px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #01579b;
     margin-bottom: 5px;
@@ -709,8 +663,6 @@ html, body {
     border-radius: 20px;
 }
 
-/* noticias */
-
 .NoticiasContainer {
     position: relative;
     text-align: left;
@@ -727,7 +679,6 @@ html, body {
     position: relative;
     display: block;
     padding: 0;
-
     overflow: hidden;
 }
 
@@ -792,9 +743,6 @@ html, body {
 
     .slickerNoticia{
         padding-bottom: 100px;
-        width: auto;
-        height: auto;
-        overflow: visible;
     } 
 
     .slickerGaleria .slick-dots{
@@ -882,8 +830,6 @@ html, body {
     z-index: 1;
 }
 
-/* fim marcação 7 */
-/* marcação 8 */
 .slickerNoticia {
     display: flex;
     overflow: visible;
@@ -923,7 +869,6 @@ html, body {
     text-decoration: underline;
 }
 
-
 .slick-prev-noticias {
     left: -30px;
 }
@@ -944,10 +889,8 @@ html, body {
 .slick-prev-noticias:hover, .slick-next-noticias:hover {
     border-color: rgba(245, 245, 245, 0.952);
     transform: translateY(-50%) scale(1.1);
-    /* Misteriosamente se nao colocar o translateY, buga :) */
 }
-/* fim marcação 8 */
-/* marcação 9 */
+
 .btnMais {
     max-width: 226px;
     max-height: 48px;
@@ -995,10 +938,6 @@ html, body {
     z-index: 2;
     font-size: 32px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: white;
     margin-bottom: 5px;
@@ -1020,7 +959,6 @@ html, body {
 .galeriaSlicker-Item {
     position: relative;
     z-index: 0;
-    /* width: 550px; */
     height: auto;
     overflow: hidden;
     padding-left: 40px;
@@ -1031,7 +969,6 @@ html, body {
     position: relative;
     z-index: 0;
     height: auto;
-
 }
 
 .Obras-Item:hover p {
@@ -1130,10 +1067,8 @@ html, body {
 .slick-prev-galeria:hover,.slick-next-galeria:hover {
     border-color: rgba(245, 245, 245, 0.952);
     transform: translateY(-50%) scale(1.1);
-    /* Misteriosamente se nao colocar o translateY, buga :) */
 }
-/* fim marcação 9 */
-/* marcação 10 */
+
 .EventosContainer {
     text-align: left;
     padding-top: 32px;
@@ -1291,8 +1226,7 @@ html, body {
 
     text-align: left;
 }
-/* fim marcação 10 */
-/* marcação 11 */
+
 .verClarin {
     background-color: #ffd54f;
 }
@@ -1327,10 +1261,6 @@ html, body {
     z-index: 2;
     font-size: 32px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #01579b;
     margin-bottom: 5px;
@@ -1352,10 +1282,6 @@ html, body {
     z-index: 2;
     font-size: 32px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
     text-align: left;
     color: #01579b;
     margin-bottom: 5px;
@@ -1537,11 +1463,9 @@ html, body {
 }
 
 .blocoAzulInferior-2 h1 {
-
     font-size: 26px;
     font-weight: 900 !important;
     text-align: left !important;
-
     margin-bottom: 20px;
     padding-top: 20px;
 }
@@ -1566,8 +1490,7 @@ html, body {
     }
     
 }
-/* fim marcação 12 */
-/* marcacao 13 */
+
 footer {
     padding: 20px 0;
     background-color: #f8f9fa;
@@ -1590,13 +1513,11 @@ footer .pezinho img {
 @media screen and (max-width: 992px) {
     footer p {
         margin: 20px;
-  
     }
 
     .pezinho{
         padding: 50px;
     }
-    
 }
 
 .mapinha {
@@ -1608,7 +1529,6 @@ footer .pezinho img {
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
 
 .youtube a {
     display: block;
@@ -1630,7 +1550,6 @@ footer .pezinho img {
     width: 100%;
     height: auto;
 }
-
 
 .play-icon {
     position: absolute;
@@ -1674,4 +1593,3 @@ footer .pezinho img {
     margin-bottom: 45px;
     padding-bottom: 35px;
 }
-/* fim marcacao 13 */
